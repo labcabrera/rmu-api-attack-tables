@@ -19,11 +19,7 @@ const findAttackResult = (attackTable, armorType, roll, callback) => {
             const range0 = parseInt(rollRange.split("-")[0]);
             const range1 = parseInt(rollRange.split("-")[1]);
             if (roll >= range0 && roll <= range1) {
-                const attackResult = data[column]
-                console.log("roll " + roll + "(" + rollRange + ")" + " -> " + result);
-                result = attackResult;
-            } else {
-                console.log("!roll " + roll + "(" + rollRange + ")");
+                result = data[column];
             }
         })
         .on('end', () => {
