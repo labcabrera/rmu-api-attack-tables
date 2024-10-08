@@ -2,10 +2,56 @@ const express = require('express');
 const router = express.Router();
 const attackTableService = require("../services/attack-table-service");
 
+const tables = [
+    "arming-sword",
+    "ball-cold",
+    "ball-fire",
+    "ball-lightning",
+    "battle-axe",
+    "beak",
+    "bite",
+    "bola",
+    "bolt-fire",
+    "bolt-ice",
+    "bolt-lightning",
+    "bolt-water",
+    "bow-long",
+    "bow-short",
+    "broadsword",
+    "claw",
+    "club",
+    "crossbow",
+    "crush",
+    "dagger",
+    "falchion",
+    "fighting-stick",
+    "flail",
+    "grapple",
+    "horn",
+    "mace",
+    "ram",
+    "rapier",
+    "rock",
+    "scimitar",
+    "shield",
+    "sling",
+    "spear",
+    "stinger",
+    "trample",
+    "unarmed-strikes",
+    "unarmed-sweeps",
+    "war-hammer",
+    "whip"
+];
 
-router.get('/:tableId/:armorType/:roll', (req, res) => {
+router.get('/', (req, res) => {
+    res.json(tables);
+});
+
+router.get('/:tableId/:size/:armorType/:roll', (req, res) => {
     try {
         const tableId = req.params.tableId;
+        const size = req.params.size;
         const armorType = readArmorType(req.params.armorType);
         const roll = readRollValue(req.params.roll);
         const callback = (err, data) => {
@@ -15,7 +61,7 @@ router.get('/:tableId/:armorType/:roll', (req, res) => {
                 res.json({ data });
             }
         };
-        attackTableService.findAttackResult(tableId, armorType, roll, callback);
+        attackTableService.findAttackResult(tableId, size, armorType, roll, callback);
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

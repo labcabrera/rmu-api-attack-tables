@@ -2,10 +2,9 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const path = require('path');
 
-const findAttackResult = (attackTable, armorType, roll, callback) => {
+const findAttackResult = (attackTable, size, armorType, roll, callback) => {
     var result = "";
-    const fileName = attackTable + '.csv';
-    const filePath = path.join(__dirname, '../../tables/attack', fileName);
+    const filePath = path.join(__dirname, '../../tables/attack', `${attackTable}-${size}.csv`);
 
     if (!fs.existsSync(filePath)) {
         throw { status: 400, message: 'Attack table not found' };
