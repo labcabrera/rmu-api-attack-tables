@@ -1,0 +1,24 @@
+const fs = require('fs');
+const path = require('path');
+const criticalTableService = require('../services/critical-table-service');
+
+describe('CriticalTableService', () => {
+
+    describe('findCriticalResult', () => {
+        it('should return the critical result when found', () => {
+            for (let i = 1; i <= 100; i++) {
+                const result = criticalTableService.findCriticalResult('slash', 'a', i);
+                expect(result).toHaveProperty('message');
+            }
+        });
+    });
+
+    describe('getFilePath', () => {
+        it('should throw an error when the file does not exist', () => {
+            expect(() => criticalTableService.findCriticalResult('error', 'a', 10)).toThrow({
+                status: 404,
+                message: 'Critical table file not found'
+            });
+        });
+    });
+});
