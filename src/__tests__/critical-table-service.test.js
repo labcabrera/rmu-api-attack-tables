@@ -11,6 +11,11 @@ describe('CriticalTableService', () => {
                 expect(result).toHaveProperty('message');
             }
         });
+
+        it('check slash a 56', () => {
+            const result = criticalTableService.findCriticalResult('slash', 'a', 56);
+            expect(result.dmg).toBe(14);
+        });
     });
 
     describe('getFilePath', () => {

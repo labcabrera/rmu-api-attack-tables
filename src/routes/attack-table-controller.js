@@ -48,22 +48,17 @@ router.get('/', (req, res) => {
     res.json(tables);
 });
 
-router.get('/:tableId/:size/:armorType/:roll', (req, res) => {
+router.get('/:tableId/:size/:armorType/:roll', async (req, res) => {
     try {
         const tableId = req.params.tableId;
         const size = req.params.size;
         const armorType = readArmorType(req.params.armorType);
         const roll = readRollValue(req.params.roll);
-        const callback = (err, data) => {
-            if (err) {
-                res.status(500).json({ error: 'Error procesando el archivo CSV' });
-            } else {
-                res.json({ data });
-            }
-        };
-        attackTableService.findAttackResult(tableId, size, armorType, roll, callback);
+        const result = await attackTableService.findAttackResult(tableId, size, armorType, roll);
+        res.json(result);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        const status = error.status || 500;
+        res.status(status).json({ error: error.message });
     }
 });
 
