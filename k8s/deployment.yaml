@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rmu-api-attack-tables
+  labels:
+    app: rmu-api-attack-tables
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rmu-api-attack-tables
+  template:
+    metadata:
+      labels:
+        app: rmu-api-attack-tables
+    spec:
+      containers:
+      - name: rmu-api-attack-tables
+        image: labcabrera/rmu-api-attack-tables:latest
+        ports:
+        - containerPort: 3005
