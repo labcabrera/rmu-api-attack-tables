@@ -55,7 +55,8 @@ router.get('/:tableId/:size/:armorType/:roll', async (req, res) => {
         const armorType = readArmorType(req.params.armorType);
         const roll = readRollValue(req.params.roll);
         const result = await attackTableService.findAttackResult(tableId, size, armorType, roll);
-        res.json(result);
+        const body = buildResponseBody(result);
+        res.json(body);
     } catch (error) {
         const status = error.status || 500;
         res.status(status).json({ error: error.message });
@@ -85,5 +86,22 @@ const readRollValue = (value) => {
         throw { status: 400, message: 'Invalid roll range (1-175)' };
     }
 }
+
+const buildResponseBody = (result) => {
+    if (result.trim() !== "" && !isNaN(result)) {
+        return {
+            literal: result,
+            hp: parseInt(result),
+            criticalType: null,
+            criticalSeverity: null,
+        };
+    }
+    return {
+        literal: result,
+        hp: parseInt(result.slice(0, -2)),
+        criticalType: result.charAt(result.length - 1),
+        criticalSeverity: result.charAt(result.length - 2),
+    };
+};
 
 module.exports = router;
