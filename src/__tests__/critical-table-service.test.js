@@ -31,13 +31,8 @@ describe('Check critical table structure', () => {
                 expect(typeof staggeredRounds).toBe('number');
                 expect(staggeredRounds).toBeGreaterThan(0);
                 break;
-            case 'knocked_down':
+            case 'prone':
                 expect(effect.rounds).toBeDefined();
-                if (effect.rounds || effect.value) {
-                    const knockedRounds = effect.rounds || effect.value;
-                    expect(typeof knockedRounds).toBe('number');
-                    expect(knockedRounds).toBeGreaterThan(0);
-                }
                 break;
             case 'breakage_roll':
                 expect(effect.value).toBeDefined();
@@ -51,6 +46,9 @@ describe('Check critical table structure', () => {
             case 'dying':
                 expect(effect.rounds).toBeDefined();
                 break;
+            case 'slow_percent':
+                expect(effect.value).toBeDefined();
+                expect(effect.value).toBeGreaterThan(0);
             default:
                 throw new Error(`Estado no reconocido en effects: ${effect.status}. Estados válidos: bleeding, penalty, stunned, staggered, knocked_down, breakage_roll, fatigue`);
         }

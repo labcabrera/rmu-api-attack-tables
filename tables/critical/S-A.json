@@ -93,7 +93,7 @@
                 "value": -10
             },
             {
-                "status": "knocked_down",
+                "status": "prone",
                 "rounds": 1
             }
         ],
@@ -150,7 +150,7 @@
                 "value": -75
             },
             {
-                "status": "knocked_down",
+                "status": "prone",
                 "rounds": 1
             }
         ],
@@ -306,7 +306,7 @@
                 "value": -50
             },
             {
-                "status": "knocked_down",
+                "status": "prone",
                 "rounds": 1
             },
             {
