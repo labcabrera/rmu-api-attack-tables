@@ -46,7 +46,12 @@
         "rollMin": 21,
         "rollMax": 25,
         "dmg": 1,
-        "bleeding": 2,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            }
+        ],
         "location": "chest",
         "message": "You did not cut much, but you cut the right spot. Blood wells in the wound."
     },
@@ -54,11 +59,17 @@
         "rollMin": 26,
         "rollMax": 35,
         "dmg": 4,
-        "bleeding": 1,
-        "stun": {
-            "rounds": 1,
-            "penalty": -75
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 1
+            },
+            {
+                "status": "stun",
+                "rounds": 1,
+                "penalty": -75
+            }
+        ],
         "location": "abdomen",
         "message": "Blood pours from groin; foe gets glazed look in his eye as he contemplates his future."
     },
@@ -76,9 +87,12 @@
         "rollMin": 46,
         "rollMax": 55,
         "dmg": 12,
-        "penalty": {
-            "penalty": -5
-        },
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -5
+            }
+        ],
         "location": "arm",
         "message": "Lower arm strike cuts into tendon."
     },
@@ -86,13 +100,17 @@
         "rollMin": 56,
         "rollMax": 65,
         "dmg": 14,
-        "penalty": {
-            "penalty": -5
-        },
-        "stun": {
-            "rounds": 1,
-            "penalty": -25
-        },
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -5
+            },
+            {
+                "status": "stun",
+                "rounds": 1,
+                "value": -25
+            }
+        ],
         "location": "arm",
         "message": "Blade bites elbow, damages bone."
     },
@@ -100,14 +118,21 @@
         "rollMin": 66,
         "rollMax": 66,
         "dmg": 9,
-        "bleeding": 3,
-        "penalty": {
-            "penalty": -5
-        },
-        "stun": {
-            "rounds": 1,
-            "penalty": -75
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 3
+            },
+            {
+                "status": "penalty",
+                "value": -5
+            },
+            {
+                "status": "stun",
+                "rounds": 1,
+                "penalty": -75
+            }
+        ],
         "knockedDown": 1,
         "location": "abdomen",
         "message": "Edge cuts deep into groin, damaging nerves. Foe crumples and shrieks (-20 to enemy morale)."
@@ -116,10 +141,16 @@
         "rollMin": 67,
         "rollMax": 75,
         "dmg": 17,
-        "bleeding": 2,
-        "penalty": {
-            "penalty": -5
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -5
+            }
+        ],
         "location": "leg",
         "message": "Lower leg wound bleeds freely."
     },
@@ -127,9 +158,12 @@
         "rollMin": 76,
         "rollMax": 80,
         "dmg": 14,
-        "penalty": {
-            "penalty": -15
-        },
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -15
+            }
+        ],
         "location": "chest",
         "message": "Chop to the side of the chest breaks one rib."
     },
@@ -137,9 +171,12 @@
         "rollMin": 81,
         "rollMax": 85,
         "dmg": 22,
-        "penalty": {
-            "penalty": -15
-        },
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -15
+            }
+        ],
         "location": "head",
         "message": "Blow delivers bone-crunching force to foe's jawbone."
     },
@@ -147,10 +184,16 @@
         "rollMin": 86,
         "rollMax": 90,
         "dmg": 17,
-        "bleeding": 2,
-        "penalty": {
-            "penalty": -15
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -15
+            }
+        ],
         "location": "arm",
         "message": "Cut into upper arm damages muscle. Foe drops anything held by that arm."
     },
@@ -158,10 +201,16 @@
         "rollMin": 91,
         "rollMax": 95,
         "dmg": 18,
-        "bleeding": 2,
-        "penalty": {
-            "penalty": -20
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -20
+            }
+        ],
         "staggered": 1,
         "location": "leg",
         "message": "Blade damages muscles in upper leg. Foe is at half movement rate until it heals."
@@ -170,14 +219,21 @@
         "rollMin": 96,
         "rollMax": 97,
         "dmg": 14,
-        "bleeding": 4,
-        "penalty": {
-            "penalty": -20
-        },
-        "stun": {
-            "rounds": 1,
-            "penalty": -75
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 4
+            },
+            {
+                "status": "penalty",
+                "value": -20
+            },
+            {
+                "status": "stun",
+                "rounds": 1,
+                "value": -75
+            }
+        ],
         "location": "abdomen",
         "message": "Slash into belly damages muscle, foe's eyes go wide at near disembowelment."
     },
@@ -185,15 +241,22 @@
         "rollMin": 98,
         "rollMax": 99,
         "dmg": 44,
-        "bleeding": 2,
-        "penalty": {
-            "penalty": -20
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -20
+            },
+            {
+                "status": "stun",
+                "rounds": 1,
+                "penalty": -75
+            }
+        ],
         "fatigue": 10,
-        "stun": {
-            "rounds": 1,
-            "penalty": -75
-        },
         "location": "chest",
         "message": "Solid chop slips between ribs, barely missing lung."
     },
@@ -202,14 +265,21 @@
         "rollMax": 100,
         "die": 6,
         "dmg": 10,
-        "bleeding": 1,
-        "penalty": {
-            "penalty": -35
-        },
-        "stun": {
-            "rounds": 1,
-            "penalty": -50
-        },
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 1
+            },
+            {
+                "status": "penalty",
+                "value": -35
+            },
+            {
+                "status": "stun",
+                "value": 1,
+                "penalty": -50
+            }
+        ],
         "knockedDown": 1,
         "location": "head",
         "message": "Strike to base of foe's neck seems strangely ineffective for 3 rounds, after which foe drops, paralyzed, dying in 6 more rounds"
