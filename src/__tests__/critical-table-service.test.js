@@ -46,9 +46,18 @@ describe('Check critical table structure', () => {
             case 'dying':
                 expect(effect.rounds).toBeDefined();
                 break;
+            case 'death':
+                expect(effect.rounds).not.toBeDefined();
+                expect(effect.value).not.toBeDefined();
+                break;
             case 'slow_percent':
                 expect(effect.value).toBeDefined();
                 expect(effect.value).toBeGreaterThan(0);
+                break
+            case 'knocked_back_distance':
+                expect(effect.value).toBeDefined();
+                expect(effect.value).toBeGreaterThan(0);
+                break;
             default:
                 throw new Error(`Estado no reconocido en effects: ${effect.status}. Estados válidos: bleeding, penalty, stunned, staggered, knocked_down, breakage_roll, fatigue`);
         }
@@ -74,12 +83,16 @@ describe('Check critical table structure', () => {
 
     describe('findCriticalResult', () => {
 
-        it('should return critical results for S-A table from 1 to 100', () => {
+        it('valid S-A table', () => {
             validateTable('S', 'A');
         });
 
-        it('should return critical results for S-B table from 1 to 100', () => {
+        it('valid S-B table', () => {
             validateTable('S', 'B');
+        });
+
+        it('valid S-C table', () => {
+            validateTable('S', 'C');
         });
     });
 
