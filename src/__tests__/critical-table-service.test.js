@@ -22,9 +22,11 @@ describe('Check critical table structure', () => {
                 break;
             case 'stunned':
                 expect(effect.rounds).toBeDefined();
+                expect(effect.value).toBeDefined();
                 break;
             case 'staggered':
-                expect(effect.rounds || effect.value).toBeDefined();
+                expect(effect.rounds).toBeDefined();
+                expect(effect.value).toBeDefined();
                 const staggeredRounds = effect.rounds || effect.value;
                 expect(typeof staggeredRounds).toBe('number');
                 expect(staggeredRounds).toBeGreaterThan(0);
@@ -44,27 +46,25 @@ describe('Check critical table structure', () => {
             case 'fatigue':
                 expect(effect.value).toBeDefined();
                 expect(typeof effect.value).toBe('number');
-                expect(effect.value).toBeGreaterThan(0);
+                expect(effect.value).toBeLessThan(0);
+                break;
+            case 'dying':
+                expect(effect.rounds).toBeDefined();
                 break;
             default:
-                // Lanzar error para estados no reconocidos
                 throw new Error(`Estado no reconocido en effects: ${effect.status}. Estados válidos: bleeding, penalty, stunned, staggered, knocked_down, breakage_roll, fatigue`);
         }
     };
 
-    describe('findCriticalResult', () => {
-
-        it('should return critical results for S-A table from 1 to 100', () => {
-            for (let roll = 1; roll <= 100; roll++) {
-                const result = criticalTableService.findCriticalResult('S', 'A', roll);
+    const validateTable = (type, severity) => {
+        for (let roll = 1; roll <= 100; roll++) {
+                const result = criticalTableService.findCriticalResult(type, severity, roll);
                 expect(result).toBeDefined();
                 expect(result).toHaveProperty('rollMin');
                 expect(result).toHaveProperty('rollMax');
                 expect(result).toHaveProperty('dmg');
                 expect(result).toHaveProperty('location');
                 expect(result).toHaveProperty('message');
-
-                // Validar effects si existe
                 if (result.effects) {
                     expect(Array.isArray(result.effects)).toBe(true);
                     result.effects.forEach(effect => {
@@ -72,6 +72,16 @@ describe('Check critical table structure', () => {
                     });
                 }
             }
+    };
+
+    describe('findCriticalResult', () => {
+
+        it('should return critical results for S-A table from 1 to 100', () => {
+            validateTable('S', 'A');
+        });
+
+        it('should return critical results for S-B table from 1 to 100', () => {
+            validateTable('S', 'B');
         });
     });
 

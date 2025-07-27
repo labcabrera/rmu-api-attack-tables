@@ -72,7 +72,7 @@
             {
                 "status": "stunned",
                 "rounds": 1,
-                "penalty": -75
+                "value": -75
             }
         ],
         "location": "abdomen",
@@ -85,11 +85,12 @@
         "effects": [
             {
                 "status": "staggered",
-                "rounds": 1
+                "rounds": 1,
+                "value": 1
             },
             {
                 "status": "fatigue",
-                "value": 10
+                "value": -10
             },
             {
                 "status": "knocked_down",
@@ -146,7 +147,7 @@
             {
                 "status": "stunned",
                 "rounds": 1,
-                "penalty": -75
+                "value": -75
             },
             {
                 "status": "knocked_down",
@@ -231,7 +232,8 @@
             },
             {
                 "status": "staggered",
-                "rounds": 1
+                "rounds": 1,
+                "value": 1
             }
         ],
         "location": "leg",
@@ -275,11 +277,11 @@
             {
                 "status": "stunned",
                 "rounds": 1,
-                "penalty": -75
+                "value": -75
             },
             {
                 "status": "fatigue",
-                "value": 10
+                "value": -10
             }
         ],
         "location": "chest",
@@ -288,7 +290,6 @@
     {
         "rollMin": 100,
         "rollMax": 100,
-        "die": 6,
         "dmg": 10,
         "effects": [
             {
@@ -302,13 +303,16 @@
             {
                 "status": "stunned",
                 "rounds": 1,
-                "penalty": -50
+                "value": -50
             },
             {
                 "status": "knocked_down",
                 "rounds": 1
+            },
+            {
+                "status": "dying",
+                "rounds": 6
             }
-
         ],
         "location": "head",
         "message": "Strike to base of foe's neck seems strangely ineffective for 3 rounds, after which foe drops, paralyzed, dying in 6 more rounds"
