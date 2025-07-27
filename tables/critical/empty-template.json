@@ -1,0 +1,158 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 1,
+        "dmg": 0,
+        "location": "head",
+        "message": ""
+    },
+    {
+        "rollMin": 2,
+        "rollMax": 3,
+        "dmg": 0,
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 4,
+        "rollMax": 5,
+        "dmg": 0,
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 6,
+        "rollMax": 10,
+        "dmg": 0,
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 11,
+        "rollMax": 15,
+        "dmg": 0,
+        "location": "arm",
+        "message": ""
+    },
+    {
+        "rollMin": 16,
+        "rollMax": 20,
+        "dmg": 0,
+        "effects": [],
+        "location": "head",
+        "message": ""
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 25,
+        "dmg": 0,
+        "effects": [],
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 26,
+        "rollMax": 35,
+        "dmg": 0,
+        "effects": [],
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 36,
+        "rollMax": 45,
+        "dmg": 0,
+        "effects": [],
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 46,
+        "rollMax": 55,
+        "dmg": 0,
+        "effects": [],
+        "location": "arm",
+        "message": ""
+    },
+    {
+        "rollMin": 56,
+        "rollMax": 65,
+        "dmg": 0,
+        "effects": [],
+        "location": "arm",
+        "message": ""
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "dmg": 0,
+        "effects": [],
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 75,
+        "dmg": 0,
+        "effects": [],
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 76,
+        "rollMax": 80,
+        "dmg": 0,
+        "effects": [],
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "dmg": 0,
+        "effects": [],
+        "location": "head",
+        "message": ""
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "dmg": 0,
+        "effects": [],
+        "location": "arm",
+        "message": ""
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "dmg": 0,
+        "effects": [],
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 97,
+        "dmg": 0,
+        "effects": [],
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 98,
+        "rollMax": 99,
+        "dmg": 0,
+        "effects": [],
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "die": 6,
+        "dmg": 0,
+        "effects": [],
+        "location": "head",
+        "message": ""
+    }
+]
