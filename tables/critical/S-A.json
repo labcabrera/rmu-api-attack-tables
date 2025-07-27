@@ -38,7 +38,12 @@
         "rollMin": 16,
         "rollMax": 20,
         "dmg": 6,
-        "breakageRoll": 0,
+        "effects": [
+            {
+                "status": "breakage_roll",
+                "value": 0
+            }
+        ],
         "location": "head",
         "message": "The skull is nice and thick, but maybe there is something else to break?"
     },
@@ -65,7 +70,7 @@
                 "value": 1
             },
             {
-                "status": "stun",
+                "status": "stunned",
                 "rounds": 1,
                 "penalty": -75
             }
@@ -77,9 +82,20 @@
         "rollMin": 36,
         "rollMax": 45,
         "dmg": 3,
-        "fatigue": 10,
-        "staggered": 1,
-        "knockedDown": 1 ,
+        "effects": [
+            {
+                "status": "staggered",
+                "rounds": 1
+            },
+            {
+                "status": "fatigue",
+                "value": 10
+            },
+            {
+                "status": "knocked_down",
+                "rounds": 1
+            }
+        ],
         "location": "leg",
         "message": "Edge caches foe behind the knee."
     },
@@ -106,7 +122,7 @@
                 "value": -5
             },
             {
-                "status": "stun",
+                "status": "stunned",
                 "rounds": 1,
                 "value": -25
             }
@@ -128,12 +144,15 @@
                 "value": -5
             },
             {
-                "status": "stun",
+                "status": "stunned",
                 "rounds": 1,
                 "penalty": -75
+            },
+            {
+                "status": "knocked_down",
+                "rounds": 1
             }
         ],
-        "knockedDown": 1,
         "location": "abdomen",
         "message": "Edge cuts deep into groin, damaging nerves. Foe crumples and shrieks (-20 to enemy morale)."
     },
@@ -209,9 +228,12 @@
             {
                 "status": "penalty",
                 "value": -20
+            },
+            {
+                "status": "staggered",
+                "rounds": 1
             }
         ],
-        "staggered": 1,
         "location": "leg",
         "message": "Blade damages muscles in upper leg. Foe is at half movement rate until it heals."
     },
@@ -229,7 +251,7 @@
                 "value": -20
             },
             {
-                "status": "stun",
+                "status": "stunned",
                 "rounds": 1,
                 "value": -75
             }
@@ -251,12 +273,15 @@
                 "value": -20
             },
             {
-                "status": "stun",
+                "status": "stunned",
                 "rounds": 1,
                 "penalty": -75
+            },
+            {
+                "status": "fatigue",
+                "value": 10
             }
         ],
-        "fatigue": 10,
         "location": "chest",
         "message": "Solid chop slips between ribs, barely missing lung."
     },
@@ -275,12 +300,16 @@
                 "value": -35
             },
             {
-                "status": "stun",
-                "value": 1,
+                "status": "stunned",
+                "rounds": 1,
                 "penalty": -50
+            },
+            {
+                "status": "knocked_down",
+                "rounds": 1
             }
+
         ],
-        "knockedDown": 1,
         "location": "head",
         "message": "Strike to base of foe's neck seems strangely ineffective for 3 rounds, after which foe drops, paralyzed, dying in 6 more rounds"
     }
