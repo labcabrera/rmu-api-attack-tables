@@ -47,6 +47,9 @@ describe('Check critical table structure', () => {
                 expect(effect.rounds).toBeDefined();
                 expect(effect.value).not.toBeDefined();
                 break;
+            case 'conditional_dying':
+                expect(effect.condition).toBeDefined();
+                break;
             case 'dead':
                 expect(effect.rounds).not.toBeDefined();
                 expect(effect.value).not.toBeDefined();
@@ -113,6 +116,10 @@ describe('Check critical table structure', () => {
 
         it('valid P-B table', () => {
             validateTable('P', 'B');
+        });
+
+        it('valid P-C table', () => {
+            validateTable('P', 'C');
         });
     });
 
