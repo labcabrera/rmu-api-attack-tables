@@ -1,35 +1,41 @@
 [
     {
-        "name": "bleeding",
-        "value": "required",
-        "valueDescription": "Additional X hits of damage per round until the bleeding stops"
-        
+        "name": "dead"
     },
     {
-        "name": "stunned",
-        "value": "optional",
-        "valueDescription": "Stunned at the given penalty for T rounds or timespan.",
-        "rounds": "required"
+        "name": "dying"
     },
     {
-        "name": "penalty",
-        "value": "required",
-        "valueDescription": "Penalizador a las tiradas."
+        "name": "conditional_dying"
     },
     {
-        "name": "staggered",
-        "value": "required",
-        "valueDescription": "Indica que el personaje está aturdido y no puede actuar en su próximo turno.",
-        "rounds": "required"
+        "name": "unconscious"
     },
     {
-        "name": "knocked_down",
-        "value": "required",
-        "valueDescription": "Indica que el personaje ha sido derribado y no puede actuar en su próximo turno."
+        "name": "bleeding"
     },
     {
-        "name": "fatigue",
-        "value": "required",
-        "valueDescription": "Fatigue penalty of X"
+        "name": "penalty"
+    },
+    {
+        "name": "stunned"
+    },
+    {
+        "name": "staggered"
+    },
+    {
+        "name": "prone"
+    },
+    {
+        "name": "breakage_roll"
+    },
+    {
+        "name": "fatigue"
+    },
+    {
+        "name": "slow_percent"
+    },
+    {
+        "name": "knocked_back_distance"
     }
 ]

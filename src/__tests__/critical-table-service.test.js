@@ -62,7 +62,7 @@ describe('Check critical table structure', () => {
                 expect(effect.value).toBeDefined();
                 expect(effect.value).toBeGreaterThan(0);
                 break;
-            case "unconcious":
+            case "unconscious":
                 expect(effect.rounds).toBeDefined();
                 break;
             default:
