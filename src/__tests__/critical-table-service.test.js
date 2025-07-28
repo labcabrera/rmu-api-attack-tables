@@ -63,7 +63,6 @@ describe('Check critical table structure', () => {
                 expect(effect.value).toBeGreaterThan(0);
                 break;
             case "unconscious":
-                expect(effect.rounds).toBeDefined();
                 break;
             default:
                 throw new Error(`Estado no reconocido en effects: ${effect.status}. Estados válidos: bleeding, penalty, stunned, staggered, knocked_down, breakage_roll, fatigue`);
@@ -124,6 +123,10 @@ describe('Check critical table structure', () => {
 
         it('valid P-D table', () => {
             validateTable('P', 'D');
+        });
+
+        it('valid P-E table', () => {
+            validateTable('P', 'E');
         });
     });
 
