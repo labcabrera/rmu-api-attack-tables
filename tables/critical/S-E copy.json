@@ -1,0 +1,245 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 1,
+        "dmg": 2,
+        "location": "head",
+        "effects": [
+            {
+                "status": "fatigue",
+                "value": -10
+            }
+        ],
+        "message": "Strike cuts skin on neck, missing major vessels."
+    },
+    {
+        "rollMin": 2,
+        "rollMax": 3,
+        "dmg": 10,
+        "location": "chest",
+        "message": "Foe sliced high on one side along the ribs. It hurts."
+    },
+    {
+        "rollMin": 4,
+        "rollMax": 5,
+        "dmg": 13,
+        "location": "abdomen",
+        "message": "Foe dodges cut to the groin awkwardly; you only get a glancing hit."
+    },
+    {
+        "rollMin": 6,
+        "rollMax": 10,
+        "dmg": 3,
+        "location": "leg",
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -5
+            },
+            {
+                "status": "breakage_roll",
+                "value": -50
+            }
+        ],
+        "message": "Edge slices into lower leg, damaging muscle."
+    },
+    {
+        "rollMin": 11,
+        "rollMax": 15,
+        "dmg": 0,
+        "location": "arm",
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -25
+            },
+            {
+                "status": "staggered",
+                "rounds": 1,
+                "value": 1
+            },
+            {
+                "status": "knocked_back_distance",
+                "value": 5
+            }
+        ],
+        "message": "Cut just above the elbow looks nasty; foe recoils from the blow."
+    },
+    {
+        "rollMin": 16,
+        "rollMax": 20,
+        "dmg": 20,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            }
+        ],
+        "location": "head",
+        "message": "Strike to the temple bounces off skull, bleeds a lot for a small cut."
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 25,
+        "dmg": 16,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 4
+            }
+        ],
+        "location": "chest",
+        "message": "Cutting beneath the ribs, your blow sends a spray of blood that would draws cheers in the arena."
+    },
+    {
+        "rollMin": 26,
+        "rollMax": 35,
+        "dmg": 10,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 6
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -25
+            }
+        ],
+        "location": "abdomen",
+        "message": "Cut along abdomen and down to groin fountains red."
+    },
+    {
+        "rollMin": 36,
+        "rollMax": 45,
+        "dmg": 19,
+        "effects": [
+            {
+                "status": "penalty",
+                "value": 15
+            },
+            {
+                "status": "staggered",
+                "rounds": 1,
+                "value": 1
+            }
+        ],
+        "location": "leg",
+        "message": "Cut to kneecap cracks the bone. Crunch!"
+    },
+    {
+        "rollMin": 46,
+        "rollMax": 55,
+        "dmg": 26,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -15
+            }
+        ],
+        "location": "arm",
+        "message": "Bloody slash to the hand damages tendons."
+    },
+    {
+        "rollMin": 56,
+        "rollMax": 65,
+        "dmg": 13,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 5
+            },
+            {
+                "status": "penalty",
+                "value": -20
+            },
+            {
+                "status": "breakage_roll",
+                "value": 0
+            }
+        ],
+        "location": "arm",
+        "message": "Your weapon leaves a bloody trail down foe's arm, and it looks like the road to victory."
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "dmg": 0,
+        "effects": [],
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 75,
+        "dmg": 0,
+        "effects": [],
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 76,
+        "rollMax": 80,
+        "dmg": 0,
+        "effects": [],
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "dmg": 0,
+        "effects": [],
+        "location": "head",
+        "message": ""
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "dmg": 0,
+        "effects": [],
+        "location": "arm",
+        "message": ""
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "dmg": 0,
+        "effects": [],
+        "location": "leg",
+        "message": ""
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 97,
+        "dmg": 0,
+        "effects": [],
+        "location": "abdomen",
+        "message": ""
+    },
+    {
+        "rollMin": 98,
+        "rollMax": 99,
+        "dmg": 0,
+        "effects": [],
+        "location": "chest",
+        "message": ""
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "die": 6,
+        "dmg": 0,
+        "effects": [],
+        "location": "head",
+        "message": ""
+    }
+]
