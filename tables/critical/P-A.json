@@ -1,0 +1,304 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 1,
+        "dmg": 1,
+        "location": "head",
+        "message": "Glancing blow disappoints."
+    },
+    {
+        "rollMin": 2,
+        "rollMax": 3,
+        "dmg": 2,
+        "location": "chest",
+        "message": "Strike bounces off."
+    },
+    {
+        "rollMin": 4,
+        "rollMax": 5,
+        "dmg": 3,
+        "location": "abdomen",
+        "message": "Sideways strike across belly tears clothing."
+    },
+    {
+        "rollMin": 6,
+        "rollMax": 10,
+        "dmg": 0,
+        "location": "leg",
+        "effects": [
+            {
+                "status": "fatigue",
+                "value": -10
+            }
+        ],
+        "message": "Foe dodges most of attack."
+    },
+    {
+        "rollMin": 11,
+        "rollMax": 15,
+        "dmg": 6,
+        "location": "arm",
+        "message": "Stab to forearm annoys foe."
+    },
+    {
+        "rollMin": 16,
+        "rollMax": 20,
+        "dmg": 3,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 1
+            }
+        ],
+        "location": "head",
+        "message": "Point skips off cheekbone, which begins to bleed."
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 25,
+        "dmg": 1,
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -5
+            }
+        ],
+        "location": "chest",
+        "message": "Point tears through pectoral, bounces off bone."
+    },
+    {
+        "rollMin": 26,
+        "rollMax": 35,
+        "dmg": 4,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            }
+        ],
+        "location": "abdomen",
+        "message": "Point penetrates into top of groin, but misses vitals. The bleeding is good, though. Sweet move!"
+    },
+    {
+        "rollMin": 36,
+        "rollMax": 45,
+        "dmg": 13,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 1
+            }
+        ],
+        "location": "leg",
+        "message": "Point stabs into the muscle above the knee."
+    },
+    {
+        "rollMin": 46,
+        "rollMax": 55,
+        "dmg": 2,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -5
+            }
+        ],
+        "location": "arm",
+        "message": "Point sinks an inch into foe's bicep muscle."
+    },
+    {
+        "rollMin": 56,
+        "rollMax": 65,
+        "dmg": 19,
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -5
+            }
+        ],
+        "location": "arm",
+        "message": "Point breaks a finger then sinks into palm. Foe's pain is your gain."
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "dmg": 19,
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -20
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -50
+            }
+        ],
+        "location": "abdomen",
+        "message": "Force of thrust causes break in foe's pelvis."
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 75,
+        "dmg": 10,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -5
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -25
+            },
+            {
+                "status": "breakage_roll",
+                "value": 0
+            }
+        ],
+        "location": "leg",
+        "message": "Stabbing through foot damages tendons."
+    },
+    {
+        "rollMin": 76,
+        "rollMax": 80,
+        "dmg": 14,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -10
+            }
+        ],
+        "location": "chest",
+        "message": "Point cracks a rib and penetrates torso, missing vitals."
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "dmg": 17,
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -10
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -50
+            }
+        ],
+        "location": "head",
+        "message": "Point scrapes side of foe's head, removing a large chunk of outer ear."
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "dmg": 17,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -15
+            }
+        ],
+        "location": "arm",
+        "message": "Point stabs all the way into upper arm, damaging muscle. Foe drops anything held by hand on that side."
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "dmg": 13,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 2
+            },
+            {
+                "status": "penalty",
+                "value": -25
+            }
+        ],
+        "location": "leg",
+        "message": "Thrust damages muscles in foe's upper leg. Foe is at half normal movement rate until it heals."
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 97,
+        "dmg": 29,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 4
+            },
+            {
+                "status": "penalty",
+                "value": -25
+            }
+        ],
+        "location": "abdomen",
+        "message": "Thrust into groin is inspiring in its awful majesty."
+    },
+    {
+        "rollMin": 98,
+        "rollMax": 99,
+        "dmg": 44,
+        "effects": [
+            {
+                "status": "bleeding",
+                "value": 4
+            },
+            {
+                "status": "penalty",
+                "value": -30
+            }
+        ],
+        "location": "chest",
+        "message": "Strike passes through ribs and nicks lung; foe coughs up pain."
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "dmg": 5,
+        "effects": [    
+            {
+                "status": "bleeding",
+                "value": 3
+            },
+            {
+                "status": "penalty",
+                "value": -30
+            },
+            {
+                "status": "stunned",
+                "rounds": 3,
+                "value": -50
+            },
+            {
+                "status": "unconcious",
+                "rounds": 3,
+                "offset": 3
+            },
+            {
+                "status": "dying",
+                "rounds": 3,
+                "offset": 3
+            }
+        ],
+        "location": "head",
+        "message": "Point drives into foe's brain. Foe remains active 3 rounds, falls unconcious for another 3 rounds, then dies."
+    }
+]

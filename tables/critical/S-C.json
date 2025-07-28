@@ -352,7 +352,6 @@
     {
         "rollMin": 100,
         "rollMax": 100,
-        "die": 6,
         "dmg": 25,
         "effects": [
             {
