@@ -143,7 +143,7 @@
                 "status": "stunned",
                 "rounds": 1,
                 "value": -25,
-                "offset": 1
+                "delay": 1
             },
             {
                 "status": "prone",
@@ -314,7 +314,7 @@
                 "status": "stunned",
                 "rounds": 1,
                 "value": -50,
-                "offset": 1
+                "delay": 1
             }
         ],
         "location": "arm",

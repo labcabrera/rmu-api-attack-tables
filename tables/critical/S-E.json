@@ -212,7 +212,7 @@
                 "status": "stunned",
                 "rounds": 1,
                 "value": -50,
-                "offset": 1
+                "delay": 1
             },
             {
                 "status": "staggered",
@@ -328,7 +328,7 @@
                 "status": "stunned",
                 "rounds": 1,
                 "value": -50,
-                "offset": 1
+                "delay": 1
             },
             {
                 "status": "prone",
