@@ -99,6 +99,10 @@ describe('Check critical table structure', () => {
         it('valid S-D table', () => {
             validateTable('S', 'D');
         });
+
+        it('valid S-E table', () => {
+            validateTable('S', 'E');
+        });
     });
 
     describe('getFilePath', () => {
