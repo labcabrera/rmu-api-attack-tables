@@ -1,3 +1,44 @@
-= Rolemaster Unified Core API
+= Rolemaster Unified Attack Tables API
 
-Mock version for frontend developing: https://github.com/labcabrera/rmu-fe/
+This API provides access to attack tables, critical hits, and fumbles.
+
+== Endpoints
+
+* _GET /v1/attack-tables_: Gets a list of available attack tables.
+* _GET /v1/attack-tables/{tableId}/{size}/{at}/{roll}_: Gets the result of an attack roll on a specific table.
+* _GET /v1/critical-tables/{type}/{severity}/{roll}: Gets the result of a critical hit roll on a specific table.
+
+The response format for attack rolls is:
+
+[source,json]
+----
+{
+    "text": "16DP",
+    "damage": 16,
+    "criticalType": "P",
+    "criticalSeverity": "D"
+}
+----
+
+The response format for critical hit rolls is:
+
+[source,json]
+----
+{
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 17,
+    "effects": [
+        {
+            "status": "bleeding",
+            "value": 2
+        },
+        {
+            "status": "penalty",
+            "value": -5
+        }
+    ],
+    "location": "leg",
+    "message": "Lower leg wound bleeds freely."
+}
+----
