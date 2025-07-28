@@ -121,6 +121,10 @@ describe('Check critical table structure', () => {
         it('valid P-C table', () => {
             validateTable('P', 'C');
         });
+
+        it('valid P-D table', () => {
+            validateTable('P', 'D');
+        });
     });
 
     describe('getFilePath', () => {
