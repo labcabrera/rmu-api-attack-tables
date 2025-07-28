@@ -90,14 +90,14 @@ const readRollValue = (value) => {
 const buildResponseBody = (result) => {
     if (result.trim() !== "" && !isNaN(result)) {
         return {
-            literal: result,
+            text: result,
             damage: parseInt(result),
             criticalType: null,
             criticalSeverity: null,
         };
     }
     return {
-        literal: result,
+        text: result,
         damage: parseInt(result.slice(0, -2)),
         criticalType: result.charAt(result.length - 1),
         criticalSeverity: result.charAt(result.length - 2),

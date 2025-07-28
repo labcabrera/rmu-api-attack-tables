@@ -110,6 +110,10 @@ describe('Check critical table structure', () => {
         it('valid P-A table', () => {
             validateTable('P', 'A');
         });
+
+        it('valid P-B table', () => {
+            validateTable('P', 'B');
+        });
     });
 
     describe('getFilePath', () => {
