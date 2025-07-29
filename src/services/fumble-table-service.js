@@ -3,19 +3,19 @@ const path = require('path');
 
 const cache = new Map();
 
-const findCriticalResult = (criticalTable, criticalType, roll) => {
-    const filePath = getFilePath(criticalTable, criticalType);
+const findFumbleResult = (fumbleTable, roll) => {
+    const filePath = getFilePath(fumbleTable);
     const data = getCachedData(filePath);
     for (const item of data) {
         if (roll >= item.rollMin && roll <= item.rollMax) {
             return item;
         }
     }
-    throw { status: 400, message: 'Invalid critical table data' };
+    throw { status: 400, message: 'Invalid fumble table data' };
 };
 
-const getFilePath = (criticalTable, criticalType) => {
-    return path.join(__dirname, '../../tables/critical', `${criticalTable}-${criticalType}.json`);
+const getFilePath = (fumbleTable) => {
+    return path.join(__dirname, '../../tables/fumble', `${fumbleTable}.json`);
 };
 
 const getCachedData = (filePath) => {
@@ -31,5 +31,5 @@ const getCachedData = (filePath) => {
 };
 
 module.exports = {
-    findCriticalResult
+    findFumbleResult
 };

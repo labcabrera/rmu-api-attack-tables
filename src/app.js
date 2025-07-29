@@ -10,9 +10,11 @@ app.use(cors());
 
 const attackTableRouter = require('./routes/attack-table-controller');
 const criticalTableRouter = require('./routes/critical-table-controller');
+const fumbleTableRouter = require('./routes/fumble-table-controller');
 
 app.use('/v1/attack-tables', attackTableRouter);
 app.use('/v1/critical-tables', criticalTableRouter);
+app.use('/v1/fumble-tables', fumbleTableRouter);
 
 app.get('/', (req, res) => {
   res.send('TODO');

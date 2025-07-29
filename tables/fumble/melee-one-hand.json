@@ -1,0 +1,173 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 20,
+        "text": "Your palm is sweaty. Maybe you will improve."
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 30,
+        "effects": [
+            {
+                "status": "disarmed"
+            }
+        ],
+        "text": "You lose your grip on your weapon; it flies 2d10 feet in a random direction. Next time wipe your hands first."
+    }
+    ,
+    {
+        "rollMin": 31,
+        "rollMax": 40,
+        "effects": [
+            {
+                "status": "initiative_penalty",
+                "rounds": 1,
+                "value": -5,
+                "delay": 1
+            }
+        ],
+        "text": "Overenthusiastic attack puts you off balance. You suffer a -5 initiative penalty next round."
+    },
+    {
+        "rollMin": 41,
+        "rollMax": 50,
+        "effects": [
+            {
+                "status": "fatigue",
+                "value": -5
+            }
+        ],
+        "text": "Figthing sure is tiring! Take a -5 Fatigue penalty."
+    },
+    {
+        "rollMin": 51,
+        "rollMax": 60,
+        "effects": [
+            {
+                "status": "stunned",
+                "rounds": 2,
+                "value": -25
+            }
+        ],
+        "text": "You try to impress your opponent with a spin maneuver. Too bad. Spend two rounds Stunned."
+    },
+    {
+        "rollMin": 61,
+        "rollMax": 65,
+        "effects": [
+            {
+                "status": "breakage_roll",
+                "value": 0
+            }
+        ],
+        "text": "You hit an innocent inanimate object. Both it and your weapon must make breakage checks."
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "text": "Execute the declared attack on the nearest ally, whoops! If no ally is in reach, an innocent bystander will do. Failing that, attack an imaginary friend."
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 70,
+        "effects": [
+            {
+                "status": "attack_penalty",
+                "rounds": 2,
+                "value": -25
+            }
+        ],
+        "text": "Your weapon's balance seems off somehow. Spend two rounds attacking at -25 before you realize your grip is wrong."
+    },
+    {
+        "rollMin": 71,
+        "rollMax": 80,
+        "effects": [
+            {
+                "status": "cannot_attack",
+                "rounds": 2
+            }
+        ],
+        "text": "You are distracted and overwhelmed. You may not initiate an attack for two rounds (you may full parry if attacked)."
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "effects": [
+            {
+                "status": "fatigue",
+                "value": -20
+            }
+        ],
+        "text": "You are suddenly very winded. Take a -20 Fatigue penalty."
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "effects": [
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -50
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -25,
+                "delay": 1
+            }
+        ],
+        "text": "You clip yourself with your own weapon. You are Stunned this round and Dazed next round."
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "effects": [
+            {
+                "status": "stunned",
+                "rounds": 2,
+                "value": -50
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -25,
+                "delay": 2
+            }
+        ],
+        "text": "You trip and fall prone as your swing goes wide. You are Stunned for two rounds, then Dazed in the third."
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 99,
+        "effects": [
+            {
+                "status": "cannot_parry",
+                "rounds": 1
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -75
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -50,
+                "delay": 1
+            },
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -25,
+                "delay": 2
+            }
+        ],
+        "text": "The excitement is just too much! Your momentary frenzy leaves you Stunned unable to parry this round, Stunned next round, and Dazed the third round."
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "text": "Execute the declared attack on yourself, with no parry DB. Ow!"
+    }
+]

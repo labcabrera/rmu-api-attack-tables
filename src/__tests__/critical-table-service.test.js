@@ -65,7 +65,7 @@ describe('Check critical table structure', () => {
             case "unconscious":
                 break;
             default:
-                throw new Error(`Estado no reconocido en effects: ${effect.status}. Estados válidos: bleeding, penalty, stunned, staggered, knocked_down, breakage_roll, fatigue`);
+                throw new Error(`Invalid status effect: ${effect.status}.`);
         }
     };
 

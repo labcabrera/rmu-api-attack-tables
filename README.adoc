@@ -4,12 +4,16 @@ This API provides access to attack tables, critical hits, and fumbles.
 
 This project is part of RMU Online: https://github.com/labcabrera/rmu-platform
 
+WARNING: *This application is an independent project developed by fans of Rolemaster Unified. It is not affiliated with, endorsed by, or licensed by Iron Crown Enterprises (ICE), the owners of the Rolemaster intellectual property.*
+*All Rolemaster trademarks, game systems, and materials are the property of Iron Crown Enterprises. This software is provided for personal, non-commercial use only. If you enjoy Rolemaster, please support the official publications and content from ICE.*
+
 == Endpoints
 
 |===
 |`GET /v1/attack-tables`                                |Gets a list of available attack tables.
 |`GET /v1/attack-tables/{tableId}/{size}/{at}/{roll}`:  |Gets the result of an attack roll on a specific table.
 |`GET /v1/critical-tables/{type}/{severity}/{roll}`     |Gets the result of a critical hit roll on a specific table.
+|`GET /v1/fumble-tables/{type}/{roll}`                  |Gets the result of a fumble roll on a specific table.
 |===
 
 The response format for attack rolls is:
@@ -44,5 +48,23 @@ The response format for critical hit rolls is:
     ],
     "location": "leg",
     "message": "Lower leg wound bleeds freely."
+}
+----
+
+The response format for fumble rolls is:
+
+[source,json]
+----
+{
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+        {
+            "status": "stunned",
+            "rounds": 2,
+            "value": -25
+        }
+    ],
+    "text": "You try to impress your opponent with a spin maneuver. Too bad. Spend two rounds Stunned."
 }
 ----

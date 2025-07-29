@@ -1,0 +1,73 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 20,
+        "text": ""
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 30,
+        "text": ""
+    }
+    ,
+    {
+        "rollMin": 31,
+        "rollMax": 40,
+        "text": ""
+    },
+    {
+        "rollMin": 41,
+        "rollMax": 50,
+        "text": ""
+    },
+    {
+        "rollMin": 51,
+        "rollMax": 60,
+        "text": ""
+    },
+    {
+        "rollMin": 61,
+        "rollMax": 65,
+        "text": ""
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "text": ""
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 70,
+        "text": ""
+    },
+    {
+        "rollMin": 71,
+        "rollMax": 80,
+        "text": ""
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "text": ""
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "text": ""
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "text": ""
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 99,
+        "text": ""
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "text": ""
+    }
+]
