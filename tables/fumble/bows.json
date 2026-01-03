@@ -1,0 +1,122 @@
+[
+    {
+        "rollMin": 1,
+        "rollMax": 20,
+        "text": "Sweat gets in your eye. You lose this round's attack to wipe it off."
+    },
+    {
+        "rollMin": 21,
+        "rollMax": 30,
+        "text": "What should be automatic with practice becomes clumsy as you overthink it. You fail to attack this round."
+    }
+    ,
+    {
+        "rollMin": 31,
+        "rollMax": 40,
+        "text": "You spill your ammunition on the ground. Did you do something to offend the gods recently?"
+    },
+    {
+        "rollMin": 41,
+        "rollMax": 50,
+        "text": "The projectile breaks, but half is still caught on the string. It requires 8 Action Points to clear it."
+    },
+    {
+        "rollMin": 51,
+        "rollMax": 60,
+        "text": "Twang! The projectile drives into the ground between your feet. It breaks."
+    },
+    {
+        "rollMin": 61,
+        "rollMax": 65,
+        "text": "Bow slips from your sweaty hands and falls at your feet."
+    },
+    {
+        "rollMin": 66,
+        "rollMax": 66,
+        "text": "Execute the declared attack on the nearest ally, whoops! (If no ally in range, put projectile through your own foot for 2d10 hits and a -20 flesh wound.)",
+        "effects": [
+            {
+                "status": "penalty",
+                "value": -20
+            }
+        ]
+    },
+    {
+        "rollMin": 67,
+        "rollMax": 70,
+        "text": "You mishandle your weapon, causing yourself pain. Take one round Stunned.",
+        "effects": [
+            {
+                "status": "stunned",
+                "rounds": 1,
+                "value": -50
+            }
+        ]
+    },
+    {
+        "rollMin": 71,
+        "rollMax": 80,
+        "text": "The bowstring snaps. Draw another weapon or restring your bow."
+    },
+    {
+        "rollMin": 81,
+        "rollMax": 85,
+        "text": "You managed to hold your thumb in the way of the string. Your shot misses, and you are Stunned for two rounds.",
+        "effects": [
+            {
+                "status": "stunned",
+                "rounds": 2,
+                "value": -50
+            }
+        ]
+    },
+    {
+        "rollMin": 86,
+        "rollMax": 90,
+        "text": "Your shot goes wild, landing 3d10 feet from target in a random direction. If someone is there, roll a +0 attack."
+    },
+    {
+        "rollMin": 91,
+        "rollMax": 95,
+        "text": "You slip and fall as you fire. Your shot goes astray. You are now prone and Stunned[-50] for two rounds.",
+        "effects": [
+            {
+                "status": "prone"
+            },
+            {   
+                "status": "stunned",
+                "rounds": 2,
+                "value": -50
+            }
+        ]
+    },
+    {
+        "rollMin": 96,
+        "rollMax": 99,
+        "text": "Make a breakage check. If it fails, the bow snaps and you take an 'A' Puncture from a flying splinter; if it is passed, the string snaps and lashes you, doing an 'A' Slash critical."
+    },
+    {
+        "rollMin": 100,
+        "rollMax": 100,
+        "text": "You shoot yourself in the foot. Your foot is pinned to the ground (6 Action Points to free yourself). You are Stunned[-50] for two rounds, bleeding at 1 hit/round, and have a -30 flesh wound.",
+        "effects": [
+            {
+                "status": "staggered",
+                "rounds": 6
+            },
+            {
+                "status": "stunned",
+                "rounds": 2,
+                "value": -50
+            },
+            {
+                "status": "bleeding",
+                "value": 1
+            },
+            {
+                "status": "penalty",
+                "value": -50    
+            }
+        ]
+    }
+]
