@@ -132,7 +132,7 @@ describe('Check critical table structure', () => {
 
     describe('getFilePath', () => {
         it('should throw an error when the file does not exist', () => {
-            expect(() => criticalTableService.findCriticalResult('error', 'a', 10)).toThrow({
+            expect(() => criticalTableService.findCriticalResult('error', 'A', 10, null)).toThrow({
                 status: 404,
                 message: 'Critical table file not found'
             });
