@@ -3,15 +3,35 @@ const path = require('path');
 
 const cache = new Map();
 
-const findCriticalResult = (criticalTable, criticalType, roll) => {
+const findCriticalResult = (criticalTable, criticalType, roll, location) => {
     const filePath = getFilePath(criticalTable, criticalType);
     const data = getCachedData(filePath);
-    for (const item of data) {
-        if (roll >= item.rollMin && roll <= item.rollMax) {
+    let i = roll;
+    while (i > 1) {
+        const item = getItem(data, i, location);
+        if (item) {
             return item;
         }
+        i--;
+    }   
+    return     {
+        "rollMin": 0,
+        "rollMax": 0,
+        "dmg": 0,
+        "effects": [],
+        "location": null,
+        "message": "Critial has no efect using the given location"
+    };
+};
+
+const getItem = (data, roll, location) => {
+    for (const item of data) {
+        if (roll >= item.rollMin && roll <= item.rollMax) {
+            if(!location) return item;
+            if(item.location === location && roll !== 66) return item;
+        }
     }
-    throw { status: 400, message: 'Invalid critical table data' };
+    return null;
 };
 
 const getFilePath = (criticalTable, criticalType) => {
