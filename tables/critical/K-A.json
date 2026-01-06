@@ -300,6 +300,11 @@
             "status": "stunned",
             "value": -50,
             "rounds": 3
+        },
+        {
+            "status": "heal",
+            "value": 5,
+            "applyTo": "source"
         }
     ],
     "location": "chest",

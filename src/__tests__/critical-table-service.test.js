@@ -64,6 +64,16 @@ describe('Check critical table structure', () => {
                 break;
             case "unconscious":
                 break;
+            case "heal":
+                expect(effect.value).toBeDefined();
+                expect(effect.applyTo).toBeDefined();
+                expect(typeof effect.value).toBe('number');
+                break;
+            case "half_activity":
+                expect(effect.value).not.toBeDefined();
+                expect(effect.rounds).toBeDefined();
+                expect(typeof effect.rounds).toBe('number');
+                break;
             default:
                 throw new Error(`Invalid status effect: ${effect.status}.`);
         }
@@ -131,6 +141,10 @@ describe('Check critical table structure', () => {
 
         it('valid K-A table', () => {
             validateTable('K', 'A');
+        });
+
+        it('valid K-B table', () => {
+            validateTable('K', 'B');
         });
     });
 
