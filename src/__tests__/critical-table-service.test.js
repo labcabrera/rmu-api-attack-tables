@@ -146,6 +146,10 @@ describe('Check critical table structure', () => {
         it('valid K-B table', () => {
             validateTable('K', 'B');
         });
+
+        it('valid K-C table', () => {
+            validateTable('K', 'C');
+        });
     });
 
     describe('getFilePath', () => {
