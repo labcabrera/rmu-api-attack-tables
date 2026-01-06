@@ -6,8 +6,9 @@ router.get('/:tableId/:type/:roll', (req, res) => {
     try {
         const tableId = req.params.tableId;
         const type = req.params.type;
+        const location = req.query.location;
         const roll = readRollValue(req.params.roll);
-        const result = criticalTableService.findCriticalResult(tableId, type, roll);
+        const result = criticalTableService.findCriticalResult(tableId, type, roll, location);
         res.json(result);
     } catch (error) {
         res.status(500).json({ error: error.message });
