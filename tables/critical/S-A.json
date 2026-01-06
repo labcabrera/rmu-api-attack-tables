@@ -93,8 +93,7 @@
                 "value": -10
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             }
         ],
         "location": "leg",
@@ -150,8 +149,7 @@
                 "value": -75
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             }
         ],
         "location": "abdomen",
@@ -306,8 +304,7 @@
                 "value": -50
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             },
             {
                 "status": "dying",

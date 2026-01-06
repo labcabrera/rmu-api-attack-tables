@@ -32,7 +32,7 @@ describe('Check critical table structure', () => {
                 expect(staggeredRounds).toBeGreaterThan(0);
                 break;
             case 'prone':
-                expect(effect.rounds).toBeDefined();
+                expect(effect.rounds).not.toBeDefined();
                 break;
             case 'breakage_roll':
                 expect(effect.value).toBeDefined();
@@ -127,6 +127,10 @@ describe('Check critical table structure', () => {
 
         it('valid P-E table', () => {
             validateTable('P', 'E');
+        });
+
+        it('valid K-A table', () => {
+            validateTable('K', 'A');
         });
     });
 

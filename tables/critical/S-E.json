@@ -242,8 +242,7 @@
                 "value": -50
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             },
             {
                 "status": "staggered",
@@ -331,8 +330,7 @@
                 "delay": 1
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             },
             {
                 "status": "staggered",

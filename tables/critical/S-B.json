@@ -121,8 +121,7 @@
                 "value": -50
             },
             {
-                "status": "prone",
-                "rounds": 1
+                "status": "prone"
             },
             {
                 "status": "staggered",
