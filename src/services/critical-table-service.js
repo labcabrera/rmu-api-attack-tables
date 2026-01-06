@@ -4,11 +4,20 @@ const path = require('path');
 const cache = new Map();
 
 const findCriticalResult = (criticalTable, criticalType, roll, location) => {
-    const filePath = getFilePath(criticalTable, criticalType);
+    validateType(criticalType);
+    const isZType = criticalType === 'Z';
+    const adjustedType = isZType ? 'A' : criticalType;
+    const filePath = getFilePath(criticalTable, adjustedType);
     const data = getCachedData(filePath);
-    let i = roll;
+    
+    const zItem = isZType ? getItem(data, roll, null) : null;
+    const zCheckLocation = isZType ? zItem.location : null;
+    const adjustedRoll = zItem ? (zItem.rollMin !== 67 ? zItem.rollMin - 1 : roll - 2) : roll;
+    const adjustedLocation = isZType ? zCheckLocation : location;
+    let i = adjustedRoll;
+
     while (i > 1) {
-        const item = getItem(data, i, location);
+        const item = getItem(data, i, adjustedLocation);
         if (item) {
             return item;
         }
@@ -23,6 +32,13 @@ const findCriticalResult = (criticalTable, criticalType, roll, location) => {
         "message": "Critial has no efect using the given location"
     };
 };
+
+const validateType = (type) => {
+    const validTypes = ['A', 'B', 'C', 'D', 'E', 'Z'];
+    if (!validTypes.includes(type)) {
+        throw { status: 400, message: 'Invalid critical type ' + type };
+    }
+}
 
 const getItem = (data, roll, location) => {
     for (const item of data) {
