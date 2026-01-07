@@ -181,15 +181,15 @@
     "rollMax": 75,
     "dmg": 2,
     "effects": [
-        {
-            "status": "penalty",
-            "value": -15
-        },
-        {
-            "status": "stunned",
-            "rounds": 1,
-            "value": -25
-        }
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
     ],
     "location": "leg",
     "message": "Bone in foe's lower leg cracks."
@@ -199,15 +199,15 @@
     "rollMax": 80,
     "dmg": 8,
     "effects": [
-        {
-            "status": "stunned",
-            "value": -50,
-            "rounds": 2
-        },
-        {
-            "status": "breakage_roll",
-            "value": -50
-        }
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
     ],
     "location": "chest",
     "message": "Truly, a solid hit was landed."
@@ -217,17 +217,17 @@
     "rollMax": 85,
     "dmg": 2,
     "effects": [
-        {
-            "status": "stunned",
-            "value": -50,
-            "rounds": 1
-        },
-        {
-            "status": "stunned",
-            "value": -25,
-            "rounds": 2,
-            "delay": 1
-        }
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 2,
+        "delay": 1
+      }
     ],
     "location": "head",
     "message": "Blow to foe's head results in amnesia. Maybe you can convince foe he's on your side."
@@ -237,10 +237,10 @@
     "rollMax": 90,
     "dmg": 2,
     "effects": [
-        {
-            "status": "penalty",
-            "value": -20
-        }
+      {
+        "status": "penalty",
+        "value": -20
+      }
     ],
     "location": "arm",
     "message": "Funny bone strike damages nerves, leaving whole arm tingly. Foe unable to hold anything in his hand until healed."
@@ -250,19 +250,19 @@
     "rollMax": 95,
     "dmg": 10,
     "effects": [
-        {
-            "status": "penalty",
-            "value": -30
-        },
-        {
-            "status": "stunned",
-            "value": -25,
-            "rounds": 1
-        },
-        {
-            "status": "breakage_roll",
-            "value": -75
-        }
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
     ],
     "location": "leg",
     "message": "Foe's ankle breaks in several places."
@@ -272,17 +272,17 @@
     "rollMax": 97,
     "dmg": 19,
     "effects": [
-        {
-            "status": "stunned",
-            "value": -25,
-            "rounds": 1
-        },
-        {
-            "status": "stunned",
-            "value": -50,
-            "rounds": 2,
-            "delay": 1
-        }
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2,
+        "delay": 1
+      }
     ],
     "location": "abdomen",
     "message": "Solid groin strike makes foe moan in pain. Hipbone is fractured."
@@ -292,20 +292,20 @@
     "rollMax": 99,
     "dmg": 24,
     "effects": [
-        {
-            "status": "penalty",
-            "value": -15
-        },
-        {
-            "status": "stunned",
-            "value": -50,
-            "rounds": 3
-        },
-        {
-            "status": "heal",
-            "value": 5,
-            "applyTo": "source"
-        }
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 3
+      },
+      {
+        "status": "heal",
+        "value": 5,
+        "applyTo": "source"
+      }
     ],
     "location": "chest",
     "message": "Ribs badly bruised, but not broken, foe looks shaken. You feel great, recover 5 hits!"
@@ -315,19 +315,19 @@
     "rollMax": 100,
     "dmg": 0,
     "effects": [
-        {
-            "status": "dying",
-            "rounds": 3
-        },
-        {
-            "status": "fatigue",
-            "value": -10
-        },
-        {
-            "status": "stunned",
-            "value": -50,
-            "rounds": 3
-        }
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 3
+      }
     ],
     "location": "head",
     "message": "Staggering blow to the head has foe reeling. Blood clots cause foe to have massive stroke and die at the end of 3 rounds."

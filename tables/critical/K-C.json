@@ -413,17 +413,17 @@
     "rollMax": 100,
     "dmg": 25,
     "effects": [
-        {
-            "status": "dying",
-            "rounds": 5
-        },
-        {
-            "status": "penalty",
-            "value": -100
-        },
-        {
-            "status": "unconscious"
-        }
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "unconscious"
+      }
     ],
     "location": "head",
     "message": "Strike crushes windpipe. Foe collapses, dies after five rounds of inactivity."
