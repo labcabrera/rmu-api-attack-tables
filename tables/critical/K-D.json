@@ -1,0 +1,268 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 6,
+    "location": "head",
+    "message": "If foe will turn the other cheek, you can give it a matching bruise next round."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "effects": [
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Blow hits shoulder, but glances off due to angle."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blow to groin leaves foe glad you did not hit with more force."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's leg struck mid-step. Foe barely keeps balance."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "location": "arm",
+    "message": "Blow to hand cracks a bone."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "head",
+    "message": "Foe's nose has cartilage damage and blood flows from both nostrils."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Solid chest strike transmits force to lung, doing a little organ damage."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 15,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "abdomen",
+    "message": "Strike to the belly makes foe regurgitate last meal."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 13,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "leg",
+    "message": "Shot to the hip causes leg to momentarily fail, foe falls."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 0,
+    "effects": [],
+    "location": "arm",
+    "message": ""
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 0,
+    "effects": [],
+    "location": "arm",
+    "message": ""
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 0,
+    "effects": [],
+    "location": "abdomen",
+    "message": ""
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 0,
+    "effects": [],
+    "location": "leg",
+    "message": ""
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 0,
+    "effects": [],
+    "location": "chest",
+    "message": ""
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 0,
+    "effects": [],
+    "location": "head",
+    "message": ""
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 0,
+    "effects": [],
+    "location": "arm",
+    "message": ""
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 0,
+    "effects": [],
+    "location": "leg",
+    "message": ""
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 0,
+    "effects": [],
+    "location": "abdomen",
+    "message": ""
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 0,
+    "effects": [],
+    "location": "chest",
+    "message": ""
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "effects": [],
+    "location": "head",
+    "message": ""
+  }
+]
