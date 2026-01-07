@@ -1,372 +1,372 @@
 [
-    {
-        "rollMin": 1,
-        "rollMax": 1,
-        "dmg": 4,
-        "location": "head",
-        "message": "Edge just grazes neck; you make a lousy barber."
-    },
-    {
-        "rollMin": 2,
-        "rollMax": 3,
-        "dmg": 6,
-        "location": "chest",
-        "message": "Strike is well-placed, but weak."
-    },
-    {
-        "rollMin": 4,
-        "rollMax": 5,
-        "dmg": 6,
-        "location": "abdomen",
-        "effects": [
-            {
-                "status": "breakage_roll",
-                "value": 0
-            }
-        ],
-        "message": "Edge flicks across foe's inner thigh, misses major vessels."
-    },
-    {
-        "rollMin": 6,
-        "rollMax": 10,
-        "dmg": 2,
-        "location": "leg",
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            }
-        ],
-        "message": "Edge flicks across foe's thigh, leaving a crimson trail."
-    },
-    {
-        "rollMin": 11,
-        "rollMax": 15,
-        "dmg": 5,
-        "location": "arm",
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "message": "Foe takes blow on the back of the hand, causing a hairline fracture."
-    },
-    {
-        "rollMin": 16,
-        "rollMax": 20,
-        "dmg": 17,
-        "effects": [
-            {
-                "status": "breakage_roll",
-                "value": 0
-            }
-        ],
-        "location": "head",
-        "message": "Slash to the cheek skips off bone."
-    },
-    {
-        "rollMin": 21,
-        "rollMax": 25,
-        "dmg": 3,
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "location": "chest",
-        "message": "Cut cracks a rib, and foe drops his weapon."
-    },
-    {
-        "rollMin": 26,
-        "rollMax": 35,
-        "dmg": 14,
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -5
-            },
-            {
-                "status": "breakage_roll",
-                "value": -50
-            }
-        ],
-        "location": "abdomen",
-        "message": "Cut below the belt line grates on pelvic bone. Ouch."
-    },
-    {
-        "rollMin": 36,
-        "rollMax": 45,
-        "dmg": 10,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 3
-            },
-            {
-                "status": "fatigue",
-                "value": -10
-            },
-            {
-                "status": "breakage_roll",
-                "value": -50
-            }
-        ],
-        "location": "leg",
-        "message": "Neat strike to the leg leaves foe spurting blood, you in perfect stance."
-    },
-    {
-        "rollMin": 46,
-        "rollMax": 55,
-        "dmg": 24,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            },
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "location": "arm",
-        "message": "Slash to forearm flicks drops of blood off to the side."
-    },
-    {
-        "rollMin": 56,
-        "rollMax": 65,
-        "dmg": 20,
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -10
-            },
-            {
-                "status": "fatigue",
-                "value": -10
-            },
-            {
-                "status": "staggered",
-                "rounds": 1,
-                "value": 1
-            },
-            {
-                "status": "breakage_roll",
-                "value": -25
-            }
-        ],
-        "location": "arm",
-        "message": "The shoulder bone's connected to your weapon albeit briefly. The bone gets the worst of it."
-    },
-    {
-        "rollMin": 66,
-        "rollMax": 66,
-        "dmg": 34,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            },
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "stunned",
-                "rounds": 1,
-                "value": -75
-            },
-            {
-                "status": "breakage_roll",
-                "value": 0
-            }
-        ],
-        "location": "abdomen",
-        "message": "Blade cuts deep, slicing the stomach (organ damage). Feel pity, or press your advantage."
-    },
-    {
-        "rollMin": 67,
-        "rollMax": 75,
-        "dmg": 26,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 4
-            },
-            {
-                "status": "penalty",
-                "value": -10
-            }
-        ],
-        "location": "leg",
-        "message": "Blow cuts into thigh, damaging muscle."
-    },
-    {
-        "rollMin": 76,
-        "rollMax": 80,
-        "dmg": 12,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            },
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "fatigue",
-                "value": -10
-            },
-            {
-                "status": "staggered",
-                "value": 1,
-                "rounds": 1
-            },
-            {
-                "status": "knocked_back_distance",
-                "value": 5
-            }
-        ],
-        "location": "chest",
-        "message": "Hard chop cracks sternum."
-    },
-    {
-        "rollMin": 81,
-        "rollMax": 85,
-        "dmg": 21,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 4
-            },
-            {
-                "status": "penalty",
-                "value": -15
-            },
-            {
-                "status": "staggered",
-                "rounds": 1,
-                "value": 1
-            },
-            {
-                "status": "breakage_roll",
-                "value": 0
-            }
-        ],
-        "location": "head",
-        "message": "Slash opens foe's face from the corner of one eye to the side of chin. Foe loses grip on weapon."
-    },
-    {
-        "rollMin": 86,
-        "rollMax": 90,
-        "dmg": 20,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 5
-            },
-            {
-                "status": "penalty",
-                "value": -15
-            },
-            {
-                "status": "stunned",
-                "rounds": 1,
-                "value": -75
-            }
-        ],
-        "location": "arm",
-        "message": "Cut into foe's hand, severs finger."
-    },
-    {
-        "rollMin": 91,
-        "rollMax": 95,
-        "dmg": 3,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 5
-            },
-            {
-                "status": "penalty",
-                "value": -45
-            },
-            {
-                "status": "stunned",
-                "rounds": 1,
-                "value": -50
-            }
-        ],
-        "location": "leg",
-        "message": "Chop to knee severs leg. That was just brutal."
-    },
-    {
-        "rollMin": 96,
-        "rollMax": 97,
-        "dmg": 21,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 5
-            },
-            {
-                "status": "penalty",
-                "value": -50
-            },
-            {
-                "status": "dying",
-                "rounds": 10
-            }
-        ],
-        "location": "abdomen",
-        "message": "Cut to abdomen ruptures spleen. Foe takes a cumulative -10 penalty each round for the organ injury. At -100 it proves fatal."
-    },
-    {
-        "rollMin": 98,
-        "rollMax": 99,
-        "dmg": 10,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 15
-            },
-            {
-                "status": "penalty",
-                "value": -30
-            },
-            {
-                "status": "dying",
-                "rounds": 3
-            },
-            {
-                "status": "stunned",
-                "rounds": 3,
-                "value": -50
-            }
-        ],
-        "location": "chest",
-        "message": "Deep cut under arm opens major vessel, blood pours down foe's side. It takes foe three more rounds to realize it is time to die."
-    },
-    {
-        "rollMin": 100,
-        "rollMax": 100,
-        "dmg": 25,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 10
-            },
-            {
-                "status": "penalty",
-                "value": -75
-            },
-            {
-                "status": "dead"
-            }
-        ],
-        "location": "head",
-        "message": "Slash across the front of foe's neck severs all but the spine."
-    }
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "message": "Edge just grazes neck; you make a lousy barber."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 6,
+    "location": "chest",
+    "message": "Strike is well-placed, but weak."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 6,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Edge flicks across foe's inner thigh, misses major vessels."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      }
+    ],
+    "message": "Edge flicks across foe's thigh, leaving a crimson trail."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "message": "Foe takes blow on the back of the hand, causing a hairline fracture."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 17,
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "head",
+    "message": "Slash to the cheek skips off bone."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "chest",
+    "message": "Cut cracks a rib, and foe drops his weapon."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 14,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "location": "abdomen",
+    "message": "Cut below the belt line grates on pelvic bone. Ouch."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 3
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "location": "leg",
+    "message": "Neat strike to the leg leaves foe spurting blood, you in perfect stance."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 24,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "arm",
+    "message": "Slash to forearm flicks drops of blood off to the side."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 20,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "location": "arm",
+    "message": "The shoulder bone's connected to your weapon albeit briefly. The bone gets the worst of it."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 34,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blade cuts deep, slicing the stomach (organ damage). Feel pity, or press your advantage."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 26,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "location": "leg",
+    "message": "Blow cuts into thigh, damaging muscle."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 12,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "value": 1,
+        "rounds": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "location": "chest",
+    "message": "Hard chop cracks sternum."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 21,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "head",
+    "message": "Slash opens foe's face from the corner of one eye to the side of chin. Foe loses grip on weapon."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 20,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "location": "arm",
+    "message": "Cut into foe's hand, severs finger."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -45
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "location": "leg",
+    "message": "Chop to knee severs leg. That was just brutal."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 21,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "dying",
+        "rounds": 10
+      }
+    ],
+    "location": "abdomen",
+    "message": "Cut to abdomen ruptures spleen. Foe takes a cumulative -10 penalty each round for the organ injury. At -100 it proves fatal."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 15
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50
+      }
+    ],
+    "location": "chest",
+    "message": "Deep cut under arm opens major vessel, blood pours down foe's side. It takes foe three more rounds to realize it is time to die."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 25,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 10
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "dead"
+      }
+    ],
+    "location": "head",
+    "message": "Slash across the front of foe's neck severs all but the spine."
+  }
 ]

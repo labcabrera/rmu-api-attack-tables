@@ -1,355 +1,355 @@
 [
-    {
-        "rollMin": 1,
-        "rollMax": 1,
-        "dmg": 3,
-        "location": "head",
-        "message": "Foe dodges most of attack."
-    },
-    {
-        "rollMin": 2,
-        "rollMax": 3,
-        "dmg": 4,
-        "location": "chest",
-        "message": "Glancing strike to the ribs fails to penetrate."
-    },
-    {
-        "rollMin": 4,
-        "rollMax": 5,
-        "dmg": 0,
-        "location": "abdomen",
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 1
-            }
-        ],
-        "message": "Poked in the belly, foe starts losing blood"
-    },
-    {
-        "rollMin": 6,
-        "rollMax": 10,
-        "dmg": 3,
-        "location": "leg",
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 1
-            }
-        ],
-        "message": "In goes the stabbing thing, out comes the sticky red fluid."
-    },
-    {
-        "rollMin": 11,
-        "rollMax": 15,
-        "dmg": 0,
-        "location": "arm",
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 1
-            },
-            {
-                "status": "breakage_roll",
-                "value": -50
-            }
-        ],
-        "message": "Thrust to foe's arm starts a bleeder."
-    },
-    {
-        "rollMin": 16,
-        "rollMax": 20,
-        "dmg": 4,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 1
-            },
-            {
-                "status": "staggered",
-                "value": 1,
-                "rounds": 1
-            }
-        ],
-        "location": "head",
-        "message": "Point glances off side of head, opening bloody furrow."
-    },
-    {
-        "rollMin": 21,
-        "rollMax": 25,
-        "dmg": 7,
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "location": "chest",
-        "message": "Grazing along ribs opens painful cut."
-    },
-    {
-        "rollMin": 26,
-        "rollMax": 35,
-        "dmg": 12,
-        "effects": [
-            {
-                "status": "fatigue",
-                "value": -20
-            }
-        ],
-        "location": "abdomen",
-        "message": "Strike with flat fails to produce penetration, but foe feels the blow."
-    },
-    {
-        "rollMin": 36,
-        "rollMax": 45,
-        "dmg": 22,
-        "effects": [
-            {
-                "status": "stunned",
-                "value": -25,
-                "rounds": 1
-            }
-        ],
-        "location": "leg",
-        "message": "Point sinks a few inches into thigh muscle."
-    },
-    {
-        "rollMin": 46,
-        "rollMax": 55,
-        "dmg": 3,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 4
-            },
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "location": "arm",
-        "message": "Point goes through arm just above wrist."
-    },
-    {
-        "rollMin": 56,
-        "rollMax": 65,
-        "dmg": 22,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            },
-            {
-                "status": "penalty",
-                "value": -5
-            }
-        ],
-        "location": "arm",
-        "message": "Stabbing foe in the elbow damages joint, draws blood and cry of pain. You feel triumphant."
-    },
-    {
-        "rollMin": 66,
-        "rollMax": 66,
-        "dmg": 15,
-        "location": "abdomen",
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 8
-            },
-            {
-                "status": "stunned",
-                "value": -75,
-                "rounds": 1
-            },
-            {
-                "status": "stunned",
-                "value": -50,
-                "rounds": 1,
-                "delay": 1
-            }
-        ],
-        "message": "Thrust to groin brings a veritable fountain of blood. -20 to enemy morale."
-    },
-    {
-        "rollMin": 67,
-        "rollMax": 75,
-        "dmg": 3,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 2
-            },
-            {
-                "status": "penalty",
-                "value": -10
-            },
-            {
-                "status": "breakage_roll",
-                "value": -75
-            }
-        ],
-        "location": "leg",
-        "message": "Thrust to foot severs a toe."
-    },
-    {
-        "rollMin": 76,
-        "rollMax": 80,
-        "dmg": 14,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 1
-            },
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "breakage_roll",
-                "value": 0
-            }
-        ],
-        "location": "chest",
-        "message": "Point passes through collarbone next to neck, tearing muscle."
-    },
-    {
-        "rollMin": 81,
-        "rollMax": 85,
-        "dmg": 17,
-        "effects": [
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "fatigue",
-                "value": -10
-            },
-            {
-                "status": "breakage_roll",
-                "value": -75
-            }
-        ],
-        "location": "head",
-        "message": "Thrust into spine does damage to nerves."
-    },
-    {
-        "rollMin": 86,
-        "rollMax": 90,
-        "dmg": 14,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 6
-            },
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "stunned",
-                "rounds": 1,
-                "value": -25
-            }
-        ],
-        "location": "arm",
-        "message": "Strike digs deep into shoulder, tearing cartilage."
-    },
-    {
-        "rollMin": 91,
-        "rollMax": 95,
-        "dmg": 33,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 4
-            },
-            {
-                "status": "penalty",
-                "value": -20
-            },
-            {
-                "status": "stunned",
-                "rounds": 1,
-                "value": -50
-            }
-        ],
-        "location": "leg",
-        "message": "Thunk! Blow passes through lower leg, tearing muscle and coming out bloody."
-    },
-    {
-        "rollMin": 96,
-        "rollMax": 97,
-        "dmg": 38,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 4
-            },
-            {
-                "status": "penalty",
-                "value": -30
-            },
-            {
-                "status": "fatigue",
-                "value": -10
-            },
-            {
-                "status": "staggered",
-                "rounds": 1,
-                "value": 0
-            }
-        ],
-        "location": "abdomen",
-        "message": "The stomach is pierced. Is this the end? Getting near, I reckon."
-    },
-    {
-        "rollMin": 98,
-        "rollMax": 99,
-        "dmg": 7,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 6
-            },
-            {
-                "status": "penalty",
-                "value": -35
-            },
-            {
-                "status": "dying",
-                "rounds": 12
-            }
-        ],
-        "location": "chest",
-        "message": "Penetrating stab damages lung. It fills with blood, killing foe after 12 rounds."
-    },
-    {
-        "rollMin": 100,
-        "rollMax": 100,
-        "dmg": 18,
-        "effects": [
-            {
-                "status": "bleeding",
-                "value": 3
-            },
-            {
-                "status": "penalty",
-                "value": -40
-            },
-            {
-                "status": "stunned",
-                "rounds": 3,
-                "value": -75
-            },
-            {
-                "status": "dying",
-                "rounds": 3
-            }
-        ],
-        "location": "head",
-        "message": "Thrust into throat leads foe to choke on his own blood and die in three rounds"
-    }
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "message": "Foe dodges most of attack."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "message": "Glancing strike to the ribs fails to penetrate."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      }
+    ],
+    "message": "Poked in the belly, foe starts losing blood"
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      }
+    ],
+    "message": "In goes the stabbing thing, out comes the sticky red fluid."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Thrust to foe's arm starts a bleeder."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "staggered",
+        "value": 1,
+        "rounds": 1
+      }
+    ],
+    "location": "head",
+    "message": "Point glances off side of head, opening bloody furrow."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 7,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "chest",
+    "message": "Grazing along ribs opens painful cut."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      }
+    ],
+    "location": "abdomen",
+    "message": "Strike with flat fails to produce penetration, but foe feels the blow."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 22,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "leg",
+    "message": "Point sinks a few inches into thigh muscle."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "arm",
+    "message": "Point goes through arm just above wrist."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "arm",
+    "message": "Stabbing foe in the elbow damages joint, draws blood and cry of pain. You feel triumphant."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 15,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 8
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
+    "message": "Thrust to groin brings a veritable fountain of blood. -20 to enemy morale."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "leg",
+    "message": "Thrust to foot severs a toe."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 14,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Point passes through collarbone next to neck, tearing muscle."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 17,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "head",
+    "message": "Thrust into spine does damage to nerves."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 14,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 6
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "location": "arm",
+    "message": "Strike digs deep into shoulder, tearing cartilage."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 33,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "location": "leg",
+    "message": "Thunk! Blow passes through lower leg, tearing muscle and coming out bloody."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 38,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 0
+      }
+    ],
+    "location": "abdomen",
+    "message": "The stomach is pierced. Is this the end? Getting near, I reckon."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 7,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 6
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "dying",
+        "rounds": 12
+      }
+    ],
+    "location": "chest",
+    "message": "Penetrating stab damages lung. It fills with blood, killing foe after 12 rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 18,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 3
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "dying",
+        "rounds": 3
+      }
+    ],
+    "location": "head",
+    "message": "Thrust into throat leads foe to choke on his own blood and die in three rounds"
+  }
 ]

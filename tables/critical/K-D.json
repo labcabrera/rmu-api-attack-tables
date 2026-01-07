@@ -1,0 +1,453 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 6,
+    "location": "head",
+    "message": "If foe will turn the other cheek, you can give it a matching bruise next round."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "effects": [
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Blow hits shoulder, but glances off due to angle."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blow to groin leaves foe glad you did not hit with more force."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's leg struck mid-step. Foe barely keeps balance."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "location": "arm",
+    "message": "Blow to hand cracks a bone."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "head",
+    "message": "Foe's nose has cartilage damage and blood flows from both nostrils."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Solid chest strike transmits force to lung, doing a little organ damage."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 15,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "abdomen",
+    "message": "Strike to the belly makes foe regurgitate last meal."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 13,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "leg",
+    "message": "Shot to the hip causes leg to momentarily fail, foe falls."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Deep shot to bicep cracks bone in upper arm."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Elbows aren't supposed to bend like that, are they? Ow. Seriously, ow."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 17,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 10
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "location": "abdomen",
+    "message": "Deep gut strike damages spleen, leading to death in 10 rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "location": "leg",
+    "message": "Hip stops blow without breaking, but cartilage is damaged."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 11,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Strike to chest sets off a coughing fit for foe. Broken rib puts pressure on lung. Foe is at -75 to Endurance until healed."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 18,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 3
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "head",
+    "message": "The skull is tough, is it not? That squishy thinking mass inside noticed you knocking, though."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 27,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 2
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "location": "arm",
+    "message": "Bruising on foe's upper arm is going to be epic."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 8
+      },
+      {
+        "status": "bleeding",
+        "value": 7
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 8
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's foot bleeds freely. In 8 rounds, blood pressure drops and foe faints, never to wake again unless healed."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 9,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -70
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 7
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blow ruptures foe's appendix. After seven rounds of activity, foe collapses."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 50,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "chest",
+    "message": "Blow shatters two ribs, sending shards into lung, foe coughs up blood. Dies after three rounds of inactivity (other than blood vomit)."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 55,
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "breakage_roll",
+        "value": -70
+      }
+    ],
+    "location": "head",
+    "message": "Solid blow to side of head snaps neck, severing spine. P.S.: Foe dies."
+  }
+]

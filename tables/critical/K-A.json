@@ -1,0 +1,335 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "message": "Blow barely grazes foe's ear."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Thud."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "message": "Better than missing, right?"
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "message": "Blow to foe's knee results in simple bruising."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 4,
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "arm",
+    "message": "Foe cries out, more surprised than hurt."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's cheek is split and blood dribbles from his mouth."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "location": "chest",
+    "message": "Blow lands on foe's chest with a thump."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 4,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "abdomen",
+    "message": "Punishing hit leaves foe with bruised liver."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 8,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 0
+      }
+    ],
+    "location": "leg",
+    "message": "Weak delivery, but great timing. Foe caught off balance."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 5,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "arm",
+    "message": "Foe's arm is driven almost into his chest by force of blow."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 14,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "arm",
+    "message": "Strike to the back of one hand 56 - 65 cracks a bone, opens blood vessels."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 24,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 0
+      }
+    ],
+    "location": "abdomen",
+    "message": "Straight shot to groin. Comedy gold."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "location": "leg",
+    "message": "Bone in foe's lower leg cracks."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 8,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "location": "chest",
+    "message": "Truly, a solid hit was landed."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 2,
+        "delay": 1
+      }
+    ],
+    "location": "head",
+    "message": "Blow to foe's head results in amnesia. Maybe you can convince foe he's on your side."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "location": "arm",
+    "message": "Funny bone strike damages nerves, leaving whole arm tingly. Foe unable to hold anything in his hand until healed."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 10,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's ankle breaks in several places."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 19,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2,
+        "delay": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Solid groin strike makes foe moan in pain. Hipbone is fractured."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 24,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 3
+      },
+      {
+        "status": "heal",
+        "value": 5,
+        "applyTo": "source"
+      }
+    ],
+    "location": "chest",
+    "message": "Ribs badly bruised, but not broken, foe looks shaken. You feel great, recover 5 hits!"
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 3
+      }
+    ],
+    "location": "head",
+    "message": "Staggering blow to the head has foe reeling. Blood clots cause foe to have massive stroke and die at the end of 3 rounds."
+  }
+]

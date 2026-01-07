@@ -1,0 +1,389 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "message": "You had hoped for more."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "chest",
+    "message": "Not your best work."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "message": "Blow to stomach is modestly effective."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "location": "leg",
+    "message": "Hip strike leaves purple mark."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "message": "You hit foe's upper arm, leaving a big bruise."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 7,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "head",
+    "message": "Foe's forehead takes the blow."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 13,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Foe's chest is struck rather hard. Good show!"
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 7,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Strike to foe's groin is less damaging than painful, but it sure is painful."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 7,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "location": "leg",
+    "message": "Knees take a lot of punishment. For example, right now."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1,
+        "delay": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "location": "arm",
+    "message": "Muscle in foe's arm tears slightly as elbow moved by impact."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 12,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Foe partly blocks attack with arm, but force of blow transmits to torso."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 2
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1,
+        "delay": 2
+      },
+      {
+        "status": "stunned",
+        "value": -20,
+        "rounds": 1,
+        "delay": 3
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      }
+    ],
+    "location": "abdomen",
+    "message": "Waist-high strike knocks breath out of foe. He is unable to speak for 1 minute."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 11,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "leg",
+    "message": "Foe manages to avoid most of blow's impact, badly twisting his ankle doing so."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 6,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Foe shifts head just before strike, blow breaks collar bone instead."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 24,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "location": "head",
+    "message": "A little lower and you might have crushed foe's skull."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 15,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "location": "arm",
+    "message": "Force of blow slams foe's arm into foe's body, knocking the wind out of him."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 19,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 0
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's hip is broken. Blood meanders down foe's thigh. You are impressed foe can still stand."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 23,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Cruel blow delivers internal damage, leaving one kidney nearly useless."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "half_activity",
+        "rounds": 6
+      }
+    ],
+    "location": "chest",
+    "message": "Chest strike drives rib into foe's heart. Foe is at half activity for six rounds, then dies."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 2
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 2,
+        "delay": 2
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "location": "head",
+    "message": "Skull cracks and brain takes four rounds to conclude it is time to die."
+  }
+]
