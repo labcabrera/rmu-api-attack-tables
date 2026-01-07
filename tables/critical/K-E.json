@@ -1,0 +1,390 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "location": "head",
+    "message": "Knock on foe's noggin demonstrates protective value of skull."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 5,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Strike to the side leaves a big bruise."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 2
+      }
+    ],
+    "location": "abdomen",
+    "message": "Foe has trouble stomaching blow to abdomen."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "stunned",
+        "value": -25,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "leg",
+    "message": "Your weapon comes down on foe's foot. Blood results. If he survives, he'll want new shoes."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 18,
+    "effects": [
+      {
+        "status": "staggered",
+        "value": -50,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "arm",
+    "message": "Blow lands just above foe's wrist, bringing a cry of pain."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "location": "head",
+    "message": "Foe's jaw is cracked and two teeth fly from foe's mouth."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Blow to the sternum rings foe's chest like a drum."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 30,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blow sinks into foe's side with bruising force."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 22,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "location": "leg",
+    "message": "Knee survives painful impact, but force of blow leaves foe bloody."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 36,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Hand takes blow without any bones breaking. Foe drops anything held by hand, hollering in pain and anger."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 15,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "value": -50,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Hard impact to foe's side breaks bone in upper arm."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 22,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "location": "abdomen",
+    "message": "Smashing blow to groin crushes reproductive organs, destroying them. Foe is helpless, unable to move or act for 20 rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 35,
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "half_movement"
+      }
+    ],
+    "location": "leg",
+    "message": "Smashing blow breaks three toes. Foe will be at half movement rate until they heal."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 25,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "value": 0,
+        "rounds": 1
+      }
+    ],
+    "location": "chest",
+    "message": "Downward blow breaks three ribs and knocks foe prone."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 40,
+    "effects": [
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      },
+      {
+        "status": "staggered",
+        "value": 1,
+        "rounds": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "location": "head",
+    "message": "Blow breaks foe's jaw."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 4,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 1
+      }
+    ],
+    "location": "arm",
+    "message": "Blood clot forms after foe's arm is struck. In nine rounds, it will reach his brain, causing a fatal stroke."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "value": -75,
+        "rounds": 3
+      }
+    ],
+    "location": "leg",
+    "message": "Foe's face goes white before he collapses as blow snaps femur. Foe dies of shock after 3 rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 26,
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 2
+      },
+      {
+        "status": "penalty",
+        "value": -90
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "location": "abdomen",
+    "message": "Blow to foe's midsection ruptures multiple internal organs. Foe dies after two inactive rounds in extreme pain. I hope you're proud."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 46,
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "location": "chest",
+    "message": "Strike shatters sternum, sending bone fragments into heart and lungs. Death is instantaneous."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -150
+      }
+    ],
+    "location": "head",
+    "message": "Downward strike to forehead shatters skull, splashing contents in a 5' radius."
+  }
+]
