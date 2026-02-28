@@ -2,6 +2,23 @@ const express = require('express');
 const router = express.Router();
 const fumbleTableService = require("../services/fumble-table-service");
 
+const tables = [
+    "melee-one-hand",
+    "melee-two-hands",
+    "animals",
+    "mounted-arms",
+    "unarmed",
+    "bows",
+    "slings",
+    "thrown",
+    "elemental-bolts",
+    "elemental-balls"
+];
+
+router.get('/', (req, res) => {
+    res.json(tables);
+});
+
 router.get('/:tableId/:roll', (req, res) => {
     try {
         const tableId = req.params.tableId;
