@@ -7,6 +7,22 @@ This project is part of RMU Online: https://github.com/labcabrera/rmu-platform
 WARNING: *This application is an independent project developed by fans of Rolemaster Unified. It is not affiliated with, endorsed by, or licensed by Iron Crown Enterprises (ICE), the owners of the Rolemaster intellectual property.*
 *All Rolemaster trademarks, game systems, and materials are the property of Iron Crown Enterprises. This software is provided for personal, non-commercial use only. If you enjoy Rolemaster, please support the official publications and content from ICE.*
 
+== Configuration
+
+|===
+|`PORT`                   |Listening port (default `3005`).
+|`RMU_ATTACK_TABLES_DIR`  |Folder with the tables. Unset or empty: the bundled `tables/` folder.
+|===
+
+`RMU_ATTACK_TABLES_DIR` accepts two layouts, checked in this order for every file:
+
+. `<dir>/attack`, `<dir>/critical`, `<dir>/fumble` (the layout of `tables/`).
+. `<dir>/attack-tables`, `<dir>/critical-tables`, `<dir>/fumble-tables` (the layout of the workspace `data/core-law` folder, which is not published).
+
+File names are the same in both: `attack/<table>-<size>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
+
+In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` read-only and sets the variable (see its `compose/local-data.yaml`).
+
 == Endpoints
 
 |===
@@ -50,6 +66,15 @@ The response format for critical hit rolls is:
     "message": "Lower leg wound bleeds freely."
 }
 ----
+
+Critical entries may carry an optional `injury` classification, returned as is:
+
+[source,json]
+----
+"injury": { "type": "bone", "secondary": ["muscle-tendon"], "flags": ["permanent-risk"] }
+----
+
+`type` and `secondary` take `bone`, `cut-burn`, `muscle-tendon`, `organ`, `poison-disease`, `skin-tissue` or `unknown`; `flags` takes `permanent-risk`, `limb-loss`, `blinding` or `paralysis`. The bundled tables do not include it; when it is missing, clients infer the type from the critical table (workspace spec 013).
 
 The response format for fumble rolls is:
 

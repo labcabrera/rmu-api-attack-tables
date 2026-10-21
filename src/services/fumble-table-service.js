@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = require('path');
+const { resolveTableFile } = require('../config/table-paths');
 
 const cache = new Map();
 
@@ -15,7 +15,7 @@ const findFumbleResult = (fumbleTable, roll) => {
 };
 
 const getFilePath = (fumbleTable) => {
-    return path.join(__dirname, '../../tables/fumble', `${fumbleTable}.json`);
+    return resolveTableFile('fumble', `${fumbleTable}.json`);
 };
 
 const getCachedData = (filePath) => {

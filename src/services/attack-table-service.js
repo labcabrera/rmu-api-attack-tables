@@ -1,6 +1,6 @@
 const fs = require('fs');
 const csv = require('csv-parser');
-const path = require('path');
+const { resolveTableFile } = require('../config/table-paths');
 const { createReadStream } = require('fs');
 const cache = new Map();
 
@@ -22,7 +22,7 @@ const parseCSV = (filePath) => {
 };
 
 const findAttackResult = async (attackTable, size, armorType, roll) => {
-    const filePath = path.join(__dirname, '../../tables/attack', `${attackTable}-${size}.csv`);
+    const filePath = resolveTableFile('attack', `${attackTable}-${size}.csv`);
     if (!fs.existsSync(filePath)) {
         throw { status: 404, message: 'Attack table not found' };
     }
