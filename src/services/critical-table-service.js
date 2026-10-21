@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = require('path');
+const { resolveTableFile } = require('../config/table-paths');
 
 const cache = new Map();
 
@@ -51,7 +51,7 @@ const getItem = (data, roll, location) => {
 };
 
 const getFilePath = (criticalTable, criticalType) => {
-    return path.join(__dirname, '../../tables/critical', `${criticalTable}-${criticalType}.json`);
+    return resolveTableFile('critical', `${criticalTable}-${criticalType}.json`);
 };
 
 const getCachedData = (filePath) => {

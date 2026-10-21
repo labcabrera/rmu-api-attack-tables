@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
+const { tablesDir, BUNDLED_DIR } = require('./config/table-paths');
 
 const app = express();
 
@@ -22,4 +24,12 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`API started on ${PORT}`);
+  const dir = tablesDir();
+  if (dir === BUNDLED_DIR) {
+    console.log(`Tables: bundled (${dir})`);
+  } else if (fs.existsSync(dir)) {
+    console.log(`Tables: ${dir} (bundled tables as fallback)`);
+  } else {
+    console.warn(`Tables: ${dir} does not exist, using the bundled tables (${BUNDLED_DIR})`);
+  }
 });
