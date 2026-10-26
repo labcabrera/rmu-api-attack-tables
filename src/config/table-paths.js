@@ -34,5 +34,6 @@ const resolveTableFile = (kind, fileName) => {
 module.exports = {
   BUNDLED_DIR,
   tablesDir,
+  candidateDirs,
   resolveTableFile,
 };
