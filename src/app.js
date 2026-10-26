@@ -13,10 +13,13 @@ app.use(cors());
 const attackTableRouter = require('./routes/attack-table-controller');
 const criticalTableRouter = require('./routes/critical-table-controller');
 const fumbleTableRouter = require('./routes/fumble-table-controller');
+const { modifiersRouter: spellcastingRouter, failureRouter: spellFailureRouter } = require('./routes/spell-casting-controller');
 
 app.use('/v1/attack-tables', attackTableRouter);
 app.use('/v1/critical-tables', criticalTableRouter);
 app.use('/v1/fumble-tables', fumbleTableRouter);
+app.use('/v1/spellcasting-tables', spellcastingRouter);
+app.use('/v1/spell-failure-tables', spellFailureRouter);
 
 app.get('/', (req, res) => {
   res.send('TODO');

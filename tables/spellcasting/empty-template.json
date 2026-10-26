@@ -1,0 +1,154 @@
+{
+  "columns": [
+    "channeling",
+    "essence",
+    "mentalism",
+    "channeling-essence",
+    "channeling-mentalism",
+    "essence-mentalism"
+  ],
+  "subtlety": {
+    "elemental": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "force": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "informational": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "utility": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    }
+  },
+  "hands": {
+    "none": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "one": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "two": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    }
+  },
+  "voice": {
+    "none": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "whisper": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "normal": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "shout": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    }
+  },
+  "helmet": {
+    "light": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "medium": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "heavy": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    }
+  },
+  "armor": {
+    "leather": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    },
+    "metal": {
+      "channeling": null,
+      "essence": null,
+      "mentalism": null,
+      "channeling-essence": null,
+      "channeling-mentalism": null,
+      "essence-mentalism": null
+    }
+  },
+  "fastCastingPerAp": 0,
+  "overcastingPerLevel": 0,
+  "preparation": {
+    "perRound": 0,
+    "max": 0
+  }
+}
