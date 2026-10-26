@@ -403,6 +403,9 @@
       {
         "status": "breakage_roll",
         "value": -100
+      },
+      {
+        "status": "incapacitated"
       }
     ],
     "injury": {

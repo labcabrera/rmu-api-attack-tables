@@ -167,6 +167,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

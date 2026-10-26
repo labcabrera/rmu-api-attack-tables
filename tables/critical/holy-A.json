@@ -177,6 +177,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "cannot_parry"
       }
     ],
     "message": "Foe feels agony as sparks fly around and through his chest. He is too angry to parry for the rest of the fight."

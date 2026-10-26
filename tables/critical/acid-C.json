@@ -336,6 +336,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

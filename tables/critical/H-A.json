@@ -140,7 +140,11 @@
     "rollMax": 65,
     "dmg": 19,
     "location": "arm",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Painful arm burns cause foe to drop anything held."
   },
   {
@@ -317,6 +321,9 @@
         "rounds": 1,
         "value": -50,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -347,6 +354,9 @@
       {
         "status": "knocked_back_distance",
         "value": 10
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

@@ -14,6 +14,16 @@ const number = (value) => typeof value === 'number' && Number.isFinite(value);
 
 // Allowed fields of each effect status, and a check of its values
 const EFFECTS = {
+  // Spec 034, phase 4: effects the book only gives in the text
+  attack_penalty: { fields: ['value', 'rounds'], check: (e) => number(e.value) && e.value < 0 },
+  blinded: { fields: ['rounds'] },
+  cannot_attack: { fields: ['rounds'], check: (e) => number(e.rounds) },
+  cannot_parry: { fields: ['rounds', 'delay'] },
+  disarmed: { fields: [] },
+  half_activity: { fields: ['rounds', 'delay'] },
+  half_movement: { fields: ['rounds'] },
+  heal: { fields: ['value', 'applyTo'], check: (e) => number(e.value) && e.value > 0 && e.applyTo === 'source' },
+  limb_useless: { fields: ['location', 'rounds'], check: (e) => ['arm', 'leg'].includes(e.location) },
   bleeding: { fields: ['value'], check: (e) => number(e.value) && e.value > 0 },
   breakage_roll: { fields: ['value'], check: (e) => number(e.value) && e.value <= 0 },
   conditional_dying: { fields: ['condition'], check: (e) => typeof e.condition === 'string' },

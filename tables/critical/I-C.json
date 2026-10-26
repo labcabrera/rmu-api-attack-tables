@@ -56,6 +56,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Stinging blow to foe's hand causes him to drop anything held."
@@ -347,6 +350,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

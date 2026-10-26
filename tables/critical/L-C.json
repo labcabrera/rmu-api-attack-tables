@@ -151,6 +151,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {
@@ -174,6 +177,11 @@
       {
         "status": "fatigue",
         "value": -10
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm",
+        "rounds": 10
       }
     ],
     "injury": {
@@ -191,6 +199,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Arcing power strikes arm, which spasms and releases anything held."
@@ -368,6 +379,9 @@
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -432,6 +446,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

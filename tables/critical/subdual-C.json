@@ -93,6 +93,9 @@
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Solid strike to chest knocks foe back. Foe drops any items held."
@@ -141,6 +144,9 @@
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Bash foe hard on the top of the foot, foe hops back a step but leaves behind weapon."
@@ -212,6 +218,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

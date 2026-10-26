@@ -119,6 +119,9 @@
       {
         "status": "penalty",
         "value": -5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

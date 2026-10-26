@@ -14,7 +14,14 @@
   {
     "rollMin": 31,
     "rollMax": 40,
-    "effects": [],
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -3,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
     "text": "You slip, but keep your feet. Suffer a -3 initiative penalty next round."
   },
   {
@@ -45,7 +52,7 @@
     "rollMax": 65,
     "effects": [
       {
-        "status": "penalty",
+        "status": "attack_penalty",
         "value": -30,
         "rounds": 3
       }
@@ -93,6 +100,10 @@
         "rounds": 1,
         "value": -50,
         "delay": 1
+      },
+      {
+        "status": "cannot_parry",
+        "rounds": 1
       }
     ],
     "text": "Bite the inside of your own mouth for 1d10 hits and a round of Stunned unable to parry followed by a round of Stun. The good news is that foes within 10' of you must save versus a level 1 Fear effect."

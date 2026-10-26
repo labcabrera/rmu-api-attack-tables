@@ -36,7 +36,11 @@
     "rollMax": 15,
     "dmg": 1,
     "location": "arm",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Hit bicep and power surges up arm. Foe drops anything held."
   },
   {
@@ -127,6 +131,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -218,6 +225,11 @@
       {
         "status": "penalty",
         "value": -15
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
       }
     ],
     "injury": {
@@ -271,6 +283,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -295,6 +310,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -75
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

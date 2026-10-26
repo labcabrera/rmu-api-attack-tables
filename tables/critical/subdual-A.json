@@ -128,6 +128,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Whack to the elbow drives a twinge of pain down foe's arm. Foe drops anything held."
@@ -146,6 +149,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Hard strike to foe's shoulder causes any item held to go flying 10' back."
@@ -212,6 +218,9 @@
       {
         "status": "fatigue",
         "value": -20
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -316,6 +325,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

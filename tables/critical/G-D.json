@@ -203,6 +203,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -342,6 +345,9 @@
         "status": "stunned",
         "rounds": 5,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Double arm holds allow you excellent control of foe. Foe drops anything in his hands."

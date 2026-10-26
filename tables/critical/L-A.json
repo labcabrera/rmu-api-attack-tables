@@ -79,7 +79,13 @@
     "rollMax": 45,
     "dmg": 8,
     "location": "leg",
-    "effects": [],
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
+      }
+    ],
     "message": "Zap deep into thigh causes muscle spasms. Foe loses 2 Action Points."
   },
   {
@@ -122,6 +128,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Power burns deep into shoulder, causing an uncontrolled jerk of the whole arm. Foe drops anything held."
@@ -157,6 +166,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Foe's knee buckles under assault from savage arc. Foe drops anything held, clutches at knee."
@@ -177,6 +189,9 @@
         "rounds": 1,
         "value": -25,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Nerves are momentarily overwhelmed as arc strikes foe's chest. Foe drops anything held."
@@ -253,7 +268,7 @@
       {
         "status": "staggered",
         "rounds": 1,
-        "value": 1
+        "value": 2
       }
     ],
     "injury": {

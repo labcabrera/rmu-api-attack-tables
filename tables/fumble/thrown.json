@@ -14,7 +14,11 @@
   {
     "rollMin": 31,
     "rollMax": 40,
-    "effects": [],
+    "effects": [
+      {
+        "status": "prone"
+      }
+    ],
     "text": "You trip over your own feet. You land face down, but hang on to your weapon."
   },
   {
@@ -66,6 +70,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "Just as you are about to release, you slip and fall prone, and are Stunned[-50] for one round."

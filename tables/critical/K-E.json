@@ -167,6 +167,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Hand takes blow without any bones breaking. Foe drops anything held by hand, hollering in pain and anger."
@@ -221,6 +224,10 @@
       {
         "status": "breakage_roll",
         "value": -100
+      },
+      {
+        "status": "incapacitated",
+        "rounds": 20
       }
     ],
     "injury": {
@@ -247,6 +254,9 @@
       {
         "status": "penalty",
         "value": -20
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

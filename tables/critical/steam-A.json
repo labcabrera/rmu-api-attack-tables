@@ -241,6 +241,9 @@
         "rounds": 1,
         "value": -50,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Back of foe's hand is blasted. Foe drops anything held."
@@ -289,6 +292,9 @@
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

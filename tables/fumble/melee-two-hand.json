@@ -14,7 +14,14 @@
   {
     "rollMin": 31,
     "rollMax": 40,
-    "effects": [],
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -8,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
     "text": "You mind wanders, and you partly lose control of your weapon. Suffer a -8 initiative penalty next round."
   },
   {
@@ -43,7 +50,11 @@
   {
     "rollMin": 61,
     "rollMax": 65,
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "text": "You manage to completely lose your grip on your weapon, which ends up 1d10 feet away in a random direction."
   },
   {
@@ -120,6 +131,9 @@
       {
         "status": "penalty",
         "value": -15
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "text": "You go down hard on one knee. The pain leaves you Stunned for one round, then Dazed for the next. The knee injury is a -15 flesh wound. You also drop your weapon."
@@ -152,6 +166,10 @@
       {
         "status": "penalty",
         "value": -30
+      },
+      {
+        "status": "cannot_parry",
+        "rounds": 5
       }
     ],
     "text": "Worst move seen in ages! You are Stunned and unable to parry for five rounds and are at -30 with a pulled groin muscle. There is a 50% chance your foes will be out for 3 rounds, laughing."

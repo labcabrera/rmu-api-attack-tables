@@ -47,7 +47,11 @@
     "rollMax": 15,
     "dmg": 1,
     "location": "arm",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Claw hand grip on upper arm pinches a nerve point. Foe is not amused because of the discomfort, pain and dropping what he was holding."
   },
   {
@@ -269,6 +273,11 @@
         "status": "stunned",
         "rounds": 3,
         "value": -25
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm",
+        "rounds": 3
       }
     ],
     "injury": {

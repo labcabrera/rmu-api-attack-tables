@@ -232,6 +232,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Foe drops anything in hand as it is driven into his torso by blow, delivering painful impact to groin."
@@ -261,6 +264,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "You knock foe's leg out from under him, though he refuses to fall. He does drop anything in his hands to keep his balance."

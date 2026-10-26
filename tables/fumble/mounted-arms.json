@@ -14,7 +14,14 @@
   {
     "rollMin": 31,
     "rollMax": 40,
-    "effects": [],
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -10,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
     "text": "You and your mount are of different minds as to what your direction meant. You both suffer a -10 initiative penalty next round."
   },
   {
@@ -130,9 +137,7 @@
     "rollMax": 100,
     "effects": [
       {
-        "status": "penalty",
-        "value": -30,
-        "rounds": 2
+        "status": "disarmed"
       }
     ],
     "text": "You drop your weapon. Trying to recover it, you fall from your mount. This shocking turn of affairs leaves your mount at -30 for two rounds."

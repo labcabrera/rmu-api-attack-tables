@@ -171,6 +171,9 @@
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -274,6 +277,11 @@
       {
         "status": "bleeding",
         "value": 13
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
       }
     ],
     "injury": {

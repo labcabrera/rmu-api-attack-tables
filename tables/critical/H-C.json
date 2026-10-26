@@ -315,6 +315,9 @@
       },
       {
         "status": "prone"
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -360,6 +363,9 @@
       {
         "status": "breakage_roll",
         "value": -100
+      },
+      {
+        "status": "paralyzed"
       }
     ],
     "injury": {

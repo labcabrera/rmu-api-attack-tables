@@ -258,6 +258,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -287,6 +290,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -375,6 +381,10 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "limb_useless",
+        "location": "leg"
       }
     ],
     "injury": {

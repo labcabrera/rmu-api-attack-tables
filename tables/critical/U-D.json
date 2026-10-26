@@ -123,6 +123,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Foe struck in groin. Spasm of pain causes foe to drop anything he is holding."
@@ -204,6 +207,9 @@
       },
       {
         "status": "prone"
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

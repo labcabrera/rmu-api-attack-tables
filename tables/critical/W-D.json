@@ -69,6 +69,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "You fail to get a good grip on foe's arm for a throw and he slips free, but you do manage to disarm him and knock him off balance."

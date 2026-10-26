@@ -185,6 +185,9 @@
         "rounds": 2,
         "value": -25,
         "delay": 1
+      },
+      {
+        "status": "half_activity"
       }
     ],
     "injury": {
@@ -310,6 +313,9 @@
         "status": "stunned",
         "rounds": 4,
         "value": -25
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

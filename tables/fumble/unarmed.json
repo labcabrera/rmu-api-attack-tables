@@ -14,7 +14,12 @@
   {
     "rollMin": 31,
     "rollMax": 40,
-    "effects": [],
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -5
+      }
+    ],
     "text": "Your mighty yell fails to impress your foes, but it leaves you a bit breathless. Take a -5 Fatigue penalty."
   },
   {
@@ -24,6 +29,12 @@
       {
         "status": "hits",
         "value": "1d5"
+      },
+      {
+        "status": "initiative_penalty",
+        "value": -7,
+        "rounds": 1,
+        "delay": 1
       }
     ],
     "text": "That move only works in a saga. Take 1d5 hits damage and suffer a -7 initiative penalty next round."
@@ -48,6 +59,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "Your move is acrobatic, but misjudged. You end up flat on your back and are Stunned for one round."
@@ -106,6 +120,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -50
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "Your foot slips out from under you as you begin your attack. You fall and Stun yourself for two rounds."
@@ -153,6 +170,9 @@
       {
         "status": "bleeding",
         "value": 1
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "You execute a textbook headbutt... to the ground. You are prone, Stunned for three rounds, and bleeding 1/rnd."

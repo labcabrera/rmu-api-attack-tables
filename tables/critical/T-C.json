@@ -161,6 +161,9 @@
         "rounds": 1,
         "value": -25,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Knife chop to wrist dislodges item in foe's hand and frustrates his attack. Foe is on the wrong footing and in serious trouble."
@@ -179,6 +182,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -300,6 +306,10 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {

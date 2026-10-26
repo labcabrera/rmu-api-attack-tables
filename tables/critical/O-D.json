@@ -118,6 +118,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Foe shivers uncontrollably, dropping anything in his hands."
@@ -249,6 +252,9 @@
       {
         "status": "penalty",
         "value": -30
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {
@@ -344,6 +350,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

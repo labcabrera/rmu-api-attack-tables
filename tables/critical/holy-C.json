@@ -130,6 +130,9 @@
       {
         "status": "fatigue",
         "value": -50
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "message": "Foe's leg muscles are weary, twitching and limp, as if they had been pushing a boulder up a hill for an eternity. Foe is at half movement rate until fatigue penalty is rested away."
@@ -219,6 +222,9 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "The very ground rejects foe's feet, sending him sprawling. Foe drops anything he was holding."

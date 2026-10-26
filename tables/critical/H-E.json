@@ -74,6 +74,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Searing heat to arm causes foe to drop anything held."
@@ -87,6 +90,9 @@
       {
         "status": "penalty",
         "value": -5
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

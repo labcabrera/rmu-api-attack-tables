@@ -136,6 +136,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Foe's fingers are steamed. Foe drops anything held in that hand."

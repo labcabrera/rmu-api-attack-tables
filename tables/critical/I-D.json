@@ -134,6 +134,10 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "attack_penalty",
+        "value": -30
       }
     ],
     "message": "Eye-watering shot to groin leaves foe with a -30 to attack you (and only you) for the rest of the fight."
@@ -230,6 +234,11 @@
         "status": "stunned",
         "rounds": 6,
         "value": -25
+      },
+      {
+        "status": "half_activity",
+        "rounds": 6,
+        "delay": 6
       }
     ],
     "injury": {

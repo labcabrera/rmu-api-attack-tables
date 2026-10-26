@@ -48,6 +48,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Hip and leg push from a sidestepped position throws foe off balance. He is flailing his arms to regain balance and loses hand held gear."
@@ -319,6 +322,9 @@
       },
       {
         "status": "prone"
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

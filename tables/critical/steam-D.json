@@ -56,7 +56,11 @@
     "rollMax": 15,
     "dmg": 10,
     "location": "arm",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Steam slicks foe's hands. Foe drops anything held."
   },
   {
@@ -256,6 +260,10 @@
       {
         "status": "penalty",
         "value": -50
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {

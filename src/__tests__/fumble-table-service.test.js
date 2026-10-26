@@ -23,13 +23,22 @@ const DICE = /^\d+d\d+$/;
 
 const EFFECTS = {
   additional_critical: { fields: ['severity'], check: (e) => /^[A-E]$/.test(e.severity) },
+  attack_penalty: { fields: ['value', 'rounds'], check: (e) => number(e.value) && e.value < 0 },
   bleeding: { fields: ['value'], check: (e) => number(e.value) && e.value > 0 },
   breakage_roll: { fields: ['value'], check: (e) => number(e.value) && e.value <= 0 },
+  cannot_attack: { fields: ['rounds'], check: (e) => number(e.rounds) },
+  cannot_parry: { fields: ['rounds'], check: (e) => number(e.rounds) },
+  disarmed: { fields: [], check: () => true },
   fatigue: { fields: ['value'], check: (e) => number(e.value) && e.value < 0 },
+  initiative_penalty: {
+    fields: ['value', 'rounds', 'delay'],
+    check: (e) => number(e.value) && e.value < 0 && number(e.rounds),
+  },
   hits: { fields: ['value'], check: (e) => DICE.test(e.value) || (number(e.value) && e.value > 0) },
   // Feet, or dice of feet ("2d10")
   knocked_back_distance: { fields: ['value'], check: (e) => DICE.test(e.value) || (number(e.value) && e.value > 0) },
   penalty: { fields: ['value', 'rounds'], check: (e) => number(e.value) && e.value < 0 },
+  prone: { fields: [], check: () => true },
   staggered: { fields: ['rounds', 'value'], check: (e) => number(e.rounds) && number(e.value) && e.value > 0 },
   stunned: { fields: ['rounds', 'value', 'delay'], check: (e) => number(e.rounds) && number(e.value) && e.value < 0 },
 };

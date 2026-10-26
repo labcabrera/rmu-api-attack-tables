@@ -143,6 +143,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Steam hits foe's elbow. Foe drops anything in hand."
@@ -371,6 +374,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

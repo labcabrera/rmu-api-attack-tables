@@ -368,6 +368,10 @@
       {
         "status": "penalty",
         "value": -60
+      },
+      {
+        "status": "half_activity",
+        "rounds": 6
       }
     ],
     "injury": {

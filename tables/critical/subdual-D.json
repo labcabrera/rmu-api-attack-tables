@@ -369,6 +369,10 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {

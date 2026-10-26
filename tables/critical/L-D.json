@@ -189,6 +189,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -304,6 +307,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -337,6 +343,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -361,6 +370,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

@@ -294,6 +294,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "blinded"
       }
     ],
     "injury": {

@@ -46,7 +46,11 @@
     "rollMax": 15,
     "dmg": 1,
     "location": "arm",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Foe hit on the elbow, drops anything in his hand."
   },
   {
@@ -332,6 +336,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

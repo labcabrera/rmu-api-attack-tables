@@ -39,6 +39,9 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Upward shot into foe's gut causes him drop any item held."
@@ -81,6 +84,10 @@
       {
         "status": "stunned",
         "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "penalty",
         "value": -25
       }
     ],
@@ -208,6 +215,9 @@
         "rounds": 1,
         "value": -25,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

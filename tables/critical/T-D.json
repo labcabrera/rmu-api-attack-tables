@@ -164,6 +164,9 @@
         "rounds": 1,
         "value": -25,
         "delay": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "message": "Gripping foe's underarm in a claw pinch, you tear at one of his muscles. Foe drops what he was holding as he soothes pain with his other hand."
@@ -328,6 +331,10 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {

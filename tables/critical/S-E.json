@@ -219,6 +219,10 @@
       {
         "status": "penalty",
         "value": -50
+      },
+      {
+        "status": "half_activity",
+        "rounds": 8
       }
     ],
     "injury": {
@@ -295,6 +299,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -347,6 +354,10 @@
       {
         "status": "penalty",
         "value": -45
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {

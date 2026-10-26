@@ -256,6 +256,10 @@
       {
         "status": "penalty",
         "value": -20
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
       }
     ],
     "injury": {
@@ -329,6 +333,11 @@
         "status": "stunned",
         "rounds": 3,
         "value": -50
+      },
+      {
+        "status": "heal",
+        "value": 5,
+        "applyTo": "source"
       }
     ],
     "injury": {

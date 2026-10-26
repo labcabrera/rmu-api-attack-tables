@@ -230,6 +230,9 @@
       {
         "status": "breakage_roll",
         "value": -25
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -359,6 +362,9 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "blinded"
       }
     ],
     "injury": {

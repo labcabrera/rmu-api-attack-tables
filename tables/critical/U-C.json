@@ -175,6 +175,9 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

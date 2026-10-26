@@ -32,7 +32,11 @@
   {
     "rollMin": 61,
     "rollMax": 65,
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "text": "Bow slips from your sweaty hands and falls at your feet."
   },
   {
@@ -94,6 +98,9 @@
         "status": "stunned",
         "rounds": 2,
         "value": -50
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "You slip and fall as you fire. Your shot goes astray. You are now prone and Stunned[-50] for two rounds."

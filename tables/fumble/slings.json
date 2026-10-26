@@ -31,7 +31,14 @@
   {
     "rollMin": 51,
     "rollMax": 60,
-    "effects": [],
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -10,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
     "text": "You spin your sling so fast that you almost lose control of it. Suffer a -10 initiative penalty next round."
   },
   {
@@ -76,6 +83,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "prone"
       }
     ],
     "text": "You put too much body into it, and you fall down before you can release your attack. You are Dazed one round."

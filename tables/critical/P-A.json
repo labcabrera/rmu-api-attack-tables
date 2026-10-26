@@ -248,6 +248,9 @@
       {
         "status": "penalty",
         "value": -15
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -268,6 +271,9 @@
       {
         "status": "penalty",
         "value": -25
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

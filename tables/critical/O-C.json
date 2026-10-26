@@ -185,6 +185,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -319,6 +322,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -365,6 +371,9 @@
       {
         "status": "breakage_roll",
         "value": -75
+      },
+      {
+        "status": "half_movement"
       }
     ],
     "injury": {

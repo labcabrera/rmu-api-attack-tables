@@ -69,6 +69,11 @@
       {
         "status": "fatigue",
         "value": -10
+      },
+      {
+        "status": "attack_penalty",
+        "value": -10,
+        "rounds": 1
       }
     ],
     "message": "The element of surprise must be yours. The cut is not deep, but startles your foe. His next attack is at -10."
@@ -168,6 +173,9 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {
@@ -424,6 +432,9 @@
         "status": "stunned",
         "rounds": 4,
         "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

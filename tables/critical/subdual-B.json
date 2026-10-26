@@ -117,6 +117,10 @@
       {
         "status": "fatigue",
         "value": -10
+      },
+      {
+        "status": "attack_penalty",
+        "value": -15
       }
     ],
     "message": "Fake high, strike low, catch foe in the groin. Foe is wary and fights you at -15 for the rest of the battle."
@@ -290,6 +294,9 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
+      },
+      {
+        "status": "disarmed"
       }
     ],
     "injury": {

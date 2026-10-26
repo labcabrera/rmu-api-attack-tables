@@ -33,7 +33,11 @@
     "rollMax": 5,
     "dmg": 3,
     "location": "abdomen",
-    "effects": [],
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
     "message": "Loin strike makes foe drop his weapon as he tries to fend off your strike."
   },
   {
