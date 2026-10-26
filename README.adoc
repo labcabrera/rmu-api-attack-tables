@@ -19,7 +19,7 @@ WARNING: *This application is an independent project developed by fans of Rolema
 . `<dir>/attack`, `<dir>/critical`, `<dir>/fumble` (the layout of `tables/`).
 . `<dir>/attack-tables`, `<dir>/critical-tables`, `<dir>/fumble-tables` (the layout of the workspace `data/core-law` folder, which is not published).
 
-File names are the same in both: `attack/<table>-<size>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
+File names are the same in both: `attack/<table>-<size>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`, `spellcasting/modifiers.json` and `spell-failure/<realm>.json` (the last two as `spellcasting-tables` and `spell-failure-tables` in the second layout). The spell casting tables are not bundled: `tables/` only has empty templates, so without a data folder those endpoints answer 404. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
 
 In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` read-only and sets the variable (see its `compose/local-data.yaml`).
 
@@ -30,6 +30,8 @@ In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` 
 |`GET /v1/attack-tables/{tableId}/{size}/{at}/{roll}`:  |Gets the result of an attack roll on a specific table.
 |`GET /v1/critical-tables/{type}/{severity}/{roll}`     |Gets the result of a critical hit roll on a specific table.
 |`GET /v1/fumble-tables/{type}/{roll}`                  |Gets the result of a fumble roll on a specific table.
+|`GET /v1/spellcasting-tables/modifiers`               |Gets the spell casting modifiers (Spell Law table 4-2).
+|`GET /v1/spell-failure-tables/{realm}/{type}/{roll}`   |Gets a spell failure result (Spell Law tables 4-4). `realm`: `channeling`, `essence` or `mentalism`; `type`: `elemental`, `force`, `informational` or `utility`; `roll`: the modified open-ended roll (below 1 reads the first row).
 |===
 
 The response format for attack rolls is:
@@ -75,6 +77,13 @@ Critical entries may carry an optional `injury` classification, returned as is:
 ----
 
 `type` and `secondary` take `bone`, `cut-burn`, `muscle-tendon`, `organ`, `poison-disease`, `skin-tissue` or `unknown`; `flags` takes `permanent-risk`, `limb-loss`, `blinding` or `paralysis`. The bundled tables do not include it; when it is missing, clients infer the type from the critical table (workspace spec 013).
+
+A spell failure result carries the text for the spell type and the power points it suggests (`pp`: `none`, `one`, `half-down`, `half-up`, `normal`, `double`, `triple` or `all`); the caller confirms them:
+
+[source,json]
+----
+{ "realm": "essence", "type": "force", "roll": 42, "rollMin": 41, "rollMax": 60, "text": "...", "pp": "normal" }
+----
 
 The response format for fumble rolls is:
 
