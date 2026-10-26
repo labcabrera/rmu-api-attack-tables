@@ -1,17 +1,49 @@
 = Rolemaster Unified Attack Tables API
 
-This API provides access to attack tables, critical hits, and fumbles.
+This API serves the attack, critical, fumble and spell casting tables, by roll or whole.
 
 This project is part of RMU Online: https://github.com/labcabrera/rmu-platform
 
 WARNING: *This application is an independent project developed by fans of Rolemaster Unified. It is not affiliated with, endorsed by, or licensed by Iron Crown Enterprises (ICE), the owners of the Rolemaster intellectual property.*
 *All Rolemaster trademarks, game systems, and materials are the property of Iron Crown Enterprises. This software is provided for personal, non-commercial use only. If you enjoy Rolemaster, please support the official publications and content from ICE.*
 
+== Overview
+
+A NestJS API on the platform of `rmu-api-core` (the *API template* section of its README; workspace spec 035). It has
+no database and no Kafka: the tables are files, read once and kept in memory. Callers:
+
+- `rmu-api-tactical` looks up every attack, critical, fumble and spell failure roll (service account token, or the
+  token of the user it serves).
+- `rmu-react-shared-lib` lists the attack and fumble tables (`fetchAttackTables`, `fetchFumbleTables`) through the
+  gateway, at `/api/attack-tables/v1`.
+
+== Getting started
+
+- Node.js 24 (`.nvmrc`; `nvm use`) and pnpm 10 (`packageManager`; `corepack enable`).
+- Keycloak for the tokens: `make up-infra` in https://github.com/labcabrera/rmu-platform[rmu-platform].
+
+```bash
+cp .env.example .env
+pnpm install
+pnpm start:dev       # http://localhost:3005, Swagger UI on /api-docs
+```
+
 == Configuration
 
+The Joi schema in `src/config/env.schema.ts` fails startup on a missing required variable.
+
+[cols="2,1,3"]
 |===
-|`PORT`                   |Listening port (default `3005`).
-|`RMU_ATTACK_TABLES_DIR`  |Folder with the tables. Unset or empty: the bundled `tables/` folder.
+| Variable | Required | Purpose
+
+| `PORT` | no (`3005`) | HTTP port
+| `LOG_LEVEL` | no (`info`) | Nest logger level
+| `RMU_ATTACK_TABLES_DIR` | no (empty) | folder with the tables; empty: the bundled `tables/` folder only
+| `RMU_IAM_JWK_URI`, `RMU_IAM_ISSUER_URI`, `RMU_IAM_AUDIENCE` | yes | JWT validation
+| `RMU_IAM_URI`, `RMU_IAM_REALM` | no (`http://localhost/sso`, `rmu`) | browser-facing OAuth URLs of the Swagger UI (`/api-docs`)
+| `RMU_CORS_ORIGINS` | no (empty) | comma-separated origins allowed by CORS; empty turns CORS off
+| `RMU_THROTTLE_LIMIT`, `RMU_THROTTLE_TTL_MS` | no (`300`, `60000`) | requests per client IP and window; `0` turns the limit off. Compose sets 1000, as tactical makes several lookups per action. `/v1/health` is never limited
+| `RMU_TRUST_PROXY` | no (`loopback, linklocal, uniquelocal`) | Express `trust proxy` (client IP from `X-Forwarded-For` behind Caddy)
 |===
 
 `RMU_ATTACK_TABLES_DIR` accepts two layouts, checked in this order for every file:
@@ -21,25 +53,43 @@ WARNING: *This application is an independent project developed by fans of Rolema
 
 File names are the same in both: `attack/<table>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`, `spellcasting/modifiers.json` and `spell-failure/<realm>.json` (the last two as `spellcasting-tables` and `spell-failure-tables` in the second layout). The spell casting tables are not bundled: `tables/` only has empty templates, so without a data folder those endpoints answer 404. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
 
-In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` read-only and sets the variable (see its `compose/local-data.yaml`).
+In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` read-only and sets the variable (see its `compose/apis.yaml`).
 
 == Endpoints
 
+Every endpoint needs a bearer token but `GET /v1/health`. The whole tables are rulebook content: they need the
+`rmu-core-law` group (or `rmu-admin`, like the service account), and answer 403 otherwise.
+
+[cols="3,1,4"]
 |===
-|`GET /v1/attack-tables`                                |Gets the ids of the attack tables found in the data folder and in `tables/`, sorted.
-|`GET /v1/attack-tables/{tableId}/{at}/{roll}`          |Gets the result of an attack roll on the Medium table. `tableId`: lowercase letters, digits and `-` (400 otherwise); `at`: 1-10; `roll`: 1-175, and a roll above the last band of the table reads its top row (the ball tables end at 125).
-|`GET /v1/critical-tables/{type}/{severity}/{roll}`     |Gets the result of a critical hit roll. `type`: the letter of the attack tables (`G H I K L O P S T U W`) or `acid`, `holy`, `steam`, `subdual`; `severity`: `A`-`E`, or `Z` (Section 9.8); optional `?location=`. 400 for an invalid type or severity, 404 for a missing table.
-|`GET /v1/fumble-tables`                                |Gets the ids of the fumble tables found in the data folder and in `tables/`, sorted.
-|`GET /v1/fumble-tables/{type}/{roll}`                  |Gets the result of a fumble roll on a specific table (400 for an invalid id, 404 for a missing table).
-|`GET /v1/spellcasting-tables/modifiers`               |Gets the spell casting modifiers (Spell Law table 4-2).
-|`GET /v1/spell-failure-tables/{realm}/{type}/{roll}`   |Gets a spell failure result (Spell Law tables 4-4). `realm`: `channeling`, `essence` or `mentalism`; `type`: `elemental`, `force`, `informational` or `utility`; `roll`: the modified open-ended roll (below 1 reads the first row).
+| Endpoint | Access | What it returns
+
+| `GET /v1/attack-tables` | token | The ids of the attack tables found in the data folder and in `tables/`, sorted.
+| `GET /v1/attack-tables/{tableId}` | Core Law | The whole Medium table: `{id, rows: [{rollMin, rollMax, results}]}`, rows from the highest band down, `results` with the ten cells (AT 1 to 10) parsed as below plus `armorType`.
+| `GET /v1/attack-tables/{tableId}/{at}/{roll}` | token | The result of an attack roll on the Medium table. `tableId`: lowercase letters, digits and `-`; `at`: 1-10; `roll`: 1-175, and a roll above the last band of the table reads its top row (the ball tables end at 125).
+| `GET /v1/critical-tables` | token | The critical types, sorted.
+| `GET /v1/critical-tables/{type}` | Core Law | Every severity of a type: `{type, severities: {A: [...], ..., E: [...]}}`, each with the rows of its file as they are. A severity without a file is left out.
+| `GET /v1/critical-tables/{type}/{severity}/{roll}` | token | The result of a critical roll. `type`: the letter of the attack tables (`G H I K L O P S T U W`) or `acid`, `holy`, `steam`, `subdual`; `severity`: `A`-`E`, or `Z` (Section 9.8); `roll`: 1-100; optional `?location=`.
+| `GET /v1/fumble-tables` | token | The ids of the fumble tables, sorted.
+| `GET /v1/fumble-tables/{tableId}` | Core Law | The whole table: `{id, entries: [...]}`, with the rows as they are.
+| `GET /v1/fumble-tables/{tableId}/{roll}` | token | The result of a fumble roll (1-100).
+| `GET /v1/spellcasting-tables/modifiers` | token | The spell casting modifiers (Spell Law table 4-2), whole.
+| `GET /v1/spell-failure-tables` | token | The realms: `channeling`, `essence`, `mentalism`.
+| `GET /v1/spell-failure-tables/{realm}` | Core Law | The whole spell failure table of a realm (Spell Law tables 4-4): `{realm, rows: [...]}`.
+| `GET /v1/spell-failure-tables/{realm}/{type}/{roll}` | token | A spell failure result. `type`: `elemental`, `force`, `informational` or `utility`; `roll`: the modified open-ended roll (below 1 reads the first row).
+| `GET /v1/health` | public | Memory checks (heap and RSS).
 |===
+
+Errors follow the HTTP contract of every RMU API: `{statusCode, error, code, message, timestamp, path}`. The codes of
+this API: `invalid-table-id`, `invalid-armor-type`, `invalid-roll`, `invalid-severity`, `invalid-realm`,
+`invalid-spell-type` (400), `unauthorized` (401), `forbidden` (403), `not-found` (404), `too-many-requests` (429) and
+`invalid-table-data` (500, a gap in a table).
 
 `tables/` bundles every Core Law table: the 39 Medium attack tables (workspace spec 033), the 15 critical tables with severities A-E (75 files, with the `injury` field of workspace spec 013) and the 10 fumble columns (spec 034). Effects only come from the printed symbols; `staggered` always carries `rounds` and `value` (AP lost).
 
-Only the Medium attack tables are served (workspace spec 033). The book's Small and Big tables are the Medium one with the critical severity one step down or up (down to `Z`) and the hits ×0.75 or ×1.5 rounded half up, so the caller (`rmu-api-tactical`) applies the attack size. `tables/attack` bundles the 39 Medium tables of Core Law.
+Only the Medium attack tables are served (workspace spec 033). The book's Small and Big tables are the Medium one with the critical severity one step down or up (down to `Z`) and the hits ×0.75 or ×1.5 rounded half up, so the caller (`rmu-api-tactical`) applies the attack size.
 
-The response format for attack rolls is:
+The response format for attack rolls is (cells are `<hits>` or `<hits><severity><type>`, with severities up to `I` on some tables):
 
 [source,json]
 ----
@@ -74,6 +124,8 @@ The response format for critical hit rolls is:
 }
 ----
 
+When no row matches the location, the answer is a row with `rollMin` 0, no effects and a `null` location.
+
 Critical entries may carry an optional `injury` classification, returned as is:
 
 [source,json]
@@ -81,7 +133,7 @@ Critical entries may carry an optional `injury` classification, returned as is:
 "injury": { "type": "bone", "secondary": ["muscle-tendon"], "flags": ["permanent-risk"] }
 ----
 
-`type` and `secondary` take `bone`, `cut-burn`, `muscle-tendon`, `organ`, `poison-disease`, `skin-tissue` or `unknown`; `flags` takes `permanent-risk`, `limb-loss`, `blinding` or `paralysis`. The bundled tables do not include it; when it is missing, clients infer the type from the critical table (workspace spec 013).
+`type` and `secondary` take `bone`, `cut-burn`, `muscle-tendon`, `organ`, `poison-disease`, `skin-tissue` or `unknown`; `flags` takes `permanent-risk`, `limb-loss`, `blinding` or `paralysis`. When it is missing, clients infer the type from the critical table (workspace spec 013).
 
 A spell failure result carries the text for the spell type and the power points it suggests (`pp`: `none`, `one`, `half-down`, `half-up`, `normal`, `double`, `triple` or `all`); the caller confirms them:
 
@@ -107,3 +159,46 @@ The response format for fumble rolls is:
     "text": "You try to impress your opponent with a spin maneuver. Too bad. Spend two rounds Stunned."
 }
 ----
+
+== Development
+
+[cols="1,3"]
+|===
+| Command | What it does
+
+| `pnpm start:dev` | Nest in watch mode
+| `pnpm build` | SWC build to `dist/`, without type checking
+| `pnpm typecheck` / `pnpm lint` | `tsc --noEmit` / ESLint over `src` and `test`
+| `pnpm test` | unit tests (`test/unit`): parsers, lookups, handlers, and every bundled table checked against its schema
+| `pnpm test:e2e` | `AppModule` with RS256 tokens checked against a local JWKS (`test/e2e/support`), on the bundled tables or a temporary data folder
+| `pnpm test:cov` | unit and e2e tests with the coverage thresholds of `vitest.config.ts` (what CI runs)
+| `pnpm check:swc` | decorators SWC cannot compile like tsc
+| `make check` | lint + typecheck + `check:swc` + unit and e2e tests
+|===
+
+----
+src/
+  main.ts, bootstrap/, config/env.schema.ts      as in rmu-api-core
+  modules/
+    shared/                                     JWT, errors, filter, throttler, health and TablePaths (the tables folders)
+    attack-tables/, critical-tables/,
+    fumble-tables/, spell-casting-tables/
+      domain/                                   entities and the lookups (pure functions)
+      application/ports/                        repository interface and its Symbol token
+      application/cqrs/{queries,handlers}/      one query and one handler per file; the whole tables check Core Law access
+      infrastructure/files/                     file repository over TablePaths
+      interfaces/http/                          controller and DTOs
+tables/                                         bundled tables (copied into the image)
+----
+
+== Docker
+
+`make docker-build` builds `labcabrera/rmu-api-attack-tables:latest` with `tables/` inside, and `make docker-run` runs it
+on the `rmu-network` Docker network (needs `.env.docker`, copied from `.env.docker.example`). The image has its own
+`HEALTHCHECK` on `/v1/health`. `make docker-push` builds and pushes `linux/amd64` and `linux/arm64`.
+
+== Releases
+
+`make create-release` runs semantic-release from a clean `develop`: it merges into `main`, derives the version from the
+Conventional Commits (force one with `RELEASE_BUMP=patch|minor|major`), tags it without `v`, updates `CHANGELOG.md`, and
+bumps `develop` to the next `-SNAPSHOT`. Commit messages are checked by commitlint in a husky hook.
