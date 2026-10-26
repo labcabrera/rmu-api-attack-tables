@@ -4,6 +4,7 @@
     "rollMax": 1,
     "dmg": 3,
     "location": "head",
+    "effects": [],
     "message": "Foe dodges most of attack."
   },
   {
@@ -11,6 +12,7 @@
     "rollMax": 3,
     "dmg": 4,
     "location": "chest",
+    "effects": [],
     "message": "Glancing strike to the ribs fails to penetrate."
   },
   {
@@ -24,7 +26,10 @@
         "value": 1
       }
     ],
-    "message": "Poked in the belly, foe starts losing blood"
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Poked in the belly, foe starts losing blood."
   },
   {
     "rollMin": 6,
@@ -37,6 +42,9 @@
         "value": 1
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "In goes the stabbing thing, out comes the sticky red fluid."
   },
   {
@@ -54,12 +62,16 @@
         "value": -50
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Thrust to foe's arm starts a bleeder."
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 4,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -67,57 +79,63 @@
       },
       {
         "status": "staggered",
-        "value": 1,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point glances off side of head, opening bloody furrow."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 7,
+    "location": "chest",
     "effects": [
       {
         "status": "penalty",
         "value": -5
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Grazing along ribs opens painful cut."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 12,
+    "location": "abdomen",
     "effects": [
       {
         "status": "fatigue",
         "value": -20
       }
     ],
-    "location": "abdomen",
     "message": "Strike with flat fails to produce penetration, but foe feels the blow."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 22,
+    "location": "leg",
     "effects": [
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 1
+        "rounds": 1,
+        "value": -25
       }
     ],
-    "location": "leg",
     "message": "Point sinks a few inches into thigh muscle."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 3,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -128,13 +146,16 @@
         "value": -5
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point goes through arm just above wrist."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 22,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -145,7 +166,9 @@
         "value": -5
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Stabbing foe in the elbow damages joint, draws blood and cry of pain. You feel triumphant."
   },
   {
@@ -160,22 +183,26 @@
       },
       {
         "status": "stunned",
-        "value": -75,
-        "rounds": 1
+        "rounds": 1,
+        "value": -75
       },
       {
         "status": "stunned",
-        "value": -50,
         "rounds": 1,
+        "value": -50,
         "delay": 1
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Thrust to groin brings a veritable fountain of blood. -20 to enemy morale."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 3,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -190,13 +217,24 @@
         "value": -75
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
     "message": "Thrust to foot severs a toe."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 14,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -211,13 +249,16 @@
         "value": 0
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point passes through collarbone next to neck, tearing muscle."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 17,
+    "location": "head",
     "effects": [
       {
         "status": "penalty",
@@ -232,13 +273,19 @@
         "value": -75
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Thrust into spine does damage to nerves."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 14,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -254,13 +301,16 @@
         "value": -25
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Strike digs deep into shoulder, tearing cartilage."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 33,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -276,13 +326,16 @@
         "value": -50
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Thunk! Blow passes through lower leg, tearing muscle and coming out bloody."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 38,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -299,17 +352,24 @@
       {
         "status": "staggered",
         "rounds": 1,
-        "value": 0
+        "value": 1
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "The stomach is pierced. Is this the end? Getting near, I reckon."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 7,
+    "location": "chest",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
       {
         "status": "bleeding",
         "value": 6
@@ -317,20 +377,23 @@
       {
         "status": "penalty",
         "value": -35
-      },
-      {
-        "status": "dying",
-        "rounds": 12
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Penetrating stab damages lung. It fills with blood, killing foe after 12 rounds."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 18,
+    "location": "head",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -343,13 +406,11 @@
         "status": "stunned",
         "rounds": 3,
         "value": -75
-      },
-      {
-        "status": "dying",
-        "rounds": 3
       }
     ],
-    "location": "head",
-    "message": "Thrust into throat leads foe to choke on his own blood and die in three rounds"
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Thrust into throat leads foe to choke on his own blood and die in three rounds."
   }
 ]

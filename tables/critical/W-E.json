@@ -1,0 +1,540 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Badly executed neck grab. Foe breaks free but he is not unscathed."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [],
+    "message": "Attempts to get a hold of foe fail, but you bruise his torso in the process."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Quick timing gets a leg into foe's groin before knocking foe on his back. This wrenches muscle in his groin and stretches tendons. Foe is hurt... a bit."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Hip and leg push from a sidestepped position throws foe off balance. He is flailing his arms to regain balance and loses hand held gear."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "You yank and push on foe's arm, sending him sprawling to his stomach."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 5,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Failed arm lock makes you bash foe in the face with your elbow, that works too."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 21,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Bad shoulder manipulation sends foe reeling but he stays up."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Low blow combined with a shove knocks foe to the ground in quite a bit of pain."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 14,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Side step and a push against the knee lets foe stumble awkwardly. He suffers a tendon injury and does not quite get what happened."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Desperate block turns to advantage. Foe is off-balance and you catch his arm in a painful hold and toss him 5' in a direction of your choice."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Perfect arm twist and throw, foe lands hard and is gawping like a landed fish."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 30,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Foe lands hard with arm between his legs, breaking pelvis and rupturing internal organs. Death after writhing in pain for 5 rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Leg throw dumps foe on the ground. He pulls a calf muscle. When he tries to get up you may attack again with a +10 bonus."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 15,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Scissor lock fells foe like a tree. All that weight on his side cracks a variety of ribs and dislocates shoulder, disarming foe."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 34,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "You knock the foe off his feet, his head makes a loud thock as it hits the ground, you doubt he'll be getting up soon."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ]
+    },
+    "message": "Earth: block, Water: take position, Fire: blow to the stomach, Wind: twist and break arm, Emptiness: bone fragments travel to heart for death in 5 rnds."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 22,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Throw foe on his leg which cannot cope and breaks in 5 places. Bone sticks out from flesh. Foe dies in 7 rounds from shock and pain."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 24,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "incapacitated"
+      },
+      {
+        "status": "penalty",
+        "value": -85
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Foe flipped like a toy in the air, lands hard in a broken heap, folded in half over a broken lower spine."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 21,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "foe is moved before the injury is healed"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Pick foe up and throw him down with force on your knee. A sharp bone snap means you dislocated a vertebra. If foe is moved without healing the injury first, he dies."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 50,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Toppling foe; snaps neck on a carelessly left around object. As he sinks in oblivion he tries to tell you something."
+  }
+]

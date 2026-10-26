@@ -1,0 +1,489 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "You were convinced that was lethal, but it was only a slap."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Jab foe in the chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Weak strike, but sinks into belly, knocking the wind out of foe."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You stomp on foe's foot and push."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Strike foe's arm leaving welts."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Hard bonk to head causes foe to bite tongue and mouth fills with blood. Foe is unable to speak or scream for 2 rounds."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Solid strike to chest knocks foe back. Foe drops any items held."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Solid gut shot knocks some of the fight out of foe. If appropriate, foe concedes."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Bash foe hard on the top of the foot, foe hops back a step but leaves behind weapon."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Hit foe in the hand hard. Foe's eyes water."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Hit funnybone. Foe laughs. Foe will stop fighting if you will."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 21,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe doubles over from shot to the stomach, dropping anything held."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Play golf with foe's ankle, spraining it. You know exactly what to do now. +10 to attack this foe next round."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Sharp, fast strike to a little known pressure point takes away foe's ability to speak (for 3 rounds)."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe's nose is like a fountain of blood."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 30,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Brutal strike to elbow knocks foe to the ground."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Incredible move knocks foe to ground while cracking ankle."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 6,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "duration": "2 minutes"
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 24,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Sucker shot to side meant to bring foe to knees instead ruptures kidney causing death in 2 minutes."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Miss foe's head, slam down into collar bone, cracking it and knocking foe out."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 25,
+    "location": "head",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Jog foe on head which knocks him cold. Unfortunately he has total amnesia for 2 days. Maybe you need to jog foe again."
+  }
+]

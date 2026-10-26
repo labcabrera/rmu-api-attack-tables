@@ -1,0 +1,481 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Foe gasps as you jab him in the windpipe."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "You try to pummel foe, but only manage to push him a bit."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Upward shot into foe's gut causes him drop any item held."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Direct strike to knee. Foe buckles, convinced you are not trying to kill him."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Dislocate foe's shoulder. Foe is at -25 until arm forced back into place (4 AP for self, 2AP for someone helping)."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Strike foe under chin causing teeth to rattle."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Strike between neck and shoulder will leave a terrible bruise."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Catch foe cleanly in the groin."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Swipe to lower leg trips foe. Roll an 'A' Unbalance critical vs. foe."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 16,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Strike to armpit ruptures minor blood vessel."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Your attempt to disable foe's hand works well. Foe has trouble holding anything."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "incapacitated",
+        "duration": "1 hour"
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's descendants feel this strike to vitals. Foe is in no condition to fight back for a full hour. Victory is yours."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 15,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Strike to foe's inner thigh throws foe off balance. You have a moment to pick foe's pockets, if desired."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 30,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You feel a rib snap as you hit foe in the lower chest."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 27,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Hit foe on the top of head, causing foe great pain. This will be over soon, very soon."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "paralyzed"
+      },
+      {
+        "status": "dying",
+        "duration": "10 minutes"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Series of quick blows to arm paralyzes foe. Foe can move eyes, but cannot speak. 10 minutes later, foe dies."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Clean strike to lower leg breaks bone and drops foe in heap. Foe lapses into unconsciousness."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "incapacitated"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Perfect upward strike to groin drives vitals into pelvis, crushing them. Foe is alive, but forever altered."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 56,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe crumples from what you thought was a precise strike, but foe is dead."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 9,
+        "value": -75
+      }
+    ],
+    "message": "You should teach this. Perfect, precise tap to temple knocks foe out causing no additional damage."
+  }
+]

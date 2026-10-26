@@ -1,0 +1,140 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "Lack of coordination between you and your mount costs you, but not your mount, the opportunity to attack."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "Use the column for your weapon to determine the result of this fumble."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "You and your mount are of different minds as to what your direction meant. You both suffer a -10 initiative penalty next round."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [],
+    "text": "Your mount shies suddenly. You lose your attack and are at -10 next round. Your mount loses its attack as well."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "text": "Your poor communication of your desires confuses your mount, which will be Dazed for the rest of this round and all of the next."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [],
+    "text": "Use the column for your weapon to determine the result of this fumble."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "2d10"
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "text": "Execute the declared attack on the nearest ally, whoops! If you can only attack your mount, and your weapon is not suitable, do 2d10 hits and two rounds of Stun to your mount with a sloppy blow."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [],
+    "text": "Use the column for your weapon to determine the result of this fumble."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30,
+        "rounds": 2
+      }
+    ],
+    "text": "You nearly fall off your mount and must Concentrate for the next two rounds to regain your seat. This distracts your mount, leaving it at -30 during this time."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "text": "Make a Hard riding maneuver or fall off your mount. If successful, you still suffer one round Dazed and a -5 penalty from a groin pull."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 10
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "text": "You get tangled in your mount's tack. It will take 10 Action Points to get free. Until then, all actions are at -100 except Riding maneuvers."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50,
+        "rounds": 3
+      }
+    ],
+    "text": "Your poorly expressed directives cost both you and your mount not only your attacks for the round, but also a -50 penalty to all actions for the next three rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [],
+    "text": "Use the column for your weapon to determine the result of this fumble."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30,
+        "rounds": 2
+      }
+    ],
+    "text": "You drop your weapon. Trying to recover it, you fall from your mount. This shocking turn of affairs leaves your mount at -30 for two rounds."
+  }
+]

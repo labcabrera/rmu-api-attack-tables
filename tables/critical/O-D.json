@@ -1,0 +1,477 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "It isn't nice to hit someone in the face with a snowball."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 8,
+    "location": "chest",
+    "effects": [],
+    "message": "Foe breaks out in goosebumps."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Foe shivers with the chill."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's lower leg pales where frostbite sets in."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 15,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Skin on foe's wrist turns white with frostbite."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Frost gathers like a short beard under one side of foe's jaw, hiding a patch of frostbite. Foe cannot move jaw to speak or bite for 3 rounds."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 15,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Sudden cold cracks one of foe's ribs."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Foe shivers uncontrollably, dropping anything in his hands."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe's lower leg sheathed in ice, weight causes foe to stumble back for balance. Foe pulls muscle in back of knee. Ice falls off."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Chunks of frozen elbow fall off foe exposing muscle."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 17,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Upper arm takes frostbite from shoulder to elbow."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -50,
+        "delay": 2
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Deep striking cold bursts foe's spleen. He is active for another 6 rounds, before keeling over stone dead."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's knee experiences major frostbite. Foe is at half movement rate until healed."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 13,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Ice covers foe's chest, causes not only frostbite but driving the air from his lungs. +20 to friendly morale."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 11,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Frostbite along whole side of face damages eye. Foe blind on that side until healed. Skin on cheek splits."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 32,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Cold leaves frostbite up and down foe's arm; shock almost causes foe to pass out. Foe drops anything held in either hand."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50,
+        "delay": 6
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's legs are engulfed in cold. Frost crisscrosses foe's extremities. Core temperature drops. In 9 rounds, foe dies."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Deep freeze to groin, reproductive organs shatter (destroyed). Foe dies of shock in six rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's heart is frozen, stops. Foe dies instantly. -20 enemy morale."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 78,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 3
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's head freezes, leaking blood before it too freezes. Foe is dead. -20 enemy morale."
+  }
+]

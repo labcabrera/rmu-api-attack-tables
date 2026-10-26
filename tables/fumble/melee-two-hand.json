@@ -1,0 +1,159 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "My that weapon is heavy! You lose the opportunity to take a swing."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "One hand slips from your weapon and it moves out of position; you lose the rest of the round recovering."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "You mind wanders, and you partly lose control of your weapon. Suffer a -8 initiative penalty next round."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "text": "You stumble over an imaginary, invisible, deceased turtle. This leaves you Stunned for two rounds."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "text": "You launch a furious, but poorly-executed series of strikes that your opponent avoids easily. You only tire yourself. Take a -10 Fatigue penalty."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [],
+    "text": "You manage to completely lose your grip on your weapon, which ends up 1d10 feet away in a random direction."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack on the nearest ally, whoops! If no ally is in reach, an innocent bystander will do. Failing that, attack an imaginary friend."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "A"
+      }
+    ],
+    "text": "The good news is that you successfully hit, delivering an 'A' Subdual critical. The bad news is, the target was yourself."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "text": "You strain your shoulders in a mighty swing (that misses). Take a -20 penalty."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50,
+        "rounds": 3
+      }
+    ],
+    "text": "You confuse yourself and get your limbs all crossed. You are -50 for three rounds."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      }
+    ],
+    "text": "Your lower back screams as you twist too far and pull a muscle. You are Stunned two rounds and suffer a -25 penalty for the injury."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      }
+    ],
+    "text": "You go down hard on one knee. The pain leaves you Stunned for one round, then Dazed for the next. The knee injury is a -15 flesh wound. You also drop your weapon."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      }
+    ],
+    "text": "Your shoulder should not bend that way! You are Stunned for three rounds. The pulled muscle provides a -25 injury."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -75
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      }
+    ],
+    "text": "Worst move seen in ages! You are Stunned and unable to parry for five rounds and are at -30 with a pulled groin muscle. There is a 50% chance your foes will be out for 3 rounds, laughing."
+  }
+]

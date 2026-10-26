@@ -1,0 +1,343 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Weak fist in the face. Foe scoffs at you."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Sliding blow doesn't really connect. Could have been better."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Strike to the groin is just a bit off, try harder next time."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [],
+    "message": "Foe leaves his leg open to attack. You eagerly take it, but realize it was a trap. Can you say: riposte?"
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Strike glances off arm. Some bruising occurred."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Your tiger claw strike rends the flesh on his face. Now he is less amused by your technique."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Sledge hammer to the back after sidestepping foe's lunge makes him crash to the ground."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Kick to the groin is evaded by foe by rolling with the blow. He lands on his face. Time to make him regret that."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Battering foe's leg, bruising and other minor injuries add up, causing major discomfort to foe as he draws back 5'."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [],
+    "message": "Blow to shoulder makes foe show signs of weakness."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Upper arm strike. Major muscles take the brunt of the damage. Foe is looking for an easier target."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 9,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hard blow fractures pelvis. Foe drops to the ground from the pain and will have trouble getting up again."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Nasty strike to back of knee buckles leg and takes foe down. He should defend next round and try to get up."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 9,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Clavicle broken. Foe cannot use that arm, which he will discover in a painfully comical way."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 12,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "A clever feint opens foe up to a strike to the temple. He goes down hard."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 17,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "message": "Upper arm strike. Major muscles take the brunt of the damage."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Kick to the lower leg breaks bone. No more standing on that leg."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 34,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Kick to the vitals misses its mark but foe is not convinced. He drops to his knees cradling his family jewels."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 34,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Solid blow to the thorax breaks a few ribs. Pain will be foe's companion for the months to come unless you finish him here."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 15,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 20
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "With a pecking strike, you destroy foe's eye. Dismayed he reels from your blow and is writhing in pain and disorientation for 20 rounds."
+  }
+]

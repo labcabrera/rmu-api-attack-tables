@@ -2,21 +2,8 @@ const express = require('express');
 const router = express.Router();
 const fumbleTableService = require("../services/fumble-table-service");
 
-const tables = [
-    "melee-one-hand",
-    "melee-two-hands",
-    "animals",
-    "mounted-arms",
-    "unarmed",
-    "bows",
-    "slings",
-    "thrown",
-    "elemental-bolts",
-    "elemental-balls-cones"
-];
-
 router.get('/', (req, res) => {
-    res.json(tables);
+    res.json(fumbleTableService.listFumbleTables());
 });
 
 router.get('/:tableId/:roll', (req, res) => {
@@ -26,7 +13,7 @@ router.get('/:tableId/:roll', (req, res) => {
         const result = fumbleTableService.findFumbleResult(tableId, roll);
         res.json(result);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(error.status || 500).json({ error: error.message });
     }
 });
 

@@ -1,0 +1,388 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "Slap to face is a fair warning of things to come."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Pray harder next time."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Holy force feels like thousands of flea bites in and around foe's groin."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Tiny tears to cartilage inside hip joint warn foe of divine wrath."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [],
+    "message": "Skin tightens and pulls toward shoulder, foe begins to bleed around each fingernail."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "The faithless head recoils from the truth of heaven."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 7,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "And cracked shall be the rib of wickedness, so it is written, so it now is."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe will not be up to practicing the sin of lust for a couple of days."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's knees all but buckle as the crushing weight of a heavenly glare falls on him for a moment."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 8,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Arm twists in pain; one of the forearm bones cracks before it relaxes."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "message": "Boils erupt and burst all up and down one forearm."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 15,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Sloth overtakes foe after blast to liver damages organ. Foe loses 1/2 activity until healed."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 6,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Pain travels up and down foe's leg. If you strike this foe next round, your attack will be Slaying I."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 34,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Tiny balls of light radiate out from the blow, burning radiating lines across foe's chest."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 25,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "You smite foe on the forehead. There is a puff of smoke, leaving a branded symbol of condemnation for all to see."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Vine erupts from the ground, wraps foe's wrist, yanks foe to ground, dislocating foe's shoulder, vanishes without trace."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Blazing light streams from foe's knee, leaving behind a ravaged joint. Foe is at half movement rate until healed."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 33,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Even gods take cheap shots. Divine light erupts in foe's groin, causing break in pelvis. -20 to enemy morale."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Your faith's symbol is burned into foe's chest. Foe's heart stops in five more rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Foe converts to your faith (out of the fight; no death printed)."
+      }
+    ],
+    "injury": {
+      "type": "unknown"
+    },
+    "message": "Blast of divine power through the skull works a miracle. Foe has seen the light. Foe converts wholeheartedly to your faith."
+  }
+]

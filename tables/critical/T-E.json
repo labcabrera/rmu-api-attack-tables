@@ -1,0 +1,510 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "prone"
+      }
+    ],
+    "message": "Foot to the face. Foe bowls over. Comical, but not much damage."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Open palm strike to the sternum has such force that it sends foe to the floor trying to breathe. You are winning this one!"
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Loin strike makes foe drop his weapon as he tries to fend off your strike."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Heavy strike bends foe's leg further than it should. He pulls a groin muscle."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "In a quick one-two punch, you hit both shoulders. Foe is seriously hampered for the rest of the fight."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 5,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Fist to eye socket cause a classic welt and some bleeding. Swelling and blood in the eye cause it to be blinded (-20 perception until bleeding stopped)."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 21,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "You exploit a weakness in foe's defense with spear hand in foe's side. He now keeps up his guard there."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 15,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Kick to the buttocks was more disgraceful than painful. Foe suffers from shame."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 14,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "message": "Hard strike to the knee feels as a major injury, but turns out to be less serious."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 26,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Seize foe's arm. Then a knee to the elbow. Foe's painful expression tells you this was good."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 15,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Catch foe's underarm with a knife chop as he swings at you. The combined force breaks radius or ulna. Using arm is painful."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 20,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Slayer walks the earth! Rain of blows in nether region stuns foe. He keels over as pain, savaged internals and trauma lead to death in 3 rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Strike to Achilles' tendon, leaves foe on the ground. He is in pain and stunned."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Attacking foe's flank, the two hammer blows you deliver there cause the foe to bend over in pain. He tries but fails to recover due to being stunned."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 34,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "First, a low kick in the groin drops foe on knees, opening up his face for a rain of blows. This is what you have trained for!"
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 20
+      },
+      {
+        "status": "penalty",
+        "value": -55
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Perfectly timed kick to the upper arm shatters humerus. Tiny bone fragments travel to heart, in 20 agonizing rounds, causing death."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Collision of events causes a ragged break in foe's femur, cutting through the flesh and artery from the inside. Foe bleeds out in 12 rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 42,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Deep spear hand ruptures a vital organ in abdomen. Pain and shock cause instant death."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 34,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Brutal kick below the sternum breaks all ribs. Foe drops like a log and dies like one. It is not pretty."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 21,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Inspiration! As you make a flying kick, your foot connects with his face, snapping his head back. Vertebrae crunch signals his death."
+  }
+]

@@ -3,26 +3,29 @@
     "rollMin": 1,
     "rollMax": 1,
     "dmg": 1,
+    "location": "head",
     "effects": [
       {
         "status": "fatigue",
         "value": -10
       }
     ],
-    "location": "head",
     "message": "A tiny line of blood marks foe's neck. Foe is not fazed, but you feel inspired."
   },
   {
     "rollMin": 2,
     "rollMax": 3,
     "dmg": 3,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 1
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Foe's shoulder begins to bleed, presumably from you."
   },
   {
@@ -30,12 +33,14 @@
     "rollMax": 5,
     "dmg": 10,
     "location": "abdomen",
+    "effects": [],
     "message": "Stomach jab."
   },
   {
     "rollMin": 6,
     "rollMax": 10,
     "dmg": 0,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -46,13 +51,16 @@
         "value": -10
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Foe bleeds from lower leg."
   },
   {
     "rollMin": 11,
     "rollMax": 15,
     "dmg": 11,
+    "location": "arm",
     "effects": [
       {
         "status": "fatigue",
@@ -63,13 +71,13 @@
         "value": -25
       }
     ],
-    "location": "arm",
     "message": "Wrist catches point, but moves with blow so damage is minor."
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 10,
+    "location": "head",
     "effects": [
       {
         "status": "stunned",
@@ -77,39 +85,45 @@
         "value": -50
       }
     ],
-    "location": "head",
     "message": "Thrust damages foe's ear."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 10,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 4
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "That is a lot of bleeding going on there. Try not to get it all over your own clothes."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 22,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
         "value": 3
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point gives the foe a second belly button."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 0,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -129,13 +143,16 @@
         "value": -25
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Thrust to the knee damages the joint and creates a serious leak."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 5,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -156,13 +173,16 @@
         "value": 5
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Powerful thrust to foe's shoulder causes foe to drop whatever is in his hand, stumble backward."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 20,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -182,14 +202,21 @@
         "value": 0
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Stab into hand cracks bone, slides along back of hand, drawing blood."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 14,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -206,19 +233,18 @@
       {
         "status": "breakage_roll",
         "value": -75
-      },
-      {
-        "status": "dying",
-        "rounds": 12
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Thrust penetrates intestines. It will take 12 more rounds, but foe is about to die."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 23,
+    "location": "leg",
     "effects": [
       {
         "status": "penalty",
@@ -234,31 +260,32 @@
         "value": 0
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point stabs into hip joint, damaging cartilage."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 18,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 13
-      },
-      {
-        "status": "staggered",
-        "rounds": 1,
-        "value": 2
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Thrust deflects off collarbone, finds artery. Surprise of result costs foe 2 AP of activity in his next active round he can not well afford."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 36,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -274,13 +301,16 @@
         "value": -25
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Thrust to neck damages tendons."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 22,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -302,14 +332,29 @@
         "delay": 2
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
     "message": "Thrust to foe's hand removes a random finger."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 12,
+    "location": "leg",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 20
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -346,20 +391,23 @@
       {
         "status": "breakage_roll",
         "value": -50
-      },
-      {
-        "status": "dying",
-        "rounds": 20
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Thrust punctures blood vessel but is stopped by bone. Pain causes foe to fall over. Blood clot takes 20 rounds to travel to foe's brain, where it triggers a fatal stroke."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 0,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 8
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -384,21 +432,20 @@
         "delay": 4
       },
       {
-        "status": "dying",
-        "rounds": 8
-      },
-      {
         "status": "breakage_roll",
         "value": -25
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Strike sinks deep into foe's side, damaging intestines. Foe will die in 8 rounds."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 48,
+    "location": "chest",
     "effects": [
       {
         "status": "dead"
@@ -408,13 +455,16 @@
         "value": -75
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Quick thrust through the heart kills foe, neat as you please."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 38,
+    "location": "head",
     "effects": [
       {
         "status": "dead"
@@ -428,7 +478,16 @@
         "value": -100
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
     "message": "Thrust through eye into brain comes out far side of skull. Bits of brain ooze from the cracked skull."
   }
 ]

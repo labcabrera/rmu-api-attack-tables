@@ -1,0 +1,417 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Not much damage, but you ruin foe's hairstyle."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Sudden puff startles foe."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 8,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Foe's hip gets a small blister from scalding."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Slick surface and surprise of blast upend foe."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Foe's arm is heated, but cools before blistering."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe's neck suffers a scalded patch."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 13,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalding over foe's ribs looks painful. It is."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Steam blasts foe's crotch. Minor damage is done, but foe must check morale."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Steam blasts foe's feet. Foe's antics to avoid the worst of it prove amusing."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 30,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Steam hits foe's elbow. Foe drops anything in hand."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Elbow scald makes it painful for foe to bend arm."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 36,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Major scalding of hip and abdomen are nearly incapacitating. Foe is lucky to survive."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 31,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Scalded above the knees, foe loses balance."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Struck across neck and shoulders, foe avoids massive scalding by throwing himself aside, tripping himself as he does so."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 29,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe experiences the sensation of a steam broiler whispering in his ear."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 40,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Steam burst strikes foe's side. Foe suffers massive scalding and falls."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 21,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Crippling leg scalding puts foe on the ground."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 15,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Hot blast takes foe down. Foe goes berserk with pain, attacking the nearest target for the next six rounds, then drops dead."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Steamy encounter is too much for foe's heart. Foe drops anything he was holding and dies in four rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 5,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -70
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Foe's eyes burst as the innards boil. The head is cooked. Foe drops dead."
+  }
+]

@@ -1,0 +1,563 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe stumbles back out of your grab at his head, so you only clip him."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Terrible technique, but bump to foe still forces him to reel backward."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Low grab is side stepped. luckily foe has other distractions."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Stomp on foe's foot is painful enough to stagger him, but not damaging."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You fail to get a good grip on foe's arm for a throw and he slips free, but you do manage to disarm him and knock him off balance."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Grasping foe's arm you pull him past you, but your leg is in the way. He trips over it and lands face first."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Leg sweep floors foe with a dull thud. Foe tears a muscle in his back."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Straight arm to the chest sends foe to the ground. This wrenches muscle in his lower back."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Sidestepping, you target the legs with a sweep. Foe's momentum carries him 10' behind you."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "message": "Finger lock. Foe has a choice between breaking his finger or going prone while you hold the finger lock. He chooses the latter."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 15,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "After some grappling with foe, you take his arm and attempt to throw him. Foe evades but is caught by an obstacle or other participant in a painful collision."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 25,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "During lessons this would be a mistake; you throw foe, but hold on to leg. Groin gets torn. Shock, internal bleeding cause foe to die in 10 rnds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 25,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Seizing foe's leg you wrench it upward. Muscles and tendons stretch in foe's other leg."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 26,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Smooth throw lands foe on back, cracking a few ribs. He will not bounce up immediately from this."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe thrown down on his face, breaking his jaw. Let's call him mumbles."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 32,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Splendid hip throw delivers foe to the ground. You keep hold of his arm long enough to break the elbow with a gut wrenching sound. Ouch."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "bleeding",
+        "value": 10
+      },
+      {
+        "status": "penalty",
+        "value": -45
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Legs do not bend that way. Knee shattered. Ragged bones tears artery. Death from shock occurs in 10 rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 24,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -25,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe tossed 10' in the direction of your choice, lands hard with own elbow in the gut. Liver and spleen damaged, death in 5 rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 28,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Flip breaks several ribs that puncture lungs. Foe froths blood and breathes with difficulty until death in 7 rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 85,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 4
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Terribly effective throw slams foe, face first, in ground. Facial reconstruction looks gruesome. This will be a closed casket funeral."
+  }
+]

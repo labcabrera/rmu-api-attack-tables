@@ -1,0 +1,382 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Tag! He's it."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [],
+    "message": "Your opponent stands firmly in front of you."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Belly slap delivers more sound than fury."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [],
+    "message": "You deliver a stinging blow to foe's thigh."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 6,
+    "location": "arm",
+    "effects": [],
+    "message": "Foe tries putting shoulder into the impact. Foe's shoulder regrets it."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Tap to foe's head leaves him dazed."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 6,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Thump!"
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 14,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Blow goes right to the gut."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Knee strike forces foe back."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe gets a broken finger."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Blow to shoulder makes foe backpedal."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 29,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Hammering blow damages foe's kidney."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Low blow twists lower leg, pulls tendon."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 9,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You crack foe's rib as you slam foe to the ground."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 17,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Pow! Right in the face! Foe is now facing in the direction of your choice."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "message": "Foe drops anything in hand as it is driven into his torso by blow, delivering painful impact to groin."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You knock foe's leg out from under him, though he refuses to fall. He does drop anything in his hands to keep his balance."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "You drive foe to the ground, fracturing his spine."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 22,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Ribs break as you drive foe to the ground."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "paralyzed",
+        "duration": "permanent"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Blow to neck breaks spine, paralyzes foe."
+  }
+]

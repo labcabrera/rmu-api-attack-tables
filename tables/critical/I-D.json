@@ -1,0 +1,513 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Like a slap in the face, but not by someone strong."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Chest strike forces foe to exhale."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Impact to groin discomforts foe."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Weak blow catches foe off guard."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Foe almost spins as arm is shoved by force of impact."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Blow rings foe's skull like a bell."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Like a well-thrown punch, strike to chest knocks wind out of foe."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Eye-watering shot to groin leaves foe with a -30 to attack you (and only you) for the rest of the fight."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Bruising force is spread across foe's thighs."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Attack blasts foe's arm, knocking foe off balance and down. In the fall, he jams a finger, causing minor muscle damage."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe's hand gets in the way, two fingers broken."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 22,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -45
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Intestines are torn in multiple places. Foe will be active for 6 rounds, have 6 more rounds at half activity, then die."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe's ankle breaks under force of impact."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Chest strike breaks two ribs and sends foe sliding back on the floor 10'."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 39,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's head hits the ground hard enough to give him a concussion. Momentary double vision means foe misses completely on his next attack."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 38,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Strike to arm has enough force to pull body along for a fall. Elbow takes brunt of damage."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -25,
+        "delay": 4
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe is thrown to ground and hurt, but thinks that is the extent of his worries. Foe is wrong; blood clot in knee rises to cause stroke, (Death at the end of the 7th round.)"
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Force of blow focused on foe's groin, severely damaging reproductive organs. Shock kills foe four rounds later."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 38,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Foe will die if moved before this injury is healed."
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Thrown down hard, spine cleanly broken, foe's lower body goes limp. (Foe will die if moved before this injury is healed.)"
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 43,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's lower jaw is torn off and a piece of skull is driven into the brain. Grim Reaper time."
+  }
+]

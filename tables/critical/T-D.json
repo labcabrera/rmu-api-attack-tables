@@ -1,0 +1,468 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Strike glances off jaw."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Jab to the side leaves foe disoriented."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Botched kick but after a little scuffle, you still manage to clip foe in the crotch."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Blow to knee puts foe off balance. He is open to attack! +10 to next strike."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Strike to upper arm bruises major muscle group."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Open hand strike to the face causes much pain."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe makes a mistake of stepping into your swing for maximum effect."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Buttocks are important muscles for standing up, as foe discovers. Deep bruise cause him to stagger and limp around afterwards."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 35,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Smashing foe's ankle makes standing very difficult. Foe drops to the ground."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "message": "Gripping foe's underarm in a claw pinch, you tear at one of his muscles. Foe drops what he was holding as he soothes pain with his other hand."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe's hand and your foot collide. Your foot wins and his fingers bend the other way. It is as painful as it looks."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 32,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Uppercut to lower abdomen ruptures intestines. Victim sinks to the ground and loses consciousness. Death from shock in 12 rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Heel strike to foot breaks several phalanges. Foe has trouble standing and walking and also it causes a lot of pain. Good one!"
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 18,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Raking strike rips flesh from foe's torso. Foe is badly injured and must make a Fear RR against level of attack equal to your ranks in Strikes."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 21,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Jaw strike makes foe bite off tip of tongue. Pain and bleeding ensue."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 18,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe tries to block your kick with his fist. Bad idea that incapacitates that hand, dropping what he is holding."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Kick dislodges patella (knee cap). This locks foe's leg, accompanied by wracking pains. Internal trauma and bleeding cause slow death in 10 rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 39,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Clever feint to the face opens up the groin. Kick in the gut sends foe back in pain, heaving his last meal. Internal damage kills in 10 rounds. Looking sickly."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 21,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 3
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Mass and speed combine as your leap kick caves in foe's chest. Broken ribs puncture foe's lungs, collapsing them. Blood loss makes death quick."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 23,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Open palm strike under foe's nose drives nasal bone fragments in brain. Massive bleeding, pain and incapacitation. Foe dies from brain damage."
+  }
+]

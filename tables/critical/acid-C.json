@@ -1,0 +1,462 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Ugly smoke rises from ruined hair, but little real damage is done."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "The damage is more psychological than physical, but there's some chemical burning, too."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Abdominal chemical burn inconveniences foe."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Minor chemical burns torment foe's leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Shoulder strike mars foe's complexion."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Blood wells up from a spot where foe used to have more neck."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Nasty chemical burn runs down foe's chest from the shoulder."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "It burns! Oh, how it burns!"
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe proves allergic to corrosive liquids. Discoloration results."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Acid damages foe's forearm and elbow."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Serious acid burns all along foe's arm create a painful inconvenience."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 16,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Spray of acid burns foe's midsection, makes every item on foe's torso make a breakage check at -30."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 31,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's foot is covered in blistered burns."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Chemical burning across foe's rib cage may give him the nickname Crispy if he lives."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 33,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Acid leaves foe with one ear looking like it has been chewed on, side of face blackened and blistered."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Acid splatters from foe's shoulder to fingers. All items on that arm make breakage checks at +10."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 19,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe falls as the flesh peels from his ankle. Foe drops anything he was holding."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 56,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 8
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Acid eats through to foe's liver and open wound proves too much for foe's system to handle. Foe will die in eight rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe will die in five rounds, as lungs burn with acid that has tunneled through to these delicate organs."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 33,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Acid takes out foe's eyes on the way to his brain. Foe dies instantly, while you feel energized (lose up to -20 in accumulated fatigue)."
+  }
+]

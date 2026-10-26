@@ -1,0 +1,421 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Foul smell of burnt hair."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe evades, receiving but a scorch."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe stumbles back while avoiding the blast."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 7,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Flame envelopes foe's foot, but dissipates a moment later."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Burn foe on the back of one hand."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "message": "Blast moves quickly, but foe is quicker and moves back to escape."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Flames surround chest. Organic clothing and armor burn to nothing."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Cook vitals. You feel bad for foe."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Charred skin falls away and begins to bleed."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burn two fingers on one of foe's hands so badly charred skin begins to fall off."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe lashes out to knock the blast aside and receives painful burns to his arm that remind him to not repeat it."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 26,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Fires burn into abdomen muscle exposing intestines."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Roast foe's ankle and hear cracking bone."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 7,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe turns to side, but blast catches side and burns skin and muscle down to bone."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 13,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Heat fuses together foe's lips. Foe cannot speak…or scream. (-10 enemy morale)"
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 35,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Cook most of skin on elbow causing foe to drop anything held."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 28,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Skin peels back exposing foe's entire lower leg."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Entire lower back burns, exposing foe's spine. Foe is paralyzed and burned alive over 5 rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 40,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 24
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Blast punches hole through chest, exposing beating heart. Heart continues to beat for 2 minutes. (-20 enemy morale.)"
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 15,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Foe's eyes boil away while the skin melts off face. Foe's allies all lose 1 AP the following round due to gawking at the horrific sight."
+  }
+]

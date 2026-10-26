@@ -1,0 +1,400 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "Some sizzle and smell of ozone around foe's head."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Foe's muscles twitch as small sparks race across his chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Abdominal muscles twitch and dance."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [],
+    "message": "Power arcs into knee with a pop."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [],
+    "message": "Hit bicep and power surges up arm. Foe drops anything held."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Current arcs into hinge of jaw, causing some nerve damage to that side of the face."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "A thunderbolt to the torso reminds foe he lives in a wondrous world of magical enchantments."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Power arcs into groin and down leg, and foe's body spasms."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 17,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Power arcs down foe's legs, causing a momentary loss of control."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 3,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Power enters upper arm, damaging muscle, and causing foe to drop anything held."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Strike to wrist flows up arm, disrupting nervous system."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 13,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Zap to top of pelvis damages nerves en route to ground."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Power sears toes on way to ground, two toes burned and blistered."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 21,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Power arcs into one rib, boiling marrow, rib breaks in two places. Foe loses 2AP activity pondering the pain."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "blinding"
+      ]
+    },
+    "message": "Electricity passes through one eyeball, damaging it in a blue flash (-10 Perception until healed)."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Charge flows deep into forearm, damaging tendons. Foe drops to ground, drops anything held."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Power arcs through foot to ground, cooking flesh on bottom of foot. Foe is at half movement rate until it heals."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 13,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Power surges deep into pelvis, knocking foe down and damaging nerves. Foe's magic items glow blue for three rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 27,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "One rib cracks, but it punctures a lung. Foe recovers from the shock after 4 rounds, then feels better for 3 rounds before dying of shock at the end of the 7th round."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 22,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Strike damages nose, leaving interior burnt. Five rounds later, the tongue swells up, choking foe to death."
+  }
+]

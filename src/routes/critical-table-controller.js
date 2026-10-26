@@ -11,7 +11,7 @@ router.get('/:tableId/:type/:roll', (req, res) => {
         const result = criticalTableService.findCriticalResult(tableId, type, roll, location);
         res.json(result);
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        res.status(error.status || 500).json({ error: error.message });
     }
 });
 

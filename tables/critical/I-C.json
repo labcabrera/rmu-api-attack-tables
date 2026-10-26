@@ -1,0 +1,453 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Some force is delivered in the general area of the foe's head."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Well, at least it was enough to get foe's attention"
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Abdominal strike leaves foe nauseated until fatigue penalty is rested away."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [],
+    "message": "This blow is hard enough to leave a mark."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Stinging blow to foe's hand causes him to drop anything held."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Whack to the neck makes foe gag, then spit."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 8,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Impact rattles foe. It did not do great damage, but he sure felt it."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Blow to gut makes foe's eyes roll back in his head."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 6,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "message": "Blow takes foe's feet out from under him. Foe barely recovers without going to the ground."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 29,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "message": "Foe's shoulder absorbs much of the impact, foe's whole torso turns a bit."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe's arm pinned to side by force of blow, which rocks foe, not quite enough to bring him down."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 36,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Direct strike to foe's groin. Foe will not be having any more children. -20 to enemy morale."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "A knee injury, again. Who designed those crazy things, anyway?"
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 32,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe feels sting through entire chest as impact rattles his torso. Blood oozes from primary impact point."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 37,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Foe takes it in the top of the head, and ends up on the ground."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 33,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Blow break fingers. Foe distressed."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 38,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Shin is shattered. Foe cannot move faster than a walking pace until it heals or at least foe finds crutches."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 21,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Both kidneys are destroyed by blow causing internal bleeding. Foe attacks in a frenzy (melee, no parry, +10 OB) five rounds, then dies."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 5,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "The force that hurls foe to ground cracks his sternum. Heart loses its rhythm and never gets it back. Foe dies in three rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 41,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -90
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Force of impact snaps foe's neck. Foe collapses in a terminal heap."
+  }
+]

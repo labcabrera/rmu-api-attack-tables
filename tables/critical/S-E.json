@@ -17,6 +17,7 @@
     "rollMax": 3,
     "dmg": 10,
     "location": "chest",
+    "effects": [],
     "message": "Foe sliced high on one side along the ribs. It hurts."
   },
   {
@@ -24,6 +25,7 @@
     "rollMax": 5,
     "dmg": 13,
     "location": "abdomen",
+    "effects": [],
     "message": "Foe dodges cut to the groin awkwardly; you only get a glancing hit."
   },
   {
@@ -41,6 +43,12 @@
         "value": -50
       }
     ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Edge slices into lower leg, damaging muscle."
   },
   {
@@ -54,7 +62,8 @@
         "value": 2
       },
       {
-        "status": "penalty",
+        "status": "stunned",
+        "rounds": 1,
         "value": -25
       },
       {
@@ -67,38 +76,48 @@
         "value": 5
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut just above the elbow looks nasty; foe recoils from the blow."
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 20,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
         "value": 2
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Strike to the temple bounces off skull, bleeds a lot for a small cut."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 16,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 4
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cutting beneath the ribs, your blow sends a spray of blood that would draws cheers in the arena."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 10,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -110,13 +129,16 @@
         "value": -25
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut along abdomen and down to groin fountains red."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 19,
+    "location": "leg",
     "effects": [
       {
         "status": "penalty",
@@ -128,13 +150,16 @@
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Cut to kneecap cracks the bone. Crunch!"
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 26,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -145,13 +170,19 @@
         "value": -15
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Bloody slash to the hand damages tendons."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 13,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -166,14 +197,21 @@
         "value": 0
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Your weapon leaves a bloody trail down foe's arm, and it looks like the road to victory."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 22,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 8
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -181,19 +219,21 @@
       {
         "status": "penalty",
         "value": -50
-      },
-      {
-        "status": "dying",
-        "rounds": 8
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Chop to groin destroys reproductive organs. Foe dies after 8 rounds of half activity."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 10,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -220,13 +260,16 @@
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Low blow cuts toe. Wound to foe's foot is a solid hit."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 6,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -254,13 +297,16 @@
         "value": -25
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Hard chop misses neck, breaks collar bone and drives foe to floor. You may take his weapon."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 29,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -276,14 +322,24 @@
         "value": -75
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Chop to side of head bites into ear, rendering it useless."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 4,
+    "location": "arm",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
       {
         "status": "bleeding",
         "value": 7
@@ -291,19 +347,26 @@
       {
         "status": "penalty",
         "value": -45
-      },
-      {
-        "status": "dying",
-        "rounds": 9
       }
     ],
-    "location": "arm",
-    "message": "Strike feels like a miss, but cleanly severs foe's hand. Fountain of blood lasts 9 rounds, during which foe stand idle. Then foe dies"
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
+    "message": "Strike feels like a miss, but cleanly severs foe's hand. Fountain of blood lasts 9 rounds, during which foe stand idle. Then foe dies."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 3,
+    "location": "leg",
     "effects": [
       {
         "status": "dying",
@@ -319,14 +382,14 @@
       },
       {
         "status": "stunned",
-        "rounds": 1,
+        "rounds": 2,
         "value": -75
       },
       {
         "status": "stunned",
         "rounds": 1,
         "value": -50,
-        "delay": 1
+        "delay": 2
       },
       {
         "status": "prone"
@@ -337,16 +400,20 @@
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Nasty cut across both legs knocks foe down. Foe struggles back on his feet for 5 more rounds, then his femoral arteries burst in a gout of blood, killing him."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 22,
+    "location": "abdomen",
     "effects": [
       {
-        "status": "dead"
+        "status": "conditional_dying",
+        "condition": "Organs spill out (no time to death printed)."
       },
       {
         "status": "bleeding",
@@ -361,13 +428,16 @@
         "value": -100
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Slash across foe's belly opens it wide, blood and internal organs begin to spill out."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 31,
+    "location": "chest",
     "effects": [
       {
         "status": "dead"
@@ -381,13 +451,16 @@
         "value": -100
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Blade slips between ribs, cuts into heart and lung. Foe is dead."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 50,
+    "location": "head",
     "effects": [
       {
         "status": "dead"
@@ -401,7 +474,9 @@
         "value": -100
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Blade cleaves through foe, bisecting it, or coming as close as the size of your weapon allows."
   }
 ]

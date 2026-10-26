@@ -1,0 +1,126 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "Your grip is weak. You elect not to attack because of lack of control."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "You lose control as you release the weapon and it falls harmlessly to the ground halfway to your target."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "You trip over your own feet. You land face down, but hang on to your weapon."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "You begin juggling your weapon because of a bad grip and smack yourself in the head. You are Stunned for 2 rounds."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [],
+    "text": "Poor release. If there is someone else within 15' of the intended target, roll a +0 attack on the closest."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [],
+    "text": "You throw very poorly. The weapon ends up 10 + 1d10 feet away in a random direction and must make a breakage check."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack on the nearest ally, whoops! (If no ally in range, weapon bounces off an object, comes back at you as a +0 surprise attack.)"
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "text": "What a throw! The weapon flies out twenty feet beyond its normal maximum range past the intended target. If someone is there, roll a +0 attack. You take a -10 Fatigue penalty from your exertion."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "text": "Just as you are about to release, you slip and fall prone, and are Stunned[-50] for one round."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "1d10"
+      }
+    ],
+    "text": "Your weapon drops to the ground, hitting your foot on the way for 1d10 hits."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "text": "Your poor and weak release sends the weapon up two feet. It immediately comes down and hits you. You take no damage, but are Stunned for one round."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "text": "You manage to throw your weapon 4d10 feet behind you. Anyone in the way takes a +0 attack. You are Dazed one round."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "You trip as you release your weapon, which flies off to make a +0 attack on the nearest creature. You are Stunned[-50] for two rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [],
+    "text": "You throw the weapon straight up and it comes down as a +50 attack on yourself."
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "A cool breeze musses foe's hair."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Tiny patch of frost glistens on foe's chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Cold hits foe's groin."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Small patch freezes above foe's knee."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [],
+    "message": "Cold along forearm surprises foe. Foe drops anything held in the hand."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 14,
+    "location": "head",
+    "effects": [],
+    "message": "Frost numbs one whole side of foe's face."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 17,
+    "location": "chest",
+    "effects": [],
+    "message": "Blast of cold leaves a white frozen patch in the center of foe's chest."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Frostbitten patch of skin in groin hurts whenever foe moves legs. Foe is at half movement rate until healed."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 22,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Ice grips foe's ankle, causing minor frostbite, but sending extraordinary pain up a sensitive nerve."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Frostbite reaches fingers of cold deep into bicep. Foe recoils."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 17,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Cold along lower arm causes foe's muscle to twitch, tear slightly, and send a massive signal through a pain nerve."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 20,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Blast of cold to foe's groin leaves it with massive frostbite. -20 to enemy morale."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 11,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Front half of foot frostbitten. Numbness costs foe his balance."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 19,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Cold wreathes foe's chest, forcing air from foe's lungs. Foe drops, gasping for breath."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's head is dusted with frost. Nose suffers frostbite, while the brain is a bit overwhelmed."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Frostbite reaches from foe's hand to mid-forearm. Foe drops anything in his hand."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
+    "message": "Frostbite covers whole foot, but two toes are frozen through, and will need to be amputated."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 13,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Frozen groins are always funny when they happen to someone else. +20 friendly morale."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 8,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25,
+        "delay": 8
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Cold is too diffuse to do much specific damage (touch of frostbite), but core temperature drops lethally. Death in 10 rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 18,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe chokes as saliva freezes, blocks throat. Foe dies in four rounds."
+  }
+]

@@ -1,0 +1,460 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe moves his head at the last minute, avoiding contact."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Hard poke to foe's chest. He is unimpressed, yet annoyed."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Foe turns into blow, you only graze his groin, but it leaves a lasting memory."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Smite foe's hip and thigh, smite harder next time."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Solid strike leaves bruise on foe's bicep."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Precise strike to foe's temple, but weak. You could have been a contender."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Hard jab to center of chest knocks foe to the ground."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Fake high, strike low, catch foe in the groin. Foe is wary and fights you at -15 for the rest of the battle."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 17,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Bruising strike to thigh causes foe pain."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 18,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      }
+    ],
+    "message": "Upward strike drives foe's hand into face. Stop hitting yourself!"
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Force of blow drives foe to the ground."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Dislocate foe's hip. Foe cannot stand without help or until hip is relocated."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 9,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Strike to leg goes wild and breaks toes instead. Foe makes a rude comment about your mother."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "message": "Smash foe hard in the upper ribs, forcing an oof out of him. Foe's allies look nervous (-20 morale)."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 15,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe's head reels from the blow. Foe spits blood from split lips."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Expert strike to foe's forearm causes any item held to be dropped at your feet."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 24,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Use the floor like an anvil to smash foe's foot, breaking a bone in the arch."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 34,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "You meant to be much gentler, but that just didn't work out."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "next critical, fumble or failed moving maneuver before the rib is healed"
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Side strike shatters rib, without healing, the next critical, fumble or failed moving maneuver will drive shard into liver, killing foe."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 19,
+    "location": "head",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Snap foe's head back with a strike to the forehead. Foe slumps forward, unconscious."
+  }
+]

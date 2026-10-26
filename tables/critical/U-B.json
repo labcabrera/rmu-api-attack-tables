@@ -1,0 +1,440 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "You produce a good sound effect."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "You thought your attack was perfect, but then your foe moved just a little."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Abdominal blow bruises slightly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "You hit your foe's knee. You thought those things broke easily. Not this time."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [],
+    "message": "Foe hit on the elbow, drops anything in his hand."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 14,
+    "location": "head",
+    "effects": [],
+    "message": "Foe takes it on the chin."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 12,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Impact rocks foe."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe takes blow in the abdomen, drops."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Nice move catches foe in the leg. You can send foe stumbling 5' in any direction of your choice."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 8,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You catch your foe inside the elbow and throw him to the ground. Bravo!"
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 3,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Using foe's arm, you drag him down in a hard fall."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 20,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Force of blow to foe's lower torso cracks spine. Agony shoots through foe's nerves."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 19,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Kneecap cracks under force of blow."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Foe takes deep bruising to chest and air is forced from his lungs. You have the option of moving foe 5' in any direction."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 35,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You hear the crunch of foe's cheekbone breaking. Sweet music."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Bone in hand cracks as foe is knocked to the ground."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Savagely jerking foe's leg out from under him sprains foe's ankle, drops him on his back. Foe is at half movement rate until healed."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 37,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Kidney-damaging blow leaves foe with a new reference point for pain."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Bruised rib results in blood clot, stroke after 9 rounds. Foe then dies."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 48,
+    "location": "head",
+    "effects": [
+      {
+        "status": "paralyzed",
+        "rounds": 12
+      },
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Blow to ear leaves it bloody. Neck snaps from force of blow. Foe is paralyzed for 12 rounds, then dies."
+  }
+]

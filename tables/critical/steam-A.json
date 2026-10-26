@@ -1,0 +1,362 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Hisssssss."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [],
+    "message": "Blast feels like the sauna is a touch too hot today."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Tepid."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [],
+    "message": "Foe's leg is warmed, but not cooked."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Foe flails arm to avoid greatest heat."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's scalp takes some scalding. Wisps rising from head look cool."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [],
+    "message": "Foe has steam heat, but finds it less pleasant than advertised."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe gets scalded in an awkward location."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "message": "Steam blisters foe's knee."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Steam hits foe's shoulder, driving cooling cloud across foe's face."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe suffers scalded shoulder."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 34,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe takes scalding crotch shot, squeals shrilly, and drops to the ground."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe is scalded about ankle and foot, loses balance."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 14,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalded flesh peels off, leaving a blood-gushing wound in its place."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 22,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75,
+        "delay": 1
+      }
+    ],
+    "message": "Steam is applied directly to the forehead. Foe has a doozie of a headache."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "message": "Back of foe's hand is blasted. Foe drops anything held."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Blast to leg staggers foe."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 34,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe losing footing as foe's crotch is scalded. Foe drops anything he was holding 1d10' away."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 32,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe has new empathy for lobsters."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 13,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Steam enters foe's mouth and nostrils. Pressure snaps foe's jaw. Foe dies in six inactive rounds as brain cooks."
+  }
+]

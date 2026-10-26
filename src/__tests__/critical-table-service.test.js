@@ -1,179 +1,95 @@
-const fs = require("fs");
-const path = require("path");
-const criticalTableService = require("../services/critical-table-service");
+const fs = require('fs');
+const path = require('path');
+const { BUNDLED_DIR } = require('../config/table-paths');
+const criticalTableService = require('../services/critical-table-service');
 
-describe("Check critical table structure", () => {
-  const validateEffect = (effect) => {
-    expect(effect).toBeDefined();
-    expect(effect).toHaveProperty("status");
-    expect(typeof effect.status).toBe("string");
+// Every bundled critical table (spec 034): 15 tables x severities A-E, read through the service with the
+// RMU_ATTACK_TABLES_DIR of the environment ignored.
+const CRITICAL_DIR = path.join(BUNDLED_DIR, 'critical');
+const TABLES = ['G', 'H', 'I', 'K', 'L', 'O', 'P', 'S', 'T', 'U', 'W', 'acid', 'holy', 'steam', 'subdual'];
+const SEVERITIES = ['A', 'B', 'C', 'D', 'E'];
+const LOCATIONS = ['head', 'chest', 'abdomen', 'leg', 'arm'];
 
-    switch (effect.status) {
-      case "bleeding":
-        expect(effect.value).toBeDefined();
-        expect(typeof effect.value).toBe("number");
-        expect(effect.value).toBeGreaterThan(0);
-        break;
-      case "penalty":
-        expect(effect.value).toBeDefined();
-        expect(typeof effect.value).toBe("number");
-        expect(effect.value).toBeLessThan(0);
-        break;
-      case "stunned":
-        expect(effect.rounds).toBeDefined();
-        expect(effect.value).toBeDefined();
-        break;
-      case "staggered":
-        expect(effect.rounds).toBeDefined();
-        expect(effect.value).toBeDefined();
-        const staggeredRounds = effect.rounds || effect.value;
-        expect(typeof staggeredRounds).toBe("number");
-        expect(staggeredRounds).toBeGreaterThan(0);
-        break;
-      case "prone":
-        expect(effect.rounds).not.toBeDefined();
-        break;
-      case "breakage_roll":
-        expect(effect.value).toBeDefined();
-        expect(typeof effect.value).toBe("number");
-        break;
-      case "fatigue":
-        expect(effect.value).toBeDefined();
-        expect(typeof effect.value).toBe("number");
-        expect(effect.value).toBeLessThan(0);
-        break;
-      case "dying":
-        expect(effect.rounds).toBeDefined();
-        expect(effect.value).not.toBeDefined();
-        break;
-      case "conditional_dying":
-        expect(effect.condition).toBeDefined();
-        break;
-      case "dead":
-        expect(effect.rounds).not.toBeDefined();
-        expect(effect.value).not.toBeDefined();
-        break;
-      case "slow_percent":
-        expect(effect.value).toBeDefined();
-        expect(effect.value).toBeGreaterThan(0);
-        break;
-      case "knocked_back_distance":
-        expect(effect.value).toBeDefined();
-        expect(effect.value).toBeGreaterThan(0);
-        break;
-      case "unconscious":
-        break;
-      case "heal":
-        expect(effect.value).toBeDefined();
-        expect(effect.applyTo).toBeDefined();
-        expect(typeof effect.value).toBe("number");
-        break;
-      case "half_activity":
-        expect(effect.value).not.toBeDefined();
-        expect(effect.rounds).toBeDefined();
-        expect(typeof effect.rounds).toBe("number");
-        break;
-      case "half_movement":
-        expect(effect.value).not.toBeDefined();
-        break;
-      case "ha":
-      default:
-        throw new Error(`Invalid status effect: ${effect.status}.`);
-    }
-  };
+const number = (value) => typeof value === 'number' && Number.isFinite(value);
 
-  const validateTable = (type, severity) => {
-    for (let roll = 1; roll <= 100; roll++) {
-      const result = criticalTableService.findCriticalResult(
-        type,
-        severity,
-        roll
-      );
-      expect(result).toBeDefined();
-      expect(result).toHaveProperty("rollMin");
-      expect(result).toHaveProperty("rollMax");
-      expect(result).toHaveProperty("dmg");
-      expect(result).toHaveProperty("location");
-      expect(result).toHaveProperty("message");
-      if (result.effects) {
-        expect(Array.isArray(result.effects)).toBe(true);
-        result.effects.forEach((effect) => {
-          validateEffect(effect);
-        });
-      }
-    }
-  };
+// Allowed fields of each effect status, and a check of its values
+const EFFECTS = {
+  bleeding: { fields: ['value'], check: (e) => number(e.value) && e.value > 0 },
+  breakage_roll: { fields: ['value'], check: (e) => number(e.value) && e.value <= 0 },
+  conditional_dying: { fields: ['condition'], check: (e) => typeof e.condition === 'string' },
+  dead: { fields: [] },
+  dying: { fields: ['rounds', 'duration'], check: (e) => e.rounds === undefined || number(e.rounds) },
+  fatigue: { fields: ['value'], check: (e) => number(e.value) && e.value < 0 },
+  grappled: { fields: ['value'], check: (e) => number(e.value) && e.value > 0 },
+  incapacitated: { fields: ['rounds', 'duration'] },
+  knocked_back_distance: { fields: ['value'], check: (e) => number(e.value) && e.value > 0 },
+  paralyzed: { fields: ['rounds', 'duration'] },
+  penalty: { fields: ['value', 'rounds'], check: (e) => number(e.value) && e.value < 0 },
+  prone: { fields: [] },
+  staggered: { fields: ['rounds', 'value'], check: (e) => number(e.rounds) && number(e.value) && e.value > 0 },
+  stunned: { fields: ['rounds', 'value', 'delay'], check: (e) => number(e.rounds) && number(e.value) && e.value < 0 },
+  unconscious: { fields: ['delay', 'delayDuration', 'duration'] },
+};
 
-  describe("findCriticalResult", () => {
-    it("valid S-A table", () => {
-      validateTable("S", "A");
-    });
+const validateEntry = (entry) => {
+  expect(number(entry.rollMin) && number(entry.rollMax)).toBe(true);
+  expect(number(entry.dmg) && entry.dmg >= 0).toBe(true);
+  expect(LOCATIONS).toContain(entry.location);
+  expect(typeof entry.message).toBe('string');
+  expect(Array.isArray(entry.effects)).toBe(true);
+  entry.effects.forEach((effect) => {
+    const schema = EFFECTS[effect.status];
+    if (!schema) throw new Error(`Invalid status effect: ${effect.status}`);
+    Object.keys(effect)
+      .filter((key) => key !== 'status')
+      .forEach((key) => expect([effect.status, schema.fields]).toEqual([effect.status, expect.arrayContaining([key])]));
+    if (schema.check) expect([effect.status, schema.check(effect)]).toEqual([effect.status, true]);
+  });
+};
 
-    it("valid S-B table", () => {
-      validateTable("S", "B");
-    });
-
-    it("valid S-C table", () => {
-      validateTable("S", "C");
-    });
-
-    it("valid S-D table", () => {
-      validateTable("S", "D");
-    });
-
-    it("valid S-E table", () => {
-      validateTable("S", "E");
-    });
-
-    it("valid P-A table", () => {
-      validateTable("P", "A");
-    });
-
-    it("valid P-B table", () => {
-      validateTable("P", "B");
-    });
-
-    it("valid P-C table", () => {
-      validateTable("P", "C");
-    });
-
-    it("valid P-D table", () => {
-      validateTable("P", "D");
-    });
-
-    it("valid P-E table", () => {
-      validateTable("P", "E");
-    });
-
-    it("valid K-A table", () => {
-      validateTable("K", "A");
-    });
-
-    it("valid K-B table", () => {
-      validateTable("K", "B");
-    });
-
-    it("valid K-C table", () => {
-      validateTable("K", "C");
-    });
-
-    it("valid K-D table", () => {
-      validateTable("K", "D");
-    });
-
-    it("valid K-E table", () => {
-      validateTable("K", "E");
-    });
+describe('bundled critical tables', () => {
+  const original = process.env.RMU_ATTACK_TABLES_DIR;
+  beforeAll(() => delete process.env.RMU_ATTACK_TABLES_DIR);
+  afterAll(() => {
+    if (original !== undefined) process.env.RMU_ATTACK_TABLES_DIR = original;
   });
 
-  describe("getFilePath", () => {
-    it("should throw an error when the file does not exist", () => {
-      expect(() =>
-        criticalTableService.findCriticalResult("error", "A", 10, null)
-      ).toThrow({
-        status: 404,
-        message: "Critical table file not found",
-      });
+  it('has every table of Core Law', () => {
+    const files = fs.readdirSync(CRITICAL_DIR).filter((file) => file !== 'empty-template.json');
+    expect(files.sort()).toEqual(TABLES.flatMap((t) => SEVERITIES.map((s) => `${t}-${s}.json`)).sort());
+  });
+
+  describe.each(TABLES)('table %s', (table) => {
+    it.each(SEVERITIES)('severity %s covers rolls 1-100 with valid entries', (severity) => {
+      const entries = JSON.parse(fs.readFileSync(path.join(CRITICAL_DIR, `${table}-${severity}.json`), 'utf8'));
+      expect(entries).toHaveLength(20);
+      entries.forEach(validateEntry);
+      for (let roll = 1; roll <= 100; roll++) {
+        const result = criticalTableService.findCriticalResult(table, severity, roll);
+        expect([roll, result.rollMin <= roll && roll <= result.rollMax]).toEqual([roll, true]);
+      }
     });
+  });
+});
+
+describe('findCriticalResult', () => {
+  it('returns the entry of roll 1', () => {
+    const result = criticalTableService.findCriticalResult('K', 'A', 1);
+    expect(result).toMatchObject({ rollMin: 1, rollMax: 1, location: 'head' });
+  });
+
+  it('answers 404 for an unknown table', () => {
+    expect(() => criticalTableService.findCriticalResult('missing', 'A', 10)).toThrow(
+      expect.objectContaining({ status: 404 }),
+    );
+  });
+
+  it('answers 400 for an invalid table id or severity', () => {
+    expect(() => criticalTableService.findCriticalResult('../K', 'A', 10)).toThrow(
+      expect.objectContaining({ status: 400 }),
+    );
+    expect(() => criticalTableService.findCriticalResult('K', 'F', 10)).toThrow(
+      expect.objectContaining({ status: 400 }),
+    );
   });
 });
