@@ -12,7 +12,7 @@ const tables = [
     "slings",
     "thrown",
     "elemental-bolts",
-    "elemental-balls"
+    "elemental-balls-cones"
 ];
 
 router.get('/', (req, res) => {
