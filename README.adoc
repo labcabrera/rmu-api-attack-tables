@@ -19,20 +19,22 @@ WARNING: *This application is an independent project developed by fans of Rolema
 . `<dir>/attack`, `<dir>/critical`, `<dir>/fumble` (the layout of `tables/`).
 . `<dir>/attack-tables`, `<dir>/critical-tables`, `<dir>/fumble-tables` (the layout of the workspace `data/core-law` folder, which is not published).
 
-File names are the same in both: `attack/<table>-<size>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`, `spellcasting/modifiers.json` and `spell-failure/<realm>.json` (the last two as `spellcasting-tables` and `spell-failure-tables` in the second layout). The spell casting tables are not bundled: `tables/` only has empty templates, so without a data folder those endpoints answer 404. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
+File names are the same in both: `attack/<table>.csv`, `critical/<table>-<severity>.json`, `fumble/<table>.json`, `spellcasting/modifiers.json` and `spell-failure/<realm>.json` (the last two as `spellcasting-tables` and `spell-failure-tables` in the second layout). The spell casting tables are not bundled: `tables/` only has empty templates, so without a data folder those endpoints answer 404. A file missing from the configured folder is read from `tables/`, so a partial folder only overrides the tables it contains. The API logs the folder in use at startup.
 
 In the local Compose stack, `rmu-platform` mounts the workspace `data/core-law` read-only and sets the variable (see its `compose/local-data.yaml`).
 
 == Endpoints
 
 |===
-|`GET /v1/attack-tables`                                |Gets a list of available attack tables.
-|`GET /v1/attack-tables/{tableId}/{size}/{at}/{roll}`:  |Gets the result of an attack roll on a specific table.
+|`GET /v1/attack-tables`                                |Gets the ids of the attack tables found in the data folder and in `tables/`, sorted.
+|`GET /v1/attack-tables/{tableId}/{at}/{roll}`          |Gets the result of an attack roll on the Medium table. `tableId`: lowercase letters, digits and `-` (400 otherwise); `at`: 1-10; `roll`: 1-175, and a roll above the last band of the table reads its top row (the ball tables end at 125).
 |`GET /v1/critical-tables/{type}/{severity}/{roll}`     |Gets the result of a critical hit roll on a specific table.
 |`GET /v1/fumble-tables/{type}/{roll}`                  |Gets the result of a fumble roll on a specific table.
 |`GET /v1/spellcasting-tables/modifiers`               |Gets the spell casting modifiers (Spell Law table 4-2).
 |`GET /v1/spell-failure-tables/{realm}/{type}/{roll}`   |Gets a spell failure result (Spell Law tables 4-4). `realm`: `channeling`, `essence` or `mentalism`; `type`: `elemental`, `force`, `informational` or `utility`; `roll`: the modified open-ended roll (below 1 reads the first row).
 |===
+
+Only the Medium attack tables are served (workspace spec 033). The book's Small and Big tables are the Medium one with the critical severity one step down or up (down to `Z`) and the hits ×0.75 or ×1.5 rounded half up, so the caller (`rmu-api-tactical`) applies the attack size. `tables/attack` bundles the 39 Medium tables of Core Law.
 
 The response format for attack rolls is:
 

@@ -2,59 +2,17 @@ const express = require('express');
 const router = express.Router();
 const attackTableService = require("../services/attack-table-service");
 
-const tables = [
-    "arming-sword",
-    "ball-cold",
-    "ball-fire",
-    "ball-lightning",
-    "battle-axe",
-    "beak",
-    "bite",
-    "bola",
-    "bolt-fire",
-    "bolt-ice",
-    "bolt-lightning",
-    "bolt-water",
-    "bow-long",
-    "bow-short",
-    "broadsword",
-    "claw",
-    "club",
-    "crossbow",
-    "crush",
-    "dagger",
-    "falchion",
-    "fighting-stick",
-    "flail",
-    "grapple",
-    "horn",
-    "mace",
-    "ram",
-    "rapier",
-    "rock",
-    "scimitar",
-    "shield",
-    "sling",
-    "spear",
-    "stinger",
-    "trample",
-    "unarmed-strikes",
-    "unarmed-sweeps",
-    "war-hammer",
-    "whip"
-];
-
 router.get('/', (req, res) => {
-    res.json(tables);
+    res.json(attackTableService.listAttackTables());
 });
 
-router.get('/:tableId/:size/:armorType/:roll', async (req, res) => {
+// Medium tables only (spec 033): the attack size is applied by the caller
+router.get('/:tableId/:armorType/:roll', async (req, res) => {
     try {
         const tableId = req.params.tableId;
-        const size = req.params.size;
         const armorType = readArmorType(req.params.armorType);
         const roll = readRollValue(req.params.roll);
-        const result = await attackTableService.findAttackResult(tableId, size, armorType, roll);
+        const result = await attackTableService.findAttackResult(tableId, armorType, roll);
         const body = buildResponseBody(result);
         res.json(body);
     } catch (error) {

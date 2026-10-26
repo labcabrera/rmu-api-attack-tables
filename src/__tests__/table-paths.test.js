@@ -42,7 +42,7 @@ describe('RMU_ATTACK_TABLES_DIR', () => {
       { rollMin: 1, rollMax: 100, effects: [], text: 'data layout fumble' },
     ]);
     fs.mkdirSync(path.join(dataLayout, 'attack-tables'));
-    fs.writeFileSync(path.join(dataLayout, 'attack-tables', 'test-weapon-medium.csv'), 'roll,at1\n1-175,7AS\n');
+    fs.writeFileSync(path.join(dataLayout, 'attack-tables', 'test-weapon.csv'), 'roll,at1\n1-175,7AS\n');
 
     // tables/ layout: <dir>/<kind>
     repoLayout = path.join(tmp, 'repo');
@@ -98,7 +98,7 @@ describe('RMU_ATTACK_TABLES_DIR', () => {
   it('uses the directory for fumble and attack tables', async () => {
     process.env.RMU_ATTACK_TABLES_DIR = dataLayout;
     expect(fumbleTableService.findFumbleResult('test-fumble', 10).text).toBe('data layout fumble');
-    await expect(attackTableService.findAttackResult('test-weapon', 'medium', 1, 100)).resolves.toBe('7AS');
+    await expect(attackTableService.findAttackResult('test-weapon', 1, 100)).resolves.toBe('7AS');
   });
 
   it('falls back to the bundled tables when the directory does not exist', () => {
