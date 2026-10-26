@@ -1,0 +1,392 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "It's almost like you flicked a burning match at your foe."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [],
+    "message": "No more than a smolder. Try harder."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "The air between the foe's legs ripples with heat."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe dances to avoid flames."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Burned shoulder causes foe to become distracted."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 8,
+    "location": "head",
+    "effects": [],
+    "message": "It could have worked, but the fire was not impressive. Still hurts."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Foe is in shock over his survival."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Sizzling heat causes foe to jump back. Good instincts."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "The faint smell of burning meat comes from foe's thigh."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe finds it difficult to use his arm, due to the 1st degree burns. Strange that it doesn't hurt, yet."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Painful arm burns cause foe to drop anything held."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 14,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's belly burns and splits. If armor is not removed it does 5 hits a round for 4 rounds from searing heat."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 17,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe falls backwards trying to escape heat, but still receives burns to the lower leg."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 9,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flames engulf foe's chest, licking at face. Foe must spends the next round putting out fire (the stun round)."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 22,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flames leap at face and miss eyes but not much else."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe gives off lots of smoke, as muscle and tendon burn."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Big toe burns away to nothing and the bone turns to ash."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 19,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's butt catches fire and the fat burns and smokes. Foe lets loose a blood curdling scream and drops anything held."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 14,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Solid blast knocks back foe, while any held weapon goes flying."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 11
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's face burns while he screams for 2 rounds. Then foe collapses and dies 9 rounds later."
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      }
+    ],
+    "message": "For a moment, you grab foe's chin, but then you lose your grip."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "You can feel foe's ribs but cannot get a hold on him."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      }
+    ],
+    "message": "You gain a loose hold around the belly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You have a hand on your foe's leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 3,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Routine move jerks foe to one side by the arm."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You get a loose grip on your foe's face. In the process, you break any grip foe has on you."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Grab at foe turns into more a wicked elbow."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Squeeze around belly forces burp out of foe."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 9,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "message": "Foe almost evades you, but you grab hold of his thigh."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 35
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Shoulder grab pulls arm up over foe's head, straining shoulder muscle."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Sharp jerk to forearm sprains foe's elbow."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 100
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "You tackle foe around waist, overwhelming him."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 6,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 75
+      }
+    ],
+    "message": "You are firmly locked around foe's hips."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 6,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "One rib cracks with an audible pop as you squeeze foe's torso."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "You now have foe around the neck and by the hair at the same time."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Brutal wrench to shoulder pinches a nerve."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "grappled",
+        "value": 100
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You pull foe's foot up and back behind him, pulling a muscle in his leg."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 13,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ]
+    },
+    "message": "Crushing damages kidneys, foe will pee blood for a week."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "unconscious",
+        "delay": 6
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 200
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Unbreakable pressure on foe's chest, starving the body of oxygen, will render foe unconscious in six more rounds of near complete helplessness."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 8,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Foe's throat crushed by neck hold. Foe fights on for 3 more rounds, coughs morbidly through 3 rounds of inactivity, then dies."
+  }
+]

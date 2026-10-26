@@ -1,0 +1,438 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 10
+      }
+    ],
+    "message": "Hair-pulling is not an elegant maneuver, but you take what you can get."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You produce hairline fracture in one of foe's ribs with your crushing hold, but then he wiggles free."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 15
+      }
+    ],
+    "message": "You manage a half solid grasp around foe's waist."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 20
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Both your hands grip foe's lower leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Jerking foe by the wrist almost dislocates his elbow."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 35
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Foe's head is secured. Now work on the rest of him."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Ribs creak as chest is compressed. Foe loses any grip he had on you."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      }
+    ],
+    "message": "You are firmly locked around foe's waist."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 9,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 75
+      }
+    ],
+    "message": "You wrap both of foe's legs."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Grip on foe's elbow turns painful as you dig your fingers in."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 6,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 60
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You take control of foe's arm. Foe drops anything in that hand."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Unsanctioned wrestling move proves effective. Reveals reason it is unsanctioned when ruptured spleen kills foe three rounds later."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 150
+      }
+    ],
+    "message": "Foe is going to have trouble getting out of this hold."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 125
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      }
+    ],
+    "message": "Magnificent technique obtains a solid lock around the foe."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 9,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "A hair pull move like this is rarely seen outside a women in prison movie."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
+      {
+        "status": "penalty",
+        "value": -45
+      },
+      {
+        "status": "stunned",
+        "rounds": 9,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Grip on foe's arm is broken by desperate flailing that causes foe to injure his head. Foe suffers brain damage that kills in 9 rounds."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Lucky leg grab topples foe. Foe hits head on ground. Foe falls into 1-10 hours of unconsciousness."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 37,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You take your foe down. Foe's neck breaks and after six inactive rounds, foe dies."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 31,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "bleeding",
+        "value": 5
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "You crush foe's chest, driving broken ribs into lungs and heart. Blood splatters from caved in chest, then flows from foe's mouth."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 50,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -125
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Skull crushed into paste scatters sharp shards of bone."
+  }
+]

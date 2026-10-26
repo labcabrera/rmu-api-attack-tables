@@ -1,0 +1,444 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's neck reddens with minor scalding."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [],
+    "message": "If you've ever picked up a vigorously boiling tea kettle and accidently turned the spout towards you, you know what the foe is going through."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Steam sprays over foe's crotch, but damage is very superficial."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Steamy thighs are not a good thing in this case."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Steam whirls around, surprising and confusing foe."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 5,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Tip of foe's tongue is scalded."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 16,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalding leaves blisters on foe's chest, causes loss of balance."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's inner thigh blisters; foe falls down."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 32,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Ankle shot blisters skin, downs foe."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 21,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Steam engulfs foe's hand. Foe drops anything held by that hand."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 30,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Geyser-like blast leaves foe's arm cooked."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 17,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Heat gets into foe's interior, cooks liver. Foe dies in twelve rounds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 35,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalding runs the length of foe's leg."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 40,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Skin blisters and cracks as foe is thrown off balance by blast."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 39,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe falls in face of a face full of furious fumes."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalding covers foe's arm and side. Shock to the system is too great. After another six rounds, foe collapses for six more inactive rounds, then dies."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
+    "message": "Burst of steam takes off foe's leg at the knee. Cauterization prevents bleeding, but shock kills foe in nine rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Steam cooking foe's midsection provides instant fatality."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 66,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Flesh cooks right off foe's ribs, beating heart is exposed for a moment before shutting down. Enemies must check morale at -30."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 30,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's entire upper body has its flesh boiled off the bone, leaving a gruesome skeleton."
+  }
+]

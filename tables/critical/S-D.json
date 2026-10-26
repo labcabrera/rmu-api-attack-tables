@@ -10,6 +10,9 @@
         "value": 1
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Nick to the chin makes foe bleed profusely."
   },
   {
@@ -23,6 +26,9 @@
         "value": 1
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "A shallow cut produces a bloody flow."
   },
   {
@@ -30,6 +36,7 @@
     "rollMax": 5,
     "dmg": 10,
     "location": "abdomen",
+    "effects": [],
     "message": "Minor cut to inner thigh, with impact to sensitive areas."
   },
   {
@@ -48,6 +55,9 @@
         "value": 1
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut along ankle starts a fluid leak."
   },
   {
@@ -59,6 +69,11 @@
       {
         "status": "fatigue",
         "value": -10
+      },
+      {
+        "status": "attack_penalty",
+        "value": -10,
+        "rounds": 1
       }
     ],
     "message": "The element of surprise must be yours. The cut is not deep, but startles your foe. His next attack is at -10."
@@ -67,6 +82,7 @@
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 6,
+    "location": "head",
     "effects": [
       {
         "status": "stunned",
@@ -78,26 +94,29 @@
         "value": -25
       }
     ],
-    "location": "head",
     "message": "Foe's hair becomes matted with blood as skull stops blow, but not without feeling the impact."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 20,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 2
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Solid blow hits the side of the upper torso, drawing blood and pain."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 5,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -121,13 +140,16 @@
         "value": 0
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Blow at belt level packs a punch and drops foe."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 0,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -151,15 +173,21 @@
         "status": "staggered",
         "rounds": 1,
         "value": 1
+      },
+      {
+        "status": "disarmed"
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Ankle strike takes down foe, who drops anything in his hands."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 21,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -174,7 +202,9 @@
         "value": -25
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut to foe's upper arm is impressive."
   },
   {
@@ -193,13 +223,21 @@
         "value": -25
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Foe's elbow takes full force of your blow. It does not work quite normally afterward."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 12,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -222,7 +260,9 @@
         "value": -100
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Slice cuts all the way through abdominal muscle. After four active rounds, foe dies as intestines fall out."
   },
   {
@@ -245,6 +285,12 @@
         "value": -25
       }
     ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Solid strike stopped by hip bone. Hip bone develops a break."
   },
   {
@@ -262,16 +308,28 @@
         "value": -20
       },
       {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
         "status": "knocked_back_distance",
         "value": 5
       }
     ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Deep cut to upper chest damages pectoral muscle."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 21,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -287,13 +345,16 @@
         "value": -50
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Edge cuts open the corner of foe's mouth and slashes tongue. Foe spits blood."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 27,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -315,14 +376,21 @@
         "delay": 1
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Chopping blow cuts in, then breaks one bone in forearm. Painfully. Very painfully."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 3,
+    "location": "leg",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
       {
         "status": "bleeding",
         "value": 4
@@ -335,20 +403,23 @@
         "status": "stunned",
         "rounds": 3,
         "value": -75
-      },
-      {
-        "status": "dying",
-        "rounds": 5
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "The bleeding is bad, but it is shock that kills the foe after 5 rounds."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 9,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -363,17 +434,19 @@
         "value": -75
       },
       {
-        "status": "dying",
-        "rounds": 4
+        "status": "disarmed"
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Foe drops anything in hands as blow to abdomen sinks in. Your weapon is stuck there until foe dies after 4 rounds of nothing but screaming."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 43,
+    "location": "chest",
     "effects": [
       {
         "status": "dead"
@@ -387,14 +460,20 @@
         "value": -65
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Edge cuts deep into chest, bisecting lung, a gout of frothy blood comes from foe's mouth. He is dead before hitting the ground."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 13,
+    "location": "head",
     "effects": [
+      {
+        "status": "dead"
+      },
       {
         "status": "bleeding",
         "value": 10
@@ -402,12 +481,11 @@
       {
         "status": "penalty",
         "value": -100
-      },
-      {
-        "status": "dead"
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Slice through neck separates foe's head from its torso."
   }
 ]

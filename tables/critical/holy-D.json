@@ -1,0 +1,429 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 6,
+    "location": "head",
+    "effects": [],
+    "message": "A wisp of smoke rises from one cheek as foe is burned by holy energies."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Ripple passes outward from blow, foe begins to sweat blood from a hand sized patch."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Perhaps foe's fall will teach him humility?"
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [],
+    "message": "In a blaze of holy light, the symbol of your god is branded on your foe's thigh."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe's elbow twists painfully, spraining as golden sparks swirl around the arm."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe feels a vengeful hand reach down his throat, then withdraw."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "A hurricane force wind that only your foe can feel roars for a moment."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 17,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Wrenching gut spasms tear muscles, foe should pray for mercy."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "message": "Blaze of white fire shoots through foe's leg, takes half of foe's PPs with it."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 25,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Numbness spreads from strike as nerves in forearm and hand are damaged."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Muscles in upper and lower arm whither as foe's skin turns the color of cold ash."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 17,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Paralyzed from the waist down (no time to death printed)."
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Broken spine paralyzes foe from the waist down."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe's leg is transfixed by a radiant spike which persists for 1 round. The damage remains."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 13,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ]
+    },
+    "message": "Light ripples across chest, stopping heart for a moment, then rips out far side breaking a rib."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 31,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Foe loses sight in one eye, which changes color. It also burns with a pain that makes foe envy the dead."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Arm withers, muscles atrophying and shrinking."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "unknown"
+    },
+    "message": "Earthquake under foe (only) topples him. Then foe begins to turn to sand, slowly at first. In six rounds, the process rushes to conclusion."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's lungs flooded with holy water, drowns in three rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 50,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Stop, said your god. Foe's heart obeys."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "A painfully pure musical note sounds, then every bone in foe's body crumbles to dust."
+  }
+]

@@ -1,0 +1,451 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Slightly burn foe's cheekbone."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Foe escapes blast, but inhales smoke."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "message": "Foe drops to protect vitals."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Blistering burn to shin, boots will be uncomfortable for a while."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Fire surrounds foe's wrist creating a bracelet of blisters."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Painful neck blisters turn foe's speech into incoherent croaking until the injury is healed."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe shields face from blow, catching it in the armpit."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scorching heat makes moving painful."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "message": "Foe briefly turns to escape blast, but catches it on lower leg causing him to stumble and land 10' away."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 8,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burn inner forearm, foe is lucky major blood vessels are not compromised."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's shoulder sizzles like bacon fat."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 60
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 7,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flames encompass foe and slowly burn him to death over 5 minutes (-5 cumulative injury penalty each round for 60 rounds)."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burn to knee melts flesh and exposes bone."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burn runs from hip to armpit. Burning armor delivers 5 hits/ round for 4 rounds or until removed."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 37,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Nearly all of foe's hair burns away and leaves his face burned and blistered."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 6
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Blood boils and vessels burst in arm. (-20 to enemy morale.)"
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 12,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's leg catches fire and burns hot. Fire cannot be smothered and foe dies after a frantic minute."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 19,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 60
+      },
+      {
+        "status": "penalty",
+        "value": -65
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's intestine bursts, showering everyone within 5' (-20 enemy morale). Foe dies after 5 painful (inactive) minutes."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "All of foe's torso skin burns away. Foe expires in a heap."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 13,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -125
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's neck burns completely away, leaving the head to fall to the floor."
+  }
+]

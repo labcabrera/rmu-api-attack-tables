@@ -1,0 +1,435 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Slap to side of neck results in missed hold."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 10
+      }
+    ],
+    "message": "Weak grip on foe's chest reminds you of a bad date."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "You do not have much of a grip on your foe, but it would do for dancing."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Quick grab gets foe by one leg, pulls foe closer."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "message": "You grab foe's arm, send him stumbling back as he slips from your grasp."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Neck grab cuts off air for a moment."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 20
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Bruising squeeze to foe's chest shows him who's boss."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Solid squeeze to foe's abdomen is sure to leave a bruise."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 7,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "grappled",
+        "value": 15
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Muscle in foe's thigh is pulled as you get hold of his leg."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Old wrestling trick twists arm painfully."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Sharp jerk to forearm sprains foe's elbow. You may take one item off your foe into your own possession, if it is less secured than a worn ring."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 9,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 125
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Iron hold on foe's lower torso puts foe at your mercy. You may move foe and yourself up to 10' in any direction."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 4,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 20
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You grab foe's lower leg, twisting the knee. The tortured joint gives under pressure."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 7,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "grappled",
+        "value": 50
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Chest squeeze deeply bruises muscle."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "grappled",
+        "value": 80
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe dodges your feint, moves right into your real attack."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 150
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "You grasp foe's wrist and shoulder, use arm as a lever to handle foe's body."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Knee bends back painfully, knocking foe prone and damaging cartilage."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Attacker keeps concentrating pressure for 3 rounds"
+      },
+      {
+        "status": "grappled",
+        "value": 175
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Grab between foe's legs brings foe under control. Foe cannot escape so long as you concentrate. You can kill foe with 3 rounds pressure."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 5,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 150
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's heart knocked off its rhythm by pressure. In four more rounds, it gives up trying to recover the beat."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Attacker chooses to choke foe unconscious or snap foe's neck"
+      },
+      {
+        "status": "grappled",
+        "value": 300
+      },
+      {
+        "status": "fatigue",
+        "value": -40
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Perfect grip around head and neck allows you to choke foe unconscious or snap foe's neck at will."
+  }
+]

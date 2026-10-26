@@ -1,0 +1,407 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Vapor loses heat before entering eyes and nose, but still distracts."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 6,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "A single blister rises from the scalding touch."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Blast hits foe's lap like spilled coffee."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Steam wets surface; foe loses footing."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Steam slicks foe's hands. Foe drops anything held."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 15,
+    "location": "head",
+    "effects": [],
+    "message": "Foe's face is steamed. Foe turns around without realizing it until making Perception maneuver at beginning of next round."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 5,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Foe winces when steam blast strikes a particularly sensitive spot."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Foe's hip and thigh are steamed; minor scalding follows."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 15,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's foot is scalded. Foe loses balance."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Shoulder strike scalds somewhat seriously."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 17,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "message": "Foe's upper arm gets scalded."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 20,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "duration": "1 hour"
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Severe scalding masks internal heat damage to foe's intestines. Foe will die in one hour."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 33,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's entire calf is scalded."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 31,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe screams in agony, distracting everyone within 100', giving them a -10 to all actions for the rest of this round."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 21,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "If the foe survives this battle, one side of his face will be horribly scarred, leading to the development of a split personality."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Foe drops anything held in hand as arm is crippled by severe scalding."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -65
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Scalding of legs prevents foe from moving at more than walking pace. Foe dies after ten rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 19,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -55
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's face looks ghastly after midsection is unbearably heated. Foe dies after four rounds of inactivity."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe is dead and severely scalded across much of his torso."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 33,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flesh is stripped from the bone and the skull exposed. Foe is dead and enemy morale takes a -20 dip."
+  }
+]

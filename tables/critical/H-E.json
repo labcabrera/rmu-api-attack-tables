@@ -1,0 +1,420 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Heat obscures foe's vision."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "message": "Clothing singed. The gods are with the foe today. He contemplates this."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Pinpoint accuracy, but attack is weak."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe believes he escaped unharmed, but knee has been compromised."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Searing heat to arm causes foe to drop anything held."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burn to face causes foe to cry out and drop anything held to protect face. But it is too late."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 26,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      }
+    ],
+    "message": "Blast to upper body causes intense pain, but no serious damage."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Pants on fire! Foe must spend next round concentrating on putting fire out (the Stun round)."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 14,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe frantically thrashes about to escape destruction and ends up on the ground."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 21,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Most of foe's upper arm is scalded leaving a painful burn."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 25,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flame spreads over foe's hand, he shakes it off along with blackened skin."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "stunned",
+        "rounds": 12,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Foe's burning loins destroy him from the inside over 1 minute (-20 each round for 12 rounds)."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 15,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Deep burn to outer thigh reveals muscle, leg fails momentarily."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 25,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flames dance in a peculiar way to burn what looks like a skull on foe's chest."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 34,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Flames envelope foe's head, burning scalp down to the skull."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Forearm and hand incinerated leaving only bone. Foe drops and screams for 6 rounds. Then foe dies."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 28,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "dying",
+        "rounds": 120
+      },
+      {
+        "status": "penalty",
+        "value": -65
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foot burned to char and cinder. Foe falls unconscious from pain and dies 10 minutes later."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 62,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Groin burns away and legs fail. Foe drops only wishing death. His wish is granted."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 6,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -125
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Flames burn through foe's body, destroying the heart and lungs."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -150
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
+    "message": "Foe's face burns away, while brain boils out of skull through eye and ear holes."
+  }
+]

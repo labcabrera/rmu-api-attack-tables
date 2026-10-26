@@ -1,0 +1,166 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "Odd smell distracts you. You can try to attack next round."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "Try to look like you meant to do that. You make no attack this round."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -3,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
+    "text": "You slip, but keep your feet. Suffer a -3 initiative penalty next round."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "1d10"
+      }
+    ],
+    "text": "Somehow, you manage to strike yourself for 1d10 hits."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "text": "Suddenly, the world just seems too confusing. Spend the next round Stunned."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [
+      {
+        "status": "attack_penalty",
+        "value": -30,
+        "rounds": 3
+      }
+    ],
+    "text": "Instinct is not always as reliable as it is made out to be. Your attacks are at -30 for the next three rounds."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack on the nearest ally, whoops! If no ally is in reach, an innocent bystander will do. Failing that, attack an imaginary friend."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [],
+    "text": "Such an itch! Spend the next two rounds Concentrating on scratching. Hope that it is not fleas."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -15
+      }
+    ],
+    "text": "Survival of the fittest, right? That might not be you. The fight is going out of you as you take a -15 Fatigue penalty."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "1d10"
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "cannot_parry",
+        "rounds": 1
+      }
+    ],
+    "text": "Bite the inside of your own mouth for 1d10 hits and a round of Stunned unable to parry followed by a round of Stun. The good news is that foes within 10' of you must save versus a level 1 Fear effect."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": "2d10"
+      }
+    ],
+    "text": "You take a tumble, traveling 2d10 feet in a random direction. You are also Stunned for the rest of this round and the whole of the next. Hope that your foe is just as surprised."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "2d10"
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "text": "You got your target's tail! Wait, no, that was your own tail. Take 2d10 hits and a round of Stunned followed by a round of Dazed."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "A"
+      }
+    ],
+    "text": "You look in one direction, move in another, and therefore fail to spot the obstacle in your path. You not only lose your attack, but take an 'A' Unbalancing critical."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [],
+    "text": "Where did he go? You managed to get turned around. Your foe is now behind you and gets a free attack on your back."
+  }
+]

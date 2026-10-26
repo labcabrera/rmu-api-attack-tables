@@ -1,0 +1,457 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 6,
+    "location": "head",
+    "effects": [],
+    "message": "Yank on foe's ear damages cartilage."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Loose grip on foe's chest pulls foe off balance."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Grab misses legs, settles around waist."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "You now have a well-earned ankle hold on your foe."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You pull foe toward you by one elbow. He pulls back and free, but also pulls a muscle in his lower arm."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 5,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 30
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "You secure a painfully tight grip around foe's head."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 30
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      }
+    ],
+    "message": "You have a pretty good grip, but don't get overconfident."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 45
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Now that's just inappropriate!"
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 40
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "With a solid grip on foe's ankle, you make him wobble."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Wrist grab gives you control of foe's arm."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You yank foe's arm behind his back. Foe loses anything held in that hand."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 32,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Crushing squeeze ruptures multiple internal organs. Foe fights on for six more rounds, then dies."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You grip both of foe's legs, yank foe off balance."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Tackle wraps foe as you take him to the ground."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 7,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 90
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      }
+    ],
+    "message": "Choke hold and tackle combined make foe feel a bit vulnerable."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 150
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Double arm holds allow you excellent control of foe. Foe drops anything in his hands."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "unconscious",
+        "delay": 5
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 200
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Leg hold leads to painful submission hold. Foe cannot free himself and will fall unconscious after five rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Stomach gives under force of your grip and foe dies in four rounds, vomiting blood."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "You achieve more force than finesse, but that results in foe falling, breaking spine, dying."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 63,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Powerful wrench of foe's head breaks spine, pulls skull loose from spine. Foe's head tilts at a sickening angle."
+  }
+]

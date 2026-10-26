@@ -4,20 +4,21 @@
     "rollMax": 1,
     "dmg": 4,
     "location": "head",
+    "effects": [],
     "message": "Foe anticipates blow and almost gets away with a last second dodge."
   },
   {
     "rollMin": 2,
     "rollMax": 3,
     "dmg": 1,
+    "location": "chest",
     "effects": [
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       }
     ],
-    "location": "chest",
     "message": "Foe yields to impact, absorbs it with knees."
   },
   {
@@ -25,6 +26,7 @@
     "rollMax": 5,
     "dmg": 8,
     "location": "abdomen",
+    "effects": [],
     "message": "Skin splits along inner thigh, and blood trickles down foe's leg."
   },
   {
@@ -32,20 +34,21 @@
     "rollMax": 10,
     "dmg": 12,
     "location": "leg",
+    "effects": [],
     "message": "Impact bruises foe's thigh."
   },
   {
     "rollMin": 11,
     "rollMax": 15,
     "dmg": 1,
+    "location": "arm",
     "effects": [
       {
         "status": "stunned",
-        "value": -50,
-        "rounds": 1
+        "rounds": 1,
+        "value": -50
       }
     ],
-    "location": "arm",
     "message": "Striking foe's arm almost at the shoulder, you rattle foe a bit."
   },
   {
@@ -53,12 +56,14 @@
     "rollMax": 20,
     "dmg": 19,
     "location": "head",
+    "effects": [],
     "message": "You rattle foe's skull."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 8,
+    "location": "chest",
     "effects": [
       {
         "status": "fatigue",
@@ -66,17 +71,17 @@
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       }
     ],
-    "location": "chest",
     "message": "Blow to side of chest knocks foe half a step out of place."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 13,
+    "location": "abdomen",
     "effects": [
       {
         "status": "fatigue",
@@ -84,21 +89,21 @@
       },
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 1
+        "rounds": 1,
+        "value": -25
       },
       {
         "status": "breakage_roll",
         "value": 0
       }
     ],
-    "location": "abdomen",
     "message": "Bouncing strike off pelvis looks really painful."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 9,
+    "location": "leg",
     "effects": [
       {
         "status": "fatigue",
@@ -106,13 +111,13 @@
       },
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 1
+        "rounds": 1,
+        "value": -25
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "knocked_back_distance",
@@ -123,13 +128,13 @@
         "value": 0
       }
     ],
-    "location": "leg",
     "message": "Foe takes attack on upper thigh, does not enjoy it."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 4,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
@@ -140,13 +145,16 @@
         "value": -100
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Blow knocks forearm aside, breaking one bone."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 29,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
@@ -154,17 +162,20 @@
       },
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 1
+        "rounds": 1,
+        "value": -25
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Strike knocks shoulder out of its socket, which shifts back into place with an audible pop. Joint back home, but injured."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 29,
+    "location": "abdomen",
     "effects": [
       {
         "status": "penalty",
@@ -176,13 +187,13 @@
       },
       {
         "status": "stunned",
-        "value": -75,
-        "rounds": 1
+        "rounds": 1,
+        "value": -75
       },
       {
         "status": "stunned",
-        "value": -50,
         "rounds": 1,
+        "value": -50,
         "delay": 1
       },
       {
@@ -190,23 +201,26 @@
         "value": 0
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Upward strike to side bruises kidney, foe will be peeing blood for weeks."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 20,
+    "location": "leg",
     "effects": [
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 1
+        "rounds": 1,
+        "value": -25
       },
       {
         "status": "stunned",
-        "value": -75,
         "rounds": 1,
+        "value": -75,
         "delay": 1
       },
       {
@@ -214,21 +228,21 @@
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "breakage_roll",
         "value": -50
       }
     ],
-    "location": "leg",
     "message": "Deep strike to thigh leaves bone deep bruise, foe falls."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 8,
+    "location": "chest",
     "effects": [
       {
         "status": "fatigue",
@@ -236,19 +250,19 @@
       },
       {
         "status": "stunned",
-        "value": -75,
-        "rounds": 1
+        "rounds": 1,
+        "value": -75
       },
       {
         "status": "stunned",
-        "value": -50,
         "rounds": 1,
+        "value": -50,
         "delay": 1
       },
       {
         "status": "stunned",
-        "value": -25,
         "rounds": 1,
+        "value": -25,
         "delay": 2
       },
       {
@@ -256,21 +270,21 @@
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "breakage_roll",
         "value": -25
       }
     ],
-    "location": "chest",
     "message": "Hammering foe's chest pays off as foe folds beneath your might."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 28,
+    "location": "head",
     "effects": [
       {
         "status": "fatigue",
@@ -278,13 +292,13 @@
       },
       {
         "status": "stunned",
-        "value": -50,
-        "rounds": 1
+        "rounds": 1,
+        "value": -50
       },
       {
         "status": "stunned",
-        "value": -75,
         "rounds": 1,
+        "value": -75,
         "delay": 1
       },
       {
@@ -292,25 +306,21 @@
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
-      },
-      {
-        "status": "breakage_roll",
-        "value": -50
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "knocked_back_distance",
         "value": 5
       }
     ],
-    "location": "head",
     "message": "Foe hit right in the ear, loses balance."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 35,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
@@ -318,26 +328,32 @@
       },
       {
         "status": "stunned",
-        "value": -75,
-        "rounds": 1
+        "rounds": 1,
+        "value": -75
       },
       {
         "status": "staggered",
-        "value": 0,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "knocked_back_distance",
         "value": 5
+      },
+      {
+        "status": "disarmed"
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Blow breaks a bone in foe's hand, sending a wave of pain up that arm. Foe drops anything in that hand."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 28,
+    "location": "leg",
     "effects": [
       {
         "status": "penalty",
@@ -345,17 +361,23 @@
       },
       {
         "status": "stunned",
-        "value": -75,
-        "rounds": 1
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "disarmed"
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Bone snaps in foe's lower leg. Foe drops items from both hands."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
-    "dmg": 0,
+    "dmg": 1,
+    "location": "abdomen",
     "effects": [
       {
         "status": "dying",
@@ -367,21 +389,24 @@
       },
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 5
+        "rounds": 5,
+        "value": -25
       },
       {
         "status": "breakage_roll",
         "value": -100
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Impact to groin triggers massive adrenaline release that leads to a heart attack in five rounds."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 10,
+    "location": "chest",
     "effects": [
       {
         "status": "dying",
@@ -397,21 +422,24 @@
       },
       {
         "status": "stunned",
-        "value": -25,
-        "rounds": 3
+        "rounds": 3,
+        "value": -25
       },
       {
         "status": "breakage_roll",
         "value": -100
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Foe's breathing and heartbeat become irregular due to impact to heart muscles. Foe goes into cardiac arrest and drops dead after three more rounds of activity."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 25,
+    "location": "head",
     "effects": [
       {
         "status": "dying",
@@ -420,12 +448,14 @@
       {
         "status": "penalty",
         "value": -100
-      },
-      {
-        "status": "unconscious"
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
     "message": "Strike crushes windpipe. Foe collapses, dies after five rounds of inactivity."
   }
 ]

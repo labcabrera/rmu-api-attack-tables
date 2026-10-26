@@ -1,0 +1,91 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "The element is unruly. If you choose to not act for the rest of the round, you may \"hold\" the bolt and roll your attack next round without recasting."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "The element loses focus and bits spray harmlessly off the bolt. Reroll attack with the Size of the attack reduced by one."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "Bolt goes flying off at an angle 90 degrees left of the intended line of attack. Roll a +0 attack on each target along the new path until it hits someone, strikes a solid obstruction, or runs out of range."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [],
+    "text": "Bolt appears as a fist sized ball of appropriate material, which gently floats at 10' per round in the direction intended. If anyone runs into it, or it otherwise makes physical contact, resolve attack at +0 OB."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 90 degrees right of the intended path."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched straight down."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack on the nearest ally, whoops! (If no ally in range, attack is lost, and you are probably in enough trouble already.)"
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 180 degrees from the intended path (i.e., in the direction opposite the intended target)."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 45 degrees left of the intended path."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 45 degrees right of the intended path."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 45 degrees above the intended path."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched at 45 degrees below the intended path."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [],
+    "text": "As 31-40 above, except that bolt is launched straight up."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "A"
+      }
+    ],
+    "text": "Element misfires as it leaves your hand. You take an 'A' critical of the appropriate type."
+  }
+]

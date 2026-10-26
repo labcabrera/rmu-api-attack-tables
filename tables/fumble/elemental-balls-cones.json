@@ -1,0 +1,91 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "The element is unruly. If you choose to not act for the rest of the round, you may hold your attack until next round without recasting."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "The energies resist direction. If you choose to not act for the rest of this round, and all of the following round, you may attack the round after that without recasting."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "Attack is launched along a line at an angle 90 degrees left of that intended. Roll +0 attacks on those in the new attack zone. When a ball hits someone (or something) or reaches its range limit, it will detonate normally."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [],
+    "text": "Elements appear as a head-sized ball, which gently floats at 10' per round in the direction intended. If it strikes anything solid, resolve attack as a ball attack centered on that point (use cone terminal radius for ball radius)."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 90 degrees right of the intended path."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched straight down."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack centered on the nearest ally, whoops! (If no ally in range, execute attack centered on self.)"
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 180 degrees from the intended path (i.e., in the direction opposite the intended target)."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 45 degrees left of the intended path."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 45 degrees right of the intended path."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 45 degrees above the intended path."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched at 45 degrees below the intended path."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [],
+    "text": "As 31-40 above, except that attack is launched straight up."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "C"
+      }
+    ],
+    "text": "Elements explode in your face. You take a 'C' critical of the appropriate type."
+  }
+]

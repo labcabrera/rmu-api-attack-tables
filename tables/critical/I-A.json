@@ -1,0 +1,365 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Strike lands without force."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [],
+    "message": "Bump foe in the chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Like a hard slap to the belly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 5,
+    "location": "leg",
+    "effects": [],
+    "message": "Stinging slap to the leg boosts your confidence."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Foe's arm struck in nerve, causing foe's eyes to cross."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe's head snaps back, hard."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [],
+    "message": "Foe takes blow in the chest."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      }
+    ],
+    "message": "Groin strike stings foe. Nice cheap shot."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Force of blow sweeps leg from under foe."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 12,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe's wrist takes brunt of blow, develops sprain."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe raises arm in an attempt to ward off blow. Arm slightly injured, force of blow transmits to body and takes foe to ground."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 24,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Internal damage to kidney amid a spasm of pain stuns foe."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Blast injures thigh muscle."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 24,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Lung takes a beating as impact goes through foe's chest."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 17,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Teeth rattle in foe's mouth as blow to chin dislocates jaw."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 31,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hand absorbs most of the blow, breaking two fingers."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 24,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Another knee takes a beating. Leg twists unnaturally under force of blow, torn tissues in knee joint suffer."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 24,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Tendons in thigh yield to excessive force."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 37,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ]
+    },
+    "message": "Force of blow breaks three ribs, squeezes breath from foe's lungs."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Permanent paralysis below the neck after one more active round (no time to death printed)."
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Foe spends one more round active, then damage to spinal cord kicks in and foe experiences permanent paralysis below the neck."
+  }
+]

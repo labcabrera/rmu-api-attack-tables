@@ -1,0 +1,180 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "Foe is too quick, and you lose your chance to attack."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "You trip over your own feet and lose the chance to attack."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -5
+      }
+    ],
+    "text": "Your mighty yell fails to impress your foes, but it leaves you a bit breathless. Take a -5 Fatigue penalty."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "1d5"
+      },
+      {
+        "status": "initiative_penalty",
+        "value": -7,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
+    "text": "That move only works in a saga. Take 1d5 hits damage and suffer a -7 initiative penalty next round."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "text": "You lost your weapon! Wait, you weren't using one. Spend the next round Stunned."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "text": "Your move is acrobatic, but misjudged. You end up flat on your back and are Stunned for one round."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [],
+    "text": "Execute the declared attack on the nearest ally, whoops! If no ally is in reach, an innocent bystander will do. Failing that, attack an imaginary friend."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "You have trouble believing that your awesome kill move did not work at all. Spend two rounds Stunned by your failure."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "2d10"
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "The problem with using your body is a weapon is that sometime you hit something hard. You take 2d10 hits and are Stunned two rounds."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "You execute a perfect blow, but your foe blocks it casually, perhaps accidentally; you are Stunned for two rounds by the shock of this."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "text": "Your foot slips out from under you as you begin your attack. You fall and Stun yourself for two rounds."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "text": "Your balance is a little off while requiring one foot to support your full weight. You suffer a -20 ankle sprain."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "2d10"
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "text": "You miss and overextend, pulling something in your back. Pulled muscle is a -20 injury. Take 2d10 hits and a round of Stun from the pain."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50
+      },
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "text": "You execute a textbook headbutt... to the ground. You are prone, Stunned for three rounds, and bleeding 1/rnd."
+  }
+]

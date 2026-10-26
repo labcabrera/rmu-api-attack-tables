@@ -1,0 +1,376 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Foe's hair stands on end as it takes a charge."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [],
+    "message": "Much light, little damage."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Mild shock to groin does not seem to please foe."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Current flows down foe's leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Zap to the shoulder makes foe twitch."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 8,
+    "location": "head",
+    "effects": [],
+    "message": "Arc jumps to the tip of foe's chin, leaving a small burn as it passes on through foe's body."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [],
+    "message": "Skin on foe's chest burns a bit as arc rebounds to floor."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 14,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Foe buckles around zap to the gut as power burns muscle internally."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
+      }
+    ],
+    "message": "Zap deep into thigh causes muscle spasms. Foe loses 2 Action Points."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Electricity enters the arm, but makes the legs fold as it grounds."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Power burns deep into shoulder, causing an uncontrolled jerk of the whole arm. Foe drops anything held."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 19,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe takes it right in the belly button. Spasms tear muscles all around midsection."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 22,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Foe's knee buckles under assault from savage arc. Foe drops anything held, clutches at knee."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 14,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Nerves are momentarily overwhelmed as arc strikes foe's chest. Foe drops anything held."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 12,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Strike to forehead knocks foe down, while foe's head is badly burned."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 17,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Like a reverse lightning bolt, arc enters foe's palm; muscles in hand tear as they spasm. Foe takes it hard."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Flow of power pulls muscles so tight they crack hip bone. Foe loses 2 Action Points."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 29,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Electricity pours into foe's abdomen, damaging the stomach. Surging power carries half of foe's PP away with it."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 29,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe cannot stand against direct hit to chest. Muscle spasms crack two ribs."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "paralyzed"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Arc to base of neck, then straight down spine leaves foe permanently paralyzed from the neck down."
+  }
+]

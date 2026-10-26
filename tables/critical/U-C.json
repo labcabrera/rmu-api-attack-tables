@@ -1,0 +1,480 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "You clip foe's ear."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "You force air from foe's lungs."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Groin strike bruises thigh."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Blow to leg pulls muscle in foe's thigh."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "You catch foe on the wrist."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Blow strikes foe's cheek with head-turning force."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 8,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Foe stands his ground, rather wishes that he hadn't."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 22,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -75
+      }
+    ],
+    "message": "Blow slams into foe's groin."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 21,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe pulls muscle in upper leg."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "message": "Bruising blow to the shoulder drives foe to the ground."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Muscle in foe's shoulder is pulled. Foe drops anything held in the hand on that side."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 26,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Blow breaks foe's pelvis. Think about what you've done."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 14,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Blow takes leg out from under foe, brings him down like a felled tree."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 32,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe's sternum cracks under your assault. You have the option of moving foe 5' in any direction."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ]
+    },
+    "message": "Hairline fracture of skull does not shield brain from being rattled."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Taking foe down by the wrist, which sprains, you stand above him like a triumphant god. Enemy must make RR versus Fear at your level +5."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 24,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Foe's knee yields to punishment. As damaged joint fails its duties, foe tumbles."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "incapacitated",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -45
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Blow to groin leaves foe helpless for the next 12 rounds. You may kill him, or be merciful."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 5,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50,
+        "delay": 3
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Foe staggers back, unaware that impact has caused damage to nerves. Heart loses its beat 7 rounds later, killing foe."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 35,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -90
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe drops from head shot, breaking neck. Death is almost instantaneous."
+  }
+]

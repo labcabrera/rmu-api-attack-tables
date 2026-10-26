@@ -3,7 +3,13 @@ const { resolveTableFile } = require('../config/table-paths');
 
 const cache = new Map();
 
+// Letter (K, P...) or name (acid, holy...) of the critical table
+const TABLE_ID = /^[A-Za-z0-9-]+$/;
+
 const findCriticalResult = (criticalTable, criticalType, roll, location) => {
+    if (!TABLE_ID.test(criticalTable)) {
+        throw { status: 400, message: 'Invalid critical table identifier' };
+    }
     validateType(criticalType);
     const isZType = criticalType === 'Z';
     const adjustedType = isZType ? 'A' : criticalType;
@@ -16,7 +22,7 @@ const findCriticalResult = (criticalTable, criticalType, roll, location) => {
     const adjustedLocation = isZType ? zCheckLocation : location;
     let i = adjustedRoll;
 
-    while (i > 1) {
+    while (i >= 1) {
         const item = getItem(data, i, adjustedLocation);
         if (item) {
             return item;
