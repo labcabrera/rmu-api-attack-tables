@@ -6,6 +6,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CqrsModule } from '@nestjs/cqrs';
 import { AuthModule } from './infrastructure/security/auth.module.js';
 import { HealthController } from './interfaces/http/health.controller.js';
+import { InfoController } from './interfaces/http/info.controller.js';
 import { TerminusModule } from '@nestjs/terminus';
 import { TablePaths } from './infrastructure/files/table-paths.js';
 
@@ -24,7 +25,7 @@ import { TablePaths } from './infrastructure/files/table-paths.js';
       },
     }),
   ],
-  controllers: [HealthController],
+  controllers: [HealthController, InfoController],
   providers: [{ provide: APP_GUARD, useClass: HttpThrottlerGuard }, TablePaths],
   exports: [TablePaths],
 })
