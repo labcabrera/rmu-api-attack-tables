@@ -199,6 +199,6 @@ on the `rmu-network` Docker network (needs `.env.docker`, copied from `.env.dock
 
 == Releases
 
-`make create-release` runs semantic-release from a clean `develop`: it merges into `main`, derives the version from the
+`make create-release` runs semantic-release from a clean `develop`: it merges into `master`, derives the version from the
 Conventional Commits (force one with `RELEASE_BUMP=patch|minor|major`), tags it without `v`, updates `CHANGELOG.md`, and
 bumps `develop` to the next `-SNAPSHOT`. Commit messages are checked by commitlint in a husky hook.
