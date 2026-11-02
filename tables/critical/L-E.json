@@ -1,0 +1,470 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Skin along foe's cheek is burnt by arcing current."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Blast catches foe mid-chest, unbalancing him."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 13,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Foe's hairs all stand up as electricity enters foe's belly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 9,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Mild burn results as current arcs through foot."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Sparks arc up forearm, damaging nerves."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Zap catches foe just under the chin, forcing out a grunting exhalation and leaving foe out of breath."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe struck just below shoulder and feels like Thor's bowling pin."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 25,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Arc into groin and down leg causes nerve damage."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 29,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Snap to hip sends spike of pain into foe as it damages cartilage in joint."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 21,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Upper arm jerks as current enters it; nerves damaged, whole arm goes numb."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 30,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's hand is severely burnt by electrical energies."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 10,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Power arcs across foe's groin and stomach. Internal damage to intestines will catch up to foe in 10 rounds, causing death."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 23,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's thighs become the target. Foe is burned and thrown to the ground."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Direct strike momentarily pauses foe's heart, leaving that organ damaged. Foe at -25 to Endurance until healed."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 19,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Powerful sparks envelop foe's head, singeing hair and cracking a clenched jaw. All foe's magic items glow green for three rounds."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Arc enters through foe's arm. On the way through foe's body, it destabilizes the heart. Foe lasts six more rounds, then drops dead."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Spasms from entering arc tear tendons in lower leg. Feedback through nervous system stops heart 4 rounds later."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Power fries abdominal organs. Foe is inactive for the 12 rounds it takes to die."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 56,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Charge arcs into chest, lungs damaged and heart destroyed."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -150
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Brain is cooked by direct current through head. Bits dribble out the ears."
+  }
+]

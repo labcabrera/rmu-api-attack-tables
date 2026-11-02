@@ -1,0 +1,485 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Shockingly ineffective."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe's heart skips a beat as current flows through chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe twitches as current flows into groin and down legs."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "An arc starts between foe's knees, slides to the ground."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Bolt strikes foe's arm. Foe staggers back."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Power arcs to top of head, setting hair on fire for a moment and burning scalp as foe spasms."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Blast to chest skips heart, but rattles the nerves on its way down to the feet."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "message": "Power drives deep into belly, knotting intestines up in spasms."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "half_movement"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Arc into foot. Muscle clenches and reduces foe's movement pace to half normal until wound heals."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm",
+        "rounds": 10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Hand jerks into a claw so hard tendons tear. Hand unusable for 10 rounds."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Arcing power strikes arm, which spasms and releases anything held."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 41,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Thunderbolt to the groin is like a kick from Zeus. The burns are terrible."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 21,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Power drives into ankle and down into foot. Tendons in ankle damaged."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 22,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Center strike to sternum makes foe dance with spasms, muscles tear on both sides of chest."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 16,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Outer ear melts a bit as arcing charge ravages inner ear, but damage to both saves foe's brain."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 18,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Arc into arm makes arm hyperextend, bone in forearm snaps."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 33,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Arc through knee shatters bone. Foe drops anything held and staggers back."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 11,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "paralyzed"
+      },
+      {
+        "status": "penalty",
+        "value": -65
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Foe spasms for a moment as arc strikes at waist height. Spinal injury leaves foe permanently paralyzed from the waist down."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Arc misses the heart. Foe drops anything held, sighs in relief, dies six rounds later as nerves fail to keep lungs going."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 40,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe glows blue as power arcs through foe's head. Neural disruption stops heart, foe dies. Foe's magic items glow for a day."
+  }
+]

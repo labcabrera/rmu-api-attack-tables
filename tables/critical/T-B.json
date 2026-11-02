@@ -1,0 +1,413 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Fist connects with skull. Your knuckles sting, he seems unfazed."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Bad side kick glances from foe's side."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Low blow to groin causes foe to groan."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Shin strike. While your shins are trained and hardened, your foe's are not. Foe is in pain."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Claw hand grip on upper arm pinches a nerve point. Foe is not amused because of the discomfort, pain and dropping what he was holding."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 4,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Strike to the throat could have been worse. Foe does feel its intent and reels from the blow."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Finely executed kick below solar plexus knocks foe's wind out of him."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 2,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Unknightly attack elicits painful scream from your foe."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 17,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Snappy leg strike causes deep contusions and tendon damage."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 8,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Upper arm claw grip causes bruising. As you pull your foe past you you pull his muscle and stretch his tendon."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "message": "Foe's attack is lost because you deliver a spear hand to his under arm. He barely manages to hold on to his weapon."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 15,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Dowward strike to abdomen almost drives foe to his knees as he gags and falls to the floor."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hard upper leg strike causes a lot of pain."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "message": "Blow to the chest leaves foe winded."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 20,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Neck chop sinks in as foe staggers to keep his balance."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 24,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -25
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm",
+        "rounds": 3
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Strike to shoulder temporarily hyperextends several rotator muscles. Cannot use this arm for 3 rounds."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 33,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Masterly kick breaks ankle, dumping him on backside. Embarrasment, discomfort and pain are his part. Standing up is cumbersome."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 28,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hard blow fractures pelvis. Foe drops to the ground from the pain and will have trouble getting up again."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 27,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 20
+      },
+      {
+        "status": "bleeding",
+        "value": 3
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Ball of your foot lands solidly on the ribs which break. Foe is knocked back in pain. Frothing blood from the mouth indicates death in 20 rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 28,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Years of accumulated brain damage converge on foe this minute. Brain hemorrhage collapses him for 5 rounds of spasmic death throes."
+  }
+]

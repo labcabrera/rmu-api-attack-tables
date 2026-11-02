@@ -4,6 +4,7 @@
     "rollMax": 1,
     "dmg": 4,
     "location": "head",
+    "effects": [],
     "message": "Edge just grazes neck; you make a lousy barber."
   },
   {
@@ -11,6 +12,7 @@
     "rollMax": 3,
     "dmg": 6,
     "location": "chest",
+    "effects": [],
     "message": "Strike is well-placed, but weak."
   },
   {
@@ -37,12 +39,15 @@
         "value": 2
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Edge flicks across foe's thigh, leaving a crimson trail."
   },
   {
     "rollMin": 11,
     "rollMax": 15,
-    "dmg": 5,
+    "dmg": 6,
     "location": "arm",
     "effects": [
       {
@@ -50,38 +55,48 @@
         "value": -5
       }
     ],
+    "injury": {
+      "type": "bone"
+    },
     "message": "Foe takes blow on the back of the hand, causing a hairline fracture."
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 17,
+    "location": "head",
     "effects": [
       {
         "status": "breakage_roll",
         "value": 0
       }
     ],
-    "location": "head",
     "message": "Slash to the cheek skips off bone."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 3,
+    "location": "chest",
     "effects": [
       {
         "status": "penalty",
         "value": -5
+      },
+      {
+        "status": "disarmed"
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Cut cracks a rib, and foe drops his weapon."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 14,
+    "location": "abdomen",
     "effects": [
       {
         "status": "penalty",
@@ -92,13 +107,16 @@
         "value": -50
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut below the belt line grates on pelvic bone. Ouch."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 10,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -113,13 +131,16 @@
         "value": -50
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Neat strike to the leg leaves foe spurting blood, you in perfect stance."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 24,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -130,13 +151,16 @@
         "value": -5
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Slash to forearm flicks drops of blood off to the side."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 20,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
@@ -156,13 +180,19 @@
         "value": -25
       }
     ],
-    "location": "arm",
-    "message": "The shoulder bone's connected to your weapon albeit briefly. The bone gets the worst of it."
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "The shoulder bone's connected to your weapon, albeit briefly. The bone gets the worst of it."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 34,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -174,7 +204,7 @@
       },
       {
         "status": "stunned",
-        "rounds": 1,
+        "rounds": 2,
         "value": -75
       },
       {
@@ -182,13 +212,16 @@
         "value": 0
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Blade cuts deep, slicing the stomach (organ damage). Feel pity, or press your advantage."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 26,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -199,13 +232,19 @@
         "value": -10
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Blow cuts into thigh, damaging muscle."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 12,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -221,21 +260,24 @@
       },
       {
         "status": "staggered",
-        "value": 1,
-        "rounds": 1
+        "rounds": 1,
+        "value": 1
       },
       {
         "status": "knocked_back_distance",
         "value": 5
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Hard chop cracks sternum."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 21,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -253,15 +295,21 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "disarmed"
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Slash opens foe's face from the corner of one eye to the side of chin. Foe loses grip on weapon."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 20,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -277,13 +325,24 @@
         "value": -75
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
     "message": "Cut into foe's hand, severs finger."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 3,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -299,14 +358,29 @@
         "value": -50
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
     "message": "Chop to knee severs leg. That was just brutal."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 21,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Cumulative -10 penalty each round; fatal at -100."
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -314,20 +388,23 @@
       {
         "status": "penalty",
         "value": -50
-      },
-      {
-        "status": "dying",
-        "rounds": 10
       }
     ],
-    "location": "abdomen",
-    "message": "Cut to abdomen ruptures spleen. Foe takes a cumulative -10 penalty each round for the organ injury. At -100 it proves fatal."
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Cut to abdomen ruptures spleen. Foe takes a cumulative -10 penalty each round for the organ injury. At -100, it proves fatal."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 10,
+    "location": "chest",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
       {
         "status": "bleeding",
         "value": 15
@@ -337,23 +414,25 @@
         "value": -30
       },
       {
-        "status": "dying",
-        "rounds": 3
-      },
-      {
         "status": "stunned",
         "rounds": 3,
         "value": -50
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Deep cut under arm opens major vessel, blood pours down foe's side. It takes foe three more rounds to realize it is time to die."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 25,
+    "location": "head",
     "effects": [
+      {
+        "status": "dead"
+      },
       {
         "status": "bleeding",
         "value": 10
@@ -361,12 +440,15 @@
       {
         "status": "penalty",
         "value": -75
-      },
-      {
-        "status": "dead"
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
     "message": "Slash across the front of foe's neck severs all but the spine."
   }
 ]

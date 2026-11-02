@@ -1,0 +1,496 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Bonk foe on noggin. Foe's eyes cross."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Sudden thumping surprises foe."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      }
+    ],
+    "message": "Blow to groin does not endear you to foe."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "message": "Tricky strike trips up foe. Foe curses your good name."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe dances back to evade leaving hand exposed. There is a crack as you break foe's thumb."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      }
+    ],
+    "message": "Crude strike to throat causes foe to gasp for breath. Foe cannot speak or scream for 2 rounds."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Strong yet off-center strike to solar plexus."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 5,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Bruising blow sinks into side below ribs."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Strike down at an angle, hit foe in the muscle on the back of the calf. Foe turns around, disoriented."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 8,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Tendons, muscles, skin….it all gets smooshed together."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "As you hear bone crack you feel sorry for foe. You really didn't mean to do that."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 37,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "incapacitated",
+        "duration": "1 minute"
+      },
+      {
+        "status": "unconscious",
+        "delayDuration": "1 minute"
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "After that brutality foe writhes on ground for 1 minute before falling unconscious."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Unexpected move as foe turns catches knee, cracking the kneecap."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 23,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "You try to hit a pressure point, but end up doing more damage than intended."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 26,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Draw blood from foe's face. Foe reconsiders fighting you (if appropriate, Morale check at -50)."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 15,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Downward strike to shoulder renders arm useless and tingly."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 48,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "incapacitated"
+      },
+      {
+        "status": "dying",
+        "duration": "2 hours"
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Deliver severe bruises to foe's leg causing instense pain. Foe is down, helpless and completely unable to act. Foe dies 2 hours later from a blood clot."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 14,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Simple, brutal, yet effective. Direct strike to abdomen drops foe to ground where he passes out."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "incapacitated"
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Cracking ribs sound like firecrackers. Foe falls to the ground, conscious, but unable to move."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -125
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Hit foe in head to knock him out, but things don't go as planned. Death caused by blunt force trauma to head."
+  }
+]

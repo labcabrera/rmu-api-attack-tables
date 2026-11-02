@@ -4,6 +4,7 @@
     "rollMax": 1,
     "dmg": 3,
     "location": "head",
+    "effects": [],
     "message": "Blade shaves close along one side of the chin."
   },
   {
@@ -11,6 +12,7 @@
     "rollMax": 3,
     "dmg": 4,
     "location": "chest",
+    "effects": [],
     "message": "Edge slices open clothing/fur but fails to reach flesh."
   },
   {
@@ -18,6 +20,7 @@
     "rollMax": 5,
     "dmg": 5,
     "location": "abdomen",
+    "effects": [],
     "message": "Slash cuts a shallow slice just above the belt line."
   },
   {
@@ -44,6 +47,9 @@
         "value": 2
       }
     ],
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Slash to upper arm is rewarded with a spray of blood."
   },
   {
@@ -51,12 +57,14 @@
     "rollMax": 20,
     "dmg": 14,
     "location": "head",
+    "effects": [],
     "message": "Chopping at foe's ear gets some blood in it."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 7,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -68,13 +76,16 @@
         "value": -25
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Ribs prevent a more serious wound, but foe feels the impact and the cut is bright with blood."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 12,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -86,13 +97,16 @@
         "value": 1
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Slicing flesh just above the hip, you feel your foe flinch."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 13,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -103,13 +117,16 @@
         "value": -25
       }
     ],
-    "location": "leg",
-    "message": "Solid chop sinks into side if foe's thigh."
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Solid chop sinks into side of foe's thigh."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 3,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -129,26 +146,35 @@
         "value": 1
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut to the shoulder makes a solid thunk. Foe cannot handle the impact."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 22,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
         "value": -10
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Cut to upper arm damages muscle."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 33,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -163,13 +189,16 @@
         "value": 0
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Strike to groin creates a grisly shower of blood."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 16,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -185,26 +214,32 @@
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Edge cuts into the side of foe's knee, which momentarily buckles."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 11,
+    "location": "chest",
     "effects": [
       {
         "status": "penalty",
         "value": -25
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Downward chop cracks collarbone."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 15,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -218,15 +253,23 @@
         "status": "stunned",
         "rounds": 1,
         "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 2
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Cut to forehead sends blood pouring down foe's face, foe shakes head to try to clear eyes. Foe loses 2 AP."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 24,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -242,13 +285,16 @@
         "value": -50
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Hack to shoulder damages tendons."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 26,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -261,15 +307,24 @@
       {
         "status": "breakage_roll",
         "value": 0
+      },
+      {
+        "status": "half_movement"
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Deep cut to lower leg damages muscle until stopped by bone. Foe is at half movement rate until it heals."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 33,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -285,14 +340,24 @@
         "value": -75
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Slash to the inner thigh damages muscle."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 7,
+    "location": "chest",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 3
+      },
       {
         "status": "bleeding",
         "value": 2
@@ -305,20 +370,26 @@
         "status": "stunned",
         "rounds": 1,
         "value": -50
-      },
-      {
-        "status": "dying",
-        "rounds": 3
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
     "message": "Savage chop to the chest breaks 3 ribs and punctures a lung. Foe fights on for 3 more rounds, then collapses and dies."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 23,
+    "location": "head",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
       {
         "status": "bleeding",
         "value": 6
@@ -332,16 +403,14 @@
         "value": -10
       },
       {
-        "status": "dying",
-        "rounds": 6
-      },
-      {
         "status": "stunned",
         "rounds": 2,
         "value": -75
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Cut appears bad, but is even worse. After six rounds, lungs collapse due to internal bleeding and foe dies."
   }
 ]

@@ -1,0 +1,488 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Your attempt to grab foe by the hair is fended off, but he is still shaken and mad."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Leg manipulation causes foe to trip, but he regains his footing. This causes a back muscle to cramp up."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Leg sweep enlarges foe's stance beyond what he finds comfortable. He staggers and has to push the effort to stay on his feet."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Low kick unbalances foe and a follow up sweep turns his world upside down."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Quick throw delivers foe to the ground. He has no idea what you did."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Arm manipulation send foe into nearest obstacle (friend or foe or furniture) with his head first. Foe ends up sprawled on the ground."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 13,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Shoddy arm lock still pulls a muscle before foe gets free."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Melee scuffle lets you take a favorable position. You kick foe in the rear and he goes down. Nothing too serious, except his pride."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "During the melee, foe lunges as you stick out your foot. He trips and takes a dive."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 5,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Botched hip throw dislodges foe's shoulder. Ligaments are stretched. Foe looks accusingly at you."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Quick move ducks foe's blow. You catch his arm and pull him on your back. As you bend over, foe flies over your shoulder landing 5' away. He is hurting."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 21,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Grappling low with foe, you miss your mark, but your fist finds soft meats in the groin area. Tears stream from foe's eyes hampering perception -25 for 5 rnds."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 11,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "As you push foe to the side, he makes a wrong step and twists his ankle."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 35,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Duck foe's attack and catch him around the middle. Using his momentum you throw him to the side where he collides with an obstacle or the ground."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 28,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Catch foe by his waist and turn him upside down, for piledriving his head in the ground. This might sting a bit."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Arm lock and takedown, but you hear the bone in his upper arm snap on the way down."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Catch foe's leg and yank it with force. Foe flies back and lands on his backside."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "secondary": [
+        "bone"
+      ]
+    },
+    "message": "Classic fall to the side breaks pelvis. Foe is down and unable to get up. He begs for mercy. Internal injuries cause sudden death in 5 rnds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 50,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe's rush is interrupted by your foot. He topples over and his momentum is too high to break his fall. He lies crumpled in a heap, dead in 5 rnds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 100,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "grappled",
+        "value": 100
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Twisting head lock snaps neck. Death is instant. Clean and efficient."
+  }
+]

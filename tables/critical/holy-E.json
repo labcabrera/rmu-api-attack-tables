@@ -1,0 +1,413 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Tiny vessels burst, the whites of foe's eyes turn red, and blood streams from foe's nose."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 10,
+    "location": "chest",
+    "effects": [],
+    "message": "Circle of skin on chest tears and reforms into rippled and cracked scar tissue."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 8,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Foe's intestines writhe inside him painfully, then subside to a throbbing soreness."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 9,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's lower leg erupts in boils, which burst and bleed."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 23,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "There is sound like a deep-pitched gong as you smite your foe."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 20,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Foe bites his own tongue, leaving a mouth full of bloody spittle."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "A patch of foe's chest erupts in a heatless blue flame that burns foe nonetheless."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Wrath passes through flesh, damaging liver from the inside. You are granted a +10 bonus to your next action."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 24,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Ripple of force enters one hip, passes across, and erupts from opposite hip, tearing muscles on its way through."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 16,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe feels an invisible wing buffet his upper arm, breaking bone."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Unseen hand sprains foe's wrist as it makes foe hit himself. Foe makes +0 attack on self with MA Strikes, claw, or weapon held. No DB."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's insides are flooded with divinely created liquid. Over the next four rounds foe coughs up gouts of fluid. You have a +10 to your next action."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 30,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Muscle in thigh twists and tears itself."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -40
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe's back and chest are crisscrossed with dozens of lash marks from an unseen whip. Foe's heart is weakened by the instant ordeal. -20 to enemy morale."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 14,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Heatless, unquenchable fire burns like third eye in middle of foe's forehead for 2 rounds. Skull is cracked beneath."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "unknown",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
+    "message": "Flesh and bone of hand wither, die, and fall off like an autumn leaf. It takes 2 more rounds for the arm to follow, 3 more for the rest of foe."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 0,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 5,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "unknown",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk",
+        "limb-loss"
+      ]
+    },
+    "message": "Foe's leg vanishes in a cloud of smoke. Despite the lack of pain, foe screams for 5 rounds before collapsing dead."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dead"
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "White light shoots up through foe's midsection, stops heart. Death is instantaneous, although body is undamaged."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's flesh melts and flows like wax. Within seconds, there is only a skeleton in a puddle."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "unknown"
+    },
+    "message": "A liquid flow of white spreads from the point of impact, foe is left as a solid statue of bone."
+  }
+]

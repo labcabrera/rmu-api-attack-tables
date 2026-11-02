@@ -1,0 +1,484 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "You fail at a grab and settle for a weak blow to the face."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "You grab at foe, just catching a loose piece of kit. You might tear it loose!"
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 1,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "You try to get a hold and grab some of foe's gear, what you have found is possibly not that strong."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Sweep unbalances foe. You step in and foe makes an awkward step back with a lot of effort to regain balance."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 6,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Painful arm twist forces foe off balance."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Evading your head grab, foe reels back 5' and might damage some of his gear."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Your throw fails, but foe's torso is twisted in ways it shouldn't be, ouch."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Sweep fails to fell foe, but overwide stance pull muscles in groin."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Leg grabbed, lifted and shoved. Foe tossed 5' and lands hard on his back with an oof."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Evading his blow, you take his arm and spin foe around, effectively trading places."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Arm lock makes foe comply to you wheeling him about and he slams into a wall or his friend. Roll 'A' Strike critical on foe and target (if any)."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 20,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Throw lands foe on buttocks but damages tailbone. Stunned look elicits laughter, but foe is in real pain."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 11,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "In an attempt to throw down foe you hit his knee. This is enough to take him down. He sits this one out."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 11,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Rolling throw slams foe to the ground hard. Foe tries to get up but stays down for this round."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "message": "Arm bar to the neck sends foe staggering 10' in the direction of your choice, coughing and having problems breathing until he can rest."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Quick arm manipulation pulls arm from socket and sends him to the ground. He will not bounce back from this one."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 28,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Pin foe's foot to the ground as you step in and unbalance him. Leg twists and foe exclaims in pain as you break all his toes."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 31,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Yank foe forward into a knee in the gut, his eyes bug out as he flops over on his back."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 27,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Rolling throw sends foe flying 10' behind you smashing in to the ground. Spine broken in 3 places. Death does job in 5 rounds."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 62,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Holding foe in a one arm lock, you take his head and smash it hard into an obstacle. Foe loses struggle to live after 4 rounds."
+  }
+]

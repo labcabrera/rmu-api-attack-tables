@@ -1,0 +1,435 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 3,
+    "location": "head",
+    "effects": [],
+    "message": "Strike glances off foe."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [],
+    "message": "Maybe you should have just thrown a stone."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Blow runs out of force before foe runs out of belly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Smart slapping sound as blow strikes foe's leg fills you with pride."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Arm flung out to one side, pinched nerve leaves arm tingly and numb until fatigue penalty is rested away."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 7,
+    "location": "head",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Blow to head stretches neck, resulting in a splitting headache until fatigue penalty is rested away."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 7,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Blow hits solidly, knocks foe back a bit."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Force catches foe across the hips, putting hairline fractures into those hips."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "message": "Foe's knee bends painfully, but miraculously bends back unharmed."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 6,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe's arm forced back into head with an amusing impact sound."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 23,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Blow to arm pulls muscle."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 35,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Painful muscle pull in groin joins a bleeding thigh as foe gets hammered."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Force of attack takes foe's legs out from under him."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Two ribs break. Foe finds breathing less than comfortable."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 20,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Blow to face pushes foe back, breaks cartilage in nose."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 34,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Attack bends foes finger the wrong way, pulling muscle."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Foe thrown to the ground, breaking hip."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 22,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Blow to foe's midsection knocks wind out of him, also some vomit. Stomach is injured."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 7,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Paralyzed from the waist down (no time to death printed)."
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Force of impact focuses on foe's spine, paralyzing him from the waist down."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 18,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 4
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 4,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Foe loses several teeth and bleeds from ears. In four more rounds, foe will bleed from eyes and choke to death on his own vomit."
+  }
+]

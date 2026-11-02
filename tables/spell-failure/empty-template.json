@@ -1,0 +1,398 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 10,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 30,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 60,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 75,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 90,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 100,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 101,
+    "rollMax": 125,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 126,
+    "rollMax": 150,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 151,
+    "rollMax": 175,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 176,
+    "rollMax": 185,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 186,
+    "rollMax": 190,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 191,
+    "rollMax": 195,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 196,
+    "rollMax": 200,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 201,
+    "rollMax": 250,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 251,
+    "rollMax": 300,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  },
+  {
+    "rollMin": 301,
+    "rollMax": null,
+    "results": {
+      "elemental": {
+        "text": "",
+        "pp": "normal"
+      },
+      "force": {
+        "text": "",
+        "pp": "normal"
+      },
+      "informational": {
+        "text": "",
+        "pp": "normal"
+      },
+      "utility": {
+        "text": "",
+        "pp": "normal"
+      }
+    }
+  }
+]

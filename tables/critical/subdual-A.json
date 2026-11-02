@@ -1,0 +1,401 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "Poke foe's fat."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Wildly grab foe's shirt."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Grazing strike to the belly, foe isn't ticklish."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      }
+    ],
+    "message": "You momentarily subdue foe's leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 0,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 10
+      }
+    ],
+    "message": "You twist foe's arm and are convinced foe is at your mercy. Foe may escape easily."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Poke foe in both eyes. Nyuk nyuk nyuk."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 1,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Poor form. Foe thinks so too, but moves back from assault."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hard strike cracks tip of foe's pelvic bone. Painful, but not debilitating."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 16,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Blow sinks into the meaty part of foe's thigh."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 3,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Whack to the elbow drives a twinge of pain down foe's arm. Foe drops anything held."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 4,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Hard strike to foe's shoulder causes any item held to go flying 10' back."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 8,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Blow sinks hard into foe's stomach, bruising abdominal muscles. Foe vomits for 3 rounds (treat as Concentration)."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      }
+    ],
+    "message": "Attempt to trip foe but knock him back instead. You think foe's will is waning."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 14,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Clean hit to the solar plexus. Needed more force but strong enough to cause foe to drop any item held."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 22,
+    "location": "head",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Pummel foe just below the eye, opening cut along the cheekbone."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 18,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Blow bends foe's wrist back too far, spraining it."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Perfect strike to leg drops foe to ground."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 29,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "fatigue",
+        "value": -30
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Painful strike to one kidney causes foe to drop anything held."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 2
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 3
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You break two lower ribs on one side of foe's chest. Foe is in no condition to fight."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 25,
+    "location": "head",
+    "effects": [
+      {
+        "status": "unconscious"
+      },
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Smash foe in side of head causing him to bite off tongue. Foe falls unconscious. Hope you did not need to talk to foe."
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [],
+    "message": "You rip a few hairs from foe's head."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Are you wrestling or copping a feel?"
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Attempt to grab is more like a punch in the belly."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 2,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 5
+      }
+    ],
+    "message": "You clutch one leg in an uncertain hold."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Weak grip on forearm pulls foe off balance."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "You stick a finger in foe's eye. Foul!"
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 2,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 15
+      }
+    ],
+    "message": "Get a grip! Done."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 15
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You painfully grab foe through crotch around back. Not very sporting."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 8,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "You give foe's knee a painful twist."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 7,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "message": "Painful grip on bicep feels like it is cutting arm off."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "message": "Grasp of foe's arm is bruising in its force."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Crushing grip on groin makes foe howl. -20 to enemy morale."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "When you grab foe by the leg you wrench the hip joint."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 15
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "Tight squeeze empties foe's lungs. Foe struggles to refill them."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "You grab foe around the head, pull him down."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Arm twisted behind foe's back produces wrenched shoulder tendons."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "grappled",
+        "value": 50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Ankle grab and twist looks as painful as it feels."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 4,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "grappled",
+        "value": 150
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Lower body hold has foe all but helpless in your grasp."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 4,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "grappled",
+        "value": 75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Four ribs crack as you tighten grip on foe's chest."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Attacker chooses to kill foe (or render him unconscious) over 3 rounds"
+      },
+      {
+        "status": "grappled",
+        "value": 200
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Stranglehold is one that foe cannot break. You have the option of killing foe or rendering him unconscious, taking 3 rounds in either case."
+  }
+]

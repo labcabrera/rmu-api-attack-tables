@@ -1,0 +1,452 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 4,
+    "location": "head",
+    "effects": [],
+    "message": "Bad strike to the face. He will still feel this one for a few days."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 0,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Wildly thrown blow hits nothing serious but it still counts!"
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 3,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Lower back strike. Opponent is inconvenienced."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 12,
+    "location": "leg",
+    "effects": [],
+    "message": "Foe's knee deflects your foot. Still a hit!"
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 11,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Quick strike to upper weapon arm causes foe to lose opportunity to strike."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 19,
+    "location": "head",
+    "effects": [],
+    "message": "Glancing blow to side of face still does some damage."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 18,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Good kick to the center mass is barely evaded. Glancing blow causes some pain and discomfort."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      }
+    ],
+    "message": "Your foot finds soft fleshy tissue. This conveys the pain perfectly."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 1,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Pummeling foe's upper leg, you strike a nerve end in one of his thigh muscles. Leg buckles from under him and he is knocked prone."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 19,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Strike with a tiger claw hand bruises and tears arm with four bloody tracks down the length."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 14,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "message": "Knife chop to wrist dislodges item in foe's hand and frustrates his attack. Foe is on the wrong footing and in serious trouble."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 36,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "skin-tissue"
+    },
+    "message": "Blatant sack hack makes foe bend over. This was low, even for you. Foe drops gear."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 11,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Quick step pins foe's foot, allowing you to hammer down into his thigh with an elbow, tearing the muscle. Foe falls over as you step off his foot."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 17,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "fatigue",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 5
+      },
+      {
+        "status": "breakage_roll",
+        "value": -100
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "You are having a field day. Strike to the side, strike to the chest and a final kick in the gut sends foe flying."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 13,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Blow lands on ear. It seems it did nothing until you see he has trouble with his balance. Finish him!"
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 15,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "limb_useless",
+        "location": "arm"
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
+    "message": "Crushing blow to the elbow makes foe yelp in pain as you dislodge his elbow and effectively break it. He will not be using that arm again in this fight."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 18,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Massive strike to the upper leg snaps the femur. Leg is out of commision and foe has a major problem."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 11,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 10
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe laments his bad defense. Solid spear hand drives deep into abdominal region causing pain and lethal organ damage. Death occurs in 10 rounds."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 20,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 12
+      },
+      {
+        "status": "penalty",
+        "value": -50
+      },
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Strike to the front of neck causes windpipe to constrict. Foe turns blue in the face and then keels over in 12 rounds, dead."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 10,
+    "location": "head",
+    "effects": [
+      {
+        "status": "paralyzed",
+        "duration": "permanent"
+      },
+      {
+        "status": "penalty",
+        "value": -100
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "injury": {
+      "type": "bone",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
+    "message": "Solid strike to neck paralyzes foe from the neck down, permanently."
+  }
+]

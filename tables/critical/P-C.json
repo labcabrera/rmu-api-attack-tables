@@ -4,90 +4,104 @@
     "rollMax": 1,
     "dmg": 4,
     "location": "head",
+    "effects": [],
     "message": "Are you certain you remembered to use the pointed end?"
   },
   {
     "rollMin": 2,
     "rollMax": 3,
     "dmg": 4,
+    "location": "chest",
     "effects": [
       {
         "status": "breakage_roll",
         "value": 0
       }
     ],
-    "location": "chest",
     "message": "Almost a great hit, but your grip was not quite right at the moment of impact."
   },
   {
     "rollMin": 4,
     "rollMax": 5,
     "dmg": 3,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
         "value": 1
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Thrust to foe's thigh draws blood."
   },
   {
     "rollMin": 6,
     "rollMax": 10,
     "dmg": 7,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Surface wound to the thigh."
   },
   {
     "rollMin": 11,
     "rollMax": 15,
     "dmg": 11,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
         "value": 1
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point grazes back of hand, opens gash. Neatly done!"
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 15,
+    "location": "head",
     "effects": [
       {
         "status": "breakage_roll",
         "value": -25
       }
     ],
-    "location": "head",
     "message": "Point tears skin along jaw line."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 13,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
         "value": 2
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Shoulder strike draws arc of spurting blood. You feel inspired."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 11,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -102,39 +116,48 @@
         "value": -25
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point penetrates just above pelvis, tearing muscle."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 11,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
         "value": 5
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Wow. That must have been an artery or something."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 24,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
         "value": -10
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point slides between forearm bones, damaging muscle."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 14,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -145,13 +168,16 @@
         "value": -10
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Deep stab into shoulder damages muscle."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 31,
+    "location": "abdomen",
     "effects": [
       {
         "status": "penalty",
@@ -176,13 +202,16 @@
         "value": 5
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Deep belly wound damages bladder."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 21,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -198,13 +227,16 @@
         "value": -25
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Thrust to knee leaves that joint in a bad way."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 27,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -215,13 +247,16 @@
         "value": -20
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Foe is stabbed between two ribs, breaking both."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 18,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -232,13 +267,16 @@
         "value": -20
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point passes through cheek, foe spits up blood. Foe cannot speak clearly until bleeding is stopped."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 40,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -250,13 +288,16 @@
         "value": -75
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Point passes through arm. Blood comes out on both sides."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 38,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -275,14 +316,24 @@
         "value": 1
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Thrust goes clear through foe's ankle. Severe muscle, tendon, and bone damage. Also, blood."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 9,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 20
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -294,42 +345,23 @@
       {
         "status": "breakage_roll",
         "value": 0
-      },
-      {
-        "status": "dying",
-        "rounds": 20
-      },
-      {
-        "status": "staggered",
-        "rounds": 5,
-        "value": 1,
-        "delay": 5
-      },
-      {
-        "status": "staggered",
-        "rounds": 5,
-        "value": 2,
-        "delay": 10
-      },
-      {
-        "status": "staggered",
-        "rounds": 5,
-        "value": 3,
-        "delay": 15
-      },
-      {
-        "status": "knocked_back_distance",
-        "value": 5
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Deep stab damages stomach. Mounting pain and shock causes foe to lose 1 AP after 5 rounds, 2AP after 10, 3AP after 15, and die after the 20th round."
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 3,
+    "location": "chest",
     "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Unless healed, the next fumble, critical or moving maneuver failure kills foe."
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -346,7 +378,7 @@
       {
         "status": "stunned",
         "rounds": 1,
-        "value": -50,
+        "value": -25,
         "delay": 3
       },
       {
@@ -355,25 +387,30 @@
         "value": 1
       },
       {
-        "status": "breakage_roll",
-        "value": 0
-      },
-      {
         "status": "knocked_back_distance",
         "value": 5
       },
       {
-        "status": "conditional_dying",
-        "condition": "Fumble, critical or moving maneuver failure"
+        "status": "breakage_roll",
+        "value": 0
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone",
+      "secondary": [
+        "organ"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Thrust shatters a rib. Unless healed, the next fumble, critical or moving maneuver failure foe takes will drive a shard into his heart, killing him."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 15,
+    "location": "head",
     "effects": [
       {
         "status": "dead"
@@ -387,7 +424,13 @@
         "value": -100
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "paralysis"
+      ]
+    },
     "message": "Point penetrates spinal cord. Heart stops. Foe dies."
   }
 ]

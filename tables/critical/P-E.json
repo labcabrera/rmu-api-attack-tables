@@ -3,13 +3,16 @@
     "rollMin": 1,
     "rollMax": 1,
     "dmg": 2,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
         "value": 1
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "A little wound to the side of foe's head begins to bleed, and it does not stop."
   },
   {
@@ -17,6 +20,7 @@
     "rollMax": 3,
     "dmg": 13,
     "location": "chest",
+    "effects": [],
     "message": "Point breaks skin, stopped by rib. You may, however, quickly scribe your initial or other simple sign into foe's garment/skin."
   },
   {
@@ -24,25 +28,30 @@
     "rollMax": 5,
     "dmg": 13,
     "location": "abdomen",
+    "effects": [],
     "message": "Glancing blow to groin is still painful."
   },
   {
     "rollMin": 6,
     "rollMax": 10,
     "dmg": 4,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
         "value": 3
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Stab to knee draws spurts of blood."
   },
   {
     "rollMin": 11,
     "rollMax": 15,
     "dmg": 10,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -53,13 +62,16 @@
         "value": -100
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Stabbing foe's elbow makes whole arm spasm for a moment."
   },
   {
     "rollMin": 16,
     "rollMax": 20,
     "dmg": 15,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -71,13 +83,16 @@
         "value": -25
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Foe flinches from blow, avoiding even greater damage to his neck."
   },
   {
     "rollMin": 21,
     "rollMax": 25,
     "dmg": 19,
+    "location": "chest",
     "effects": [
       {
         "status": "penalty",
@@ -92,13 +107,16 @@
         "value": 0
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "You damage muscle, but thrust is turned by rib. You just know your next attack will be even better."
   },
   {
     "rollMin": 26,
     "rollMax": 35,
     "dmg": 15,
+    "location": "abdomen",
     "effects": [
       {
         "status": "bleeding",
@@ -114,13 +132,16 @@
         "value": -25
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "cut-burn"
+    },
     "message": "Stab foe in groin. Savor the triumph."
   },
   {
     "rollMin": 36,
     "rollMax": 45,
     "dmg": 20,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -135,13 +156,16 @@
         "value": -25
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Blow passes through lower leg, between the bones, damaging muscle."
   },
   {
     "rollMin": 46,
     "rollMax": 55,
     "dmg": 21,
+    "location": "arm",
     "effects": [
       {
         "status": "penalty",
@@ -153,13 +177,16 @@
         "value": -50
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point passes through palm and out back of hand, damaging tendons."
   },
   {
     "rollMin": 56,
     "rollMax": 65,
     "dmg": 20,
+    "location": "arm",
     "effects": [
       {
         "status": "bleeding",
@@ -170,14 +197,21 @@
         "value": -15
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "muscle-tendon"
+    },
     "message": "Point passes between forearm bones, passing through skin and scoring muscle."
   },
   {
     "rollMin": 66,
     "rollMax": 66,
     "dmg": 17,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 9
+      },
       {
         "status": "bleeding",
         "value": 1
@@ -196,19 +230,18 @@
         "rounds": 4,
         "value": -25,
         "delay": 5
-      },
-      {
-        "status": "dying",
-        "rounds": 9
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Stabbing through a kidney doesn't seem so bad, but the other one fails for reasons unclear. Foe will drop and die in 9 rounds."
   },
   {
     "rollMin": 67,
     "rollMax": 75,
     "dmg": 20,
+    "location": "leg",
     "effects": [
       {
         "status": "bleeding",
@@ -228,13 +261,19 @@
         "value": -50
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ]
+    },
     "message": "Point penetrates foe's ankle, damaging joint and sending a fan of blood from the wound."
   },
   {
     "rollMin": 76,
     "rollMax": 80,
     "dmg": 10,
+    "location": "chest",
     "effects": [
       {
         "status": "bleeding",
@@ -250,13 +289,16 @@
         "value": -50
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "bone"
+    },
     "message": "Your attack breaks two ribs, which serve as secondary weapons in opening up foe's blood vessels."
   },
   {
     "rollMin": 81,
     "rollMax": 85,
     "dmg": 4,
+    "location": "head",
     "effects": [
       {
         "status": "bleeding",
@@ -267,14 +309,25 @@
         "value": -50
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk",
+        "blinding"
+      ]
+    },
     "message": "Thrust into foe's eye. Eye pops like a hammered grape. +20 boost to friendly morale."
   },
   {
     "rollMin": 86,
     "rollMax": 90,
     "dmg": 9,
+    "location": "arm",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
       {
         "status": "bleeding",
         "value": 1
@@ -287,20 +340,23 @@
         "status": "stunned",
         "rounds": 6,
         "value": -50
-      },
-      {
-        "status": "dying",
-        "rounds": 6
       }
     ],
-    "location": "arm",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Point goes through shoulder down into foe's body. Only when foe coughs blood six rounds later and dies, do you know it hit lung."
   },
   {
     "rollMin": 91,
     "rollMax": 95,
     "dmg": 3,
+    "location": "leg",
     "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
       {
         "status": "bleeding",
         "value": 5
@@ -313,20 +369,29 @@
         "status": "stunned",
         "rounds": 3,
         "value": -75
-      },
-      {
-        "status": "dying",
-        "rounds": 6
       }
     ],
-    "location": "leg",
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Simple seeming leg puncture rips painfully through nerves and blood vessels. Blow is lethal as foe dies of shock six rounds after this wound occurs."
   },
   {
     "rollMin": 96,
     "rollMax": 97,
     "dmg": 7,
+    "location": "abdomen",
     "effects": [
+      {
+        "status": "conditional_dying",
+        "condition": "Foe dies in 1 hour unless healed."
+      },
       {
         "status": "bleeding",
         "value": 3
@@ -340,20 +405,19 @@
         "value": -100
       },
       {
-        "status": "unconscious"
-      },
-      {
-        "status": "conditional_dying",
-        "condition": "Foe dies in 1 hour unless healed."
+        "status": "incapacitated"
       }
     ],
-    "location": "abdomen",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Attack rips through belly and out back, damaging liver and intestines, incapacitating foe. (Foe dead in 1 hour.)"
   },
   {
     "rollMin": 98,
     "rollMax": 99,
     "dmg": 6,
+    "location": "chest",
     "effects": [
       {
         "status": "dead"
@@ -367,13 +431,16 @@
         "value": -100
       }
     ],
-    "location": "chest",
+    "injury": {
+      "type": "organ"
+    },
     "message": "Point goes through foe's heart and one lung. As if this was not lethal enough, blood floods the lungs, drowning foe."
   },
   {
     "rollMin": 100,
     "rollMax": 100,
     "dmg": 15,
+    "location": "head",
     "effects": [
       {
         "status": "dead"
@@ -387,7 +454,12 @@
         "value": -125
       }
     ],
-    "location": "head",
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
     "message": "Point enters mouth and comes out the top of the head, destroying foe's brain."
   }
 ]

@@ -1,0 +1,507 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 2,
+    "location": "head",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Acid hits foe's head, but mostly drops away before doing much damage."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Minor acid burning of the chest leaves a lingering stinging."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 0,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Quick reflexes save foe from serious damage, leaves foe prone."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 13,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "It smells worse than it is, but spots of acid burns speckle foe's leg."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 9,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "breakage_roll",
+        "value": -50
+      }
+    ],
+    "message": "Foe's arm is splashed with a cup of causticity."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 0,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Acid gets in foe's ear; slight hearing loss follows."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 13,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Foe is dropped more by surprise than force."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 12,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      }
+    ],
+    "message": "You almost wince in sympathy as acid rolls down foe's belly to the groin."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Acid eats at foe's feet, seeping between the toes."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 20,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's hand has trouble opening and closing after skin blisters."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 13,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "bleeding",
+        "value": 1
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Foe's upper arm and shoulder are blackened and disfigured. Damaged skin cracks and oozes blood."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 23,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 8
+      },
+      {
+        "status": "penalty",
+        "value": -65
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "The smoldering ruin of foe's lower torso spasms for 8 rounds, before splitting to spill foe's innards, causing death."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "bone",
+        "muscle-tendon"
+      ]
+    },
+    "message": "Severe damage to foot and ankle drop foe, causes foe to drop anything held."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 34,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe suffers serious damage around shoulder, drops anything held."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 39,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe goes bald the quick and painful way. Scalp sizzles."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 27,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Foe's arm is terribly burnt."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 11,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 5
+      },
+      {
+        "status": "penalty",
+        "value": -60
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      },
+      {
+        "status": "limb_useless",
+        "location": "leg"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn",
+      "secondary": [
+        "muscle-tendon"
+      ],
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Little is left of the leg except bone and tendons. Muscles entirely stripped away, the limb is useless. Shock kills in five rounds."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 24,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "bleeding",
+        "value": 2
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Burning sensation strikes foe as acid opens midsection. Foe dies in six rounds. All items around hips make a breakage check."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 43,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Acid actually burns hole through and into foe's heart. Time for last rites."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 46,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Acid eats foe's head completely, dissolving even the skull. Headless body twitches and lashes out (resolve as +0 OB attack on nearest ally), before dropping."
+  }
+]

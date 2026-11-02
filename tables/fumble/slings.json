@@ -1,0 +1,150 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 20,
+    "effects": [],
+    "text": "Not enough spin. Hold your attack until next round."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 30,
+    "effects": [],
+    "text": "You lose your grip. The stone still goes flying off to make a +0 attack on the target, but your sling goes along for the ride."
+  },
+  {
+    "rollMin": 31,
+    "rollMax": 40,
+    "effects": [],
+    "text": "You partly lose your grip. The stone goes skipping off harmlessly along the ground, but you retain your sling."
+  },
+  {
+    "rollMin": 41,
+    "rollMax": 50,
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -5
+      }
+    ],
+    "text": "You have been overdoing it. Take a -5 Fatigue penalty."
+  },
+  {
+    "rollMin": 51,
+    "rollMax": 60,
+    "effects": [
+      {
+        "status": "initiative_penalty",
+        "value": -10,
+        "rounds": 1,
+        "delay": 1
+      }
+    ],
+    "text": "You spin your sling so fast that you almost lose control of it. Suffer a -10 initiative penalty next round."
+  },
+  {
+    "rollMin": 61,
+    "rollMax": 65,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20,
+        "rounds": 1
+      }
+    ],
+    "text": "You are sure it is the perfect sling until you tire of waiting for your target to fall and notice the stone is on the ground near your feet. Your next action is at -20."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "A"
+      }
+    ],
+    "text": "Execute the declared attack on the nearest ally, whoops! (If no ally in range, you do yourself an 'A' Unbalancing crit.)"
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 70,
+    "effects": [
+      {
+        "status": "hits",
+        "value": "1d5"
+      }
+    ],
+    "text": "The stone drops on your foot. Take 1d5 hits of damage."
+  },
+  {
+    "rollMin": 71,
+    "rollMax": 80,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      }
+    ],
+    "text": "You put too much body into it, and you fall down before you can release your attack. You are Dazed one round."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      }
+    ],
+    "text": "You clip the side of your head and suffer one round Stunned."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -50
+      }
+    ],
+    "text": "You clip the side of your head and suffer two rounds Stunned."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      }
+    ],
+    "text": "You injure a tendon in the wrist of your slinging hand. This results in a -15 injury penalty."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 99,
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      }
+    ],
+    "text": "You pull a muscle in your slinging arm, resulting in a -20 penalty injury."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "effects": [
+      {
+        "status": "additional_critical",
+        "severity": "A"
+      }
+    ],
+    "text": "The sling becomes a melee weapon as you manage to hit yourself for an 'A' Krush critical."
+  }
+]

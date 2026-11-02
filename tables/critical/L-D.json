@@ -1,0 +1,517 @@
+[
+  {
+    "rollMin": 1,
+    "rollMax": 1,
+    "dmg": 1,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      }
+    ],
+    "message": "Electricity arcs across foe's skull, and foe's body twitches."
+  },
+  {
+    "rollMin": 2,
+    "rollMax": 3,
+    "dmg": 3,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "fatigue",
+        "value": -10
+      }
+    ],
+    "message": "Spark catches foe in the side of the chest."
+  },
+  {
+    "rollMin": 4,
+    "rollMax": 5,
+    "dmg": 10,
+    "location": "abdomen",
+    "effects": [],
+    "message": "Arc to abdomen looks painful."
+  },
+  {
+    "rollMin": 6,
+    "rollMax": 10,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Leg twitches madly as sparks run down it."
+  },
+  {
+    "rollMin": 11,
+    "rollMax": 15,
+    "dmg": 1,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "knocked_back_distance",
+        "value": 10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "message": "Electricity running up and down foe's arm motivates falling back, fails to do much harm."
+  },
+  {
+    "rollMin": 16,
+    "rollMax": 20,
+    "dmg": 3,
+    "location": "head",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": 0
+      }
+    ],
+    "message": "Sudden electrical surge across foe's skull proves a distraction."
+  },
+  {
+    "rollMin": 21,
+    "rollMax": 25,
+    "dmg": 6,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "bone"
+    },
+    "message": "Hard current to the side of the chest causes hard spasms that crack rib."
+  },
+  {
+    "rollMin": 26,
+    "rollMax": 35,
+    "dmg": 18,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "breakage_roll",
+        "value": -25
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Power rips across ribs, muscles tear as they clench ferociously."
+  },
+  {
+    "rollMin": 36,
+    "rollMax": 45,
+    "dmg": 10,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Blasted ankle spasms, and foe tumbles."
+  },
+  {
+    "rollMin": 46,
+    "rollMax": 55,
+    "dmg": 10,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -5
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Power arcs into forearm, burning the skin. Foe drops anything held."
+  },
+  {
+    "rollMin": 56,
+    "rollMax": 65,
+    "dmg": 2,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 1
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 2
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "message": "Foe is knocked down by arcing bolt to shoulder. Spectacle of blast delivers -20 penalty to enemy morale."
+  },
+  {
+    "rollMin": 66,
+    "rollMax": 66,
+    "dmg": 7,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -35
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -50
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Little visible damage shows from shock to abdomen, but liver damage causes foe to die at the end of the 6th round."
+  },
+  {
+    "rollMin": 67,
+    "rollMax": 75,
+    "dmg": 20,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -15
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 1
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Pain from leg strike causes foe to turn own ankle, tear muscle."
+  },
+  {
+    "rollMin": 76,
+    "rollMax": 80,
+    "dmg": 38,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Strike catches foe in the armpit and arcs down side, damaging muscles. Anything held is dropped."
+  },
+  {
+    "rollMin": 81,
+    "rollMax": 85,
+    "dmg": 11,
+    "location": "head",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -75
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Foe takes nerve damage in face due to electrical blast, as well as falling and dropping anything held."
+  },
+  {
+    "rollMin": 86,
+    "rollMax": 90,
+    "dmg": 22,
+    "location": "arm",
+    "effects": [
+      {
+        "status": "penalty",
+        "value": -25
+      },
+      {
+        "status": "stunned",
+        "rounds": 2,
+        "value": -75
+      },
+      {
+        "status": "disarmed"
+      }
+    ],
+    "injury": {
+      "type": "muscle-tendon"
+    },
+    "message": "Power surge to upper arm internally cooks muscle. Anything held is dropped."
+  },
+  {
+    "rollMin": 91,
+    "rollMax": 95,
+    "dmg": 3,
+    "location": "leg",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 7
+      },
+      {
+        "status": "penalty",
+        "value": -20
+      },
+      {
+        "status": "fatigue",
+        "value": -20
+      },
+      {
+        "status": "stunned",
+        "rounds": 3,
+        "value": -75
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -50,
+        "delay": 3
+      },
+      {
+        "status": "stunned",
+        "rounds": 1,
+        "value": -25,
+        "delay": 4
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ",
+      "flags": [
+        "permanent-risk"
+      ]
+    },
+    "message": "Electricity wreathes foe's legs and down foe goes. Foe may rise again, but 7 rounds later a surge through the nerves stops foe's heart."
+  },
+  {
+    "rollMin": 96,
+    "rollMax": 97,
+    "dmg": 9,
+    "location": "abdomen",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 6
+      },
+      {
+        "status": "penalty",
+        "value": -10
+      },
+      {
+        "status": "stunned",
+        "rounds": 6,
+        "value": -75
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "cut-burn"
+    },
+    "message": "Electricity enters groin, wanders nervous system. After six rounds, foe drops dead."
+  },
+  {
+    "rollMin": 98,
+    "rollMax": 99,
+    "dmg": 8,
+    "location": "chest",
+    "effects": [
+      {
+        "status": "dying",
+        "rounds": 15
+      },
+      {
+        "status": "penalty",
+        "value": -40
+      },
+      {
+        "status": "stunned",
+        "rounds": 15,
+        "value": -25
+      },
+      {
+        "status": "prone"
+      },
+      {
+        "status": "staggered",
+        "rounds": 1,
+        "value": 1
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Foe falls and flops around like a fish. (Heart damaged, foe dead in 15 rounds.) -20 to enemy morale."
+  },
+  {
+    "rollMin": 100,
+    "rollMax": 100,
+    "dmg": 13,
+    "location": "head",
+    "effects": [
+      {
+        "status": "dead"
+      },
+      {
+        "status": "penalty",
+        "value": -125
+      }
+    ],
+    "injury": {
+      "type": "organ"
+    },
+    "message": "Head strike shuts down brain, foe dies unless he has extra brain ready to go."
+  }
+]
