@@ -50,6 +50,14 @@ describe('Tables (e2e)', () => {
       await get('/v1/attack-tables/broadsword/medium/1/100').expect(404);
     });
 
+    it('gives the disarm and subdual modifiers of a table to any user (spec 079)', async () => {
+      const res = await get('/v1/attack-tables/spear/modifiers').expect(200);
+      expect(res.body).toEqual({ id: 'spear', disarm: { melee: -100, ranged: -200 }, subdual: { melee: -100, ranged: -150 } });
+      expect((await get('/v1/attack-tables/ice-bolt/modifiers').expect(200)).body).toEqual({ id: 'ice-bolt', disarm: null, subdual: null });
+      expect((await get('/v1/attack-tables/missing/modifiers').expect(404)).body).toMatchObject({ code: 'not-found' });
+      expect((await get('/v1/attack-tables/Bad_Id/modifiers').expect(400)).body).toMatchObject({ code: 'invalid-table-id' });
+    });
+
     it('gives the whole table with Core Law access', async () => {
       const res = await get('/v1/attack-tables/broadsword', 'coreLaw').expect(200);
       const body = res.body as { id: string; rows: { rollMin: number; rollMax: number; results: unknown[] }[] };
