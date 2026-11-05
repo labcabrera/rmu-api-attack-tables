@@ -1,5 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import type { CriticalEntry, CriticalTable } from '../../../domain/entities/critical-table.js';
+import type { CriticalLocationRange } from '../../../domain/services/critical-locations.js';
 
 /** A row of a critical table, as the file has it. */
 export class CriticalEntryDto {
@@ -65,3 +66,18 @@ export class CriticalTableDto {
 }
 
 export const toCriticalEntryDto = (entry: CriticalEntry): CriticalEntryDto => Object.assign(new CriticalEntryDto(), entry);
+
+/** A band of critical rolls and the location it hits. */
+export class CriticalLocationRangeDto {
+  @ApiProperty({ type: Number, example: 81 })
+  from: number;
+
+  @ApiProperty({ type: Number, example: 85 })
+  to: number;
+
+  @ApiProperty({ type: String, nullable: true, description: 'Location (head, chest, abdomen, arm, leg)', example: 'head' })
+  location: string | null;
+}
+
+export const toCriticalLocationRangeDto = (range: CriticalLocationRange): CriticalLocationRangeDto =>
+  Object.assign(new CriticalLocationRangeDto(), range);

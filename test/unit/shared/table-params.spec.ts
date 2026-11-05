@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { checkTableId, readInt } from '../../../src/modules/shared/domain/services/table-params.js';
+import { checkTableId, readBoolean, readInt } from '../../../src/modules/shared/domain/services/table-params.js';
 
 describe('table params', () => {
   it('reads integers within bounds', () => {
@@ -20,5 +20,13 @@ describe('table params', () => {
     expect(() => checkTableId('broadsword', 'attack table')).not.toThrow();
     expect(() => checkTableId('../bows', 'fumble table')).toThrow(expect.objectContaining({ code: 'invalid-table-id' }));
     expect(() => checkTableId('Test_Weapon', 'attack table')).toThrow(expect.objectContaining({ statusCode: 400 }));
+  });
+
+  it('reads optional booleans', () => {
+    expect(readBoolean('true', 'natural')).toBe(true);
+    expect(readBoolean('false', 'natural', true)).toBe(false);
+    expect(readBoolean(undefined, 'natural')).toBe(false);
+    expect(readBoolean('', 'natural', true)).toBe(true);
+    expect(() => readBoolean('1', 'natural')).toThrow(expect.objectContaining({ statusCode: 400, code: 'invalid-natural' }));
   });
 });
