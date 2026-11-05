@@ -76,6 +76,30 @@ describe('Tables (e2e)', () => {
       await get('/v1/critical-tables/P/Z/50').expect(200);
     });
 
+    it('gives the roll → location map shared by every table', async () => {
+      const res = await get('/v1/critical-tables/locations').expect(200);
+      const map = res.body as { from: number; to: number; location: string }[];
+      expect(map).toHaveLength(20);
+      expect(map[0]).toEqual({ from: 1, to: 1, location: 'head' });
+      expect(map).toContainEqual({ from: 66, to: 66, location: 'abdomen' });
+      expect(map.at(-1)).toEqual({ from: 100, to: 100, location: 'head' });
+      expect(map).toEqual(
+        (bundled('critical/P-C.json') as { rollMin: number; rollMax: number; location: string }[]).map(e => ({
+          from: e.rollMin,
+          to: e.rollMax,
+          location: e.location,
+        })),
+      );
+    });
+
+    it('keeps a natural 66 with a location, and moves a modified one down', async () => {
+      const natural = (await get('/v1/critical-tables/P/C/66?location=head&natural=true').expect(200)).body as { rollMin: number };
+      expect(natural).toMatchObject({ rollMin: 66, rollMax: 66 });
+      const moved = (await get('/v1/critical-tables/P/C/66?location=head').expect(200)).body as { rollMin: number; location: string };
+      expect(moved).toMatchObject({ rollMin: 16, rollMax: 20, location: 'head' });
+      expect((await get('/v1/critical-tables/P/C/66?natural=yes').expect(400)).body).toMatchObject({ code: 'invalid-natural' });
+    });
+
     it('rejects an invalid severity, type or roll, and 404 for an unknown type', async () => {
       expect((await get('/v1/critical-tables/P/F/50').expect(400)).body).toMatchObject({ code: 'invalid-severity' });
       expect((await get('/v1/critical-tables/P_x/A/50').expect(400)).body).toMatchObject({ code: 'invalid-table-id' });

@@ -43,6 +43,7 @@ describe('AppModule (e2e)', () => {
     '/v1/attack-tables',
     '/v1/critical-tables',
     '/v1/critical-tables/P',
+    '/v1/critical-tables/locations',
     '/v1/fumble-tables/bows/10',
     '/v1/spellcasting-tables/modifiers',
     '/v1/spell-failure-tables',

@@ -10,12 +10,17 @@ export const NO_EFFECT: CriticalEntry = {
   message: 'Critical has no effect using the given location',
 };
 
-const entryAt = (entries: CriticalEntry[], roll: number, location: string | null | undefined): CriticalEntry | null => {
+const entryAt = (entries: CriticalEntry[], roll: number, location: string | null | undefined, natural = false): CriticalEntry | null => {
   for (const entry of entries) {
     if (roll >= entry.rollMin && roll <= entry.rollMax) {
       if (!location) return entry;
-      // 66 is the special result of the table, which never moves to the attack location.
-      if (entry.location === location && roll !== 66) return entry;
+      // 66 is the special result of the table: it is never reached by moving down to a location (Section 9.7), but a
+      // natural 66 keeps it whatever the location.
+      if (roll === 66) {
+        if (natural) return entry;
+        continue;
+      }
+      if (entry.location === location) return entry;
     }
   }
   return null;
@@ -24,9 +29,15 @@ const entryAt = (entries: CriticalEntry[], roll: number, location: string | null
 /**
  * The row of a critical roll. With a location, the first row of that location at or below the roll. `entries` are the
  * rows of the severity, or of A for Z: a Z critical takes the A row just below the one the roll falls in (two below
- * on 67-…), on the same location.
+ * on 67-…), on the same location. `natural`: the roll is the unmodified one, so a 66 gives the 66 row even with a location.
  */
-export const findCriticalEntry = (entries: CriticalEntry[], severity: LookupSeverity, roll: number, location?: string): CriticalEntry => {
+export const findCriticalEntry = (
+  entries: CriticalEntry[],
+  severity: LookupSeverity,
+  roll: number,
+  location?: string,
+  natural = false,
+): CriticalEntry => {
   let from = roll;
   let where: string | null | undefined = location;
   if (severity === 'Z') {
@@ -35,7 +46,7 @@ export const findCriticalEntry = (entries: CriticalEntry[], severity: LookupSeve
     where = rolled?.location ?? null;
   }
   for (let value = from; value >= 1; value--) {
-    const entry = entryAt(entries, value, where);
+    const entry = entryAt(entries, value, where, natural && value === roll);
     if (entry) return entry;
   }
   return NO_EFFECT;

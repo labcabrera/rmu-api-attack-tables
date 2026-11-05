@@ -16,3 +16,11 @@ export const readInt = (value: string, label: string, min = Number.MIN_SAFE_INTE
   }
   return number;
 };
+
+/** An optional boolean query parameter: `true`, `false` or missing (`fallback`). */
+export const readBoolean = (value: string | undefined, label: string, fallback = false): boolean => {
+  if (value === undefined || value === '') return fallback;
+  if (value === 'true') return true;
+  if (value === 'false') return false;
+  throw new ValidationError(`Invalid ${label} '${value}' (true or false)`, `invalid-${label.replace(/ /g, '-')}`);
+};
