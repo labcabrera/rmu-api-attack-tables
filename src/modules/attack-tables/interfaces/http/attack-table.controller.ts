@@ -6,11 +6,13 @@ import { JwtAuthGuard } from '../../../shared/infrastructure/security/jwt-auth.g
 import { ApiErrors } from '../../../shared/interfaces/http/api-errors.decorator.js';
 import type { AuthenticatedUser } from '../../../shared/interfaces/http/authenticated-request.js';
 import { CurrentUser } from '../../../shared/interfaces/http/current-user.decorator.js';
+import { GetAttackTableModifiersQuery } from '../../application/cqrs/queries/get-attack-table-modifiers.query.js';
 import { GetAttackTableQuery } from '../../application/cqrs/queries/get-attack-table.query.js';
 import { ListAttackTablesQuery } from '../../application/cqrs/queries/list-attack-tables.query.js';
 import { LookupAttackTableQuery } from '../../application/cqrs/queries/lookup-attack-table.query.js';
 import { ARMOR_TYPES, type AttackResult, type AttackTable, MAX_ATTACK_ROLL } from '../../domain/entities/attack-table.js';
-import { AttackLookupDto, AttackTableDto } from './dto/attack-table.dto.js';
+import type { AttackTableModifiers } from '../../domain/entities/attack-table-modifiers.js';
+import { AttackLookupDto, AttackTableDto, AttackTableModifiersDto } from './dto/attack-table.dto.js';
 
 @UseGuards(JwtAuthGuard)
 @Controller('v1/attack-tables')
@@ -37,6 +39,21 @@ export class AttackTableController {
   async getTable(@Param('tableId') tableId: string, @CurrentUser() user: AuthenticatedUser): Promise<AttackTableDto> {
     const table = await this.queryBus.execute<GetAttackTableQuery, AttackTable>(new GetAttackTableQuery(tableId, user.roles));
     return AttackTableDto.fromEntity(table);
+  }
+
+  @Get(':tableId/modifiers')
+  @ApiOperation({
+    operationId: 'getAttackTableModifiers',
+    summary: 'Get the disarm and subdual modifiers of an attack table',
+    description: 'Numbers of Tables 9-7a and 9-7e per table (workspace spec 079, A7); null when the maneuver does not apply.',
+  })
+  @ApiOkResponse({ type: AttackTableModifiersDto, description: 'Success' })
+  @ApiErrors({ 400: 'Invalid table id', 404: 'Attack table not found' })
+  async getModifiers(@Param('tableId') tableId: string): Promise<AttackTableModifiersDto> {
+    const modifiers = await this.queryBus.execute<GetAttackTableModifiersQuery, AttackTableModifiers>(
+      new GetAttackTableModifiersQuery(tableId),
+    );
+    return AttackTableModifiersDto.fromEntity(modifiers);
   }
 
   @Get(':tableId/:armorType/:roll')

@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { CqrsModule } from '@nestjs/cqrs';
 import { AuthModule } from '../shared/infrastructure/security/auth.module.js';
 import { SharedModule } from '../shared/shared.module.js';
+import { GetAttackTableModifiersHandler } from './application/cqrs/handlers/get-attack-table-modifiers.handler.js';
 import { GetAttackTableHandler } from './application/cqrs/handlers/get-attack-table.handler.js';
 import { ListAttackTablesHandler } from './application/cqrs/handlers/list-attack-tables.handler.js';
 import { LookupAttackTableHandler } from './application/cqrs/handlers/lookup-attack-table.handler.js';
@@ -15,6 +16,7 @@ import { AttackTableController } from './interfaces/http/attack-table.controller
   providers: [
     ListAttackTablesHandler,
     GetAttackTableHandler,
+    GetAttackTableModifiersHandler,
     LookupAttackTableHandler,
     { provide: ATTACK_TABLE_REPOSITORY, useClass: FileAttackTableRepository },
   ],
