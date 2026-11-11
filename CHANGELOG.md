@@ -1,3 +1,11 @@
+# [0.5.0](https://github.com/labcabrera/rmu-api-attack-tables/compare/0.4.0...0.5.0) (2026-11-11)
+
+
+### Features
+
+* critical locations endpoint and natural 66 (spec 077, phase 1) ([fb4ad46](https://github.com/labcabrera/rmu-api-attack-tables/commit/fb4ad46c7baadc044fee8864d7426aa2f9bb9ee4))
+* disarm and subdual modifiers per attack table (spec 079, phase 3) ([5f65ca9](https://github.com/labcabrera/rmu-api-attack-tables/commit/5f65ca9da2671d5f65a642ffbc0ead90f15bfba1))
+
 # [0.4.0](https://github.com/labcabrera/rmu-api-attack-tables/compare/0.3.1...0.4.0) (2026-11-02)
 
 
