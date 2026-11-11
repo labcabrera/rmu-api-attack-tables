@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import type { AttackTableModifiers } from '../../../domain/entities/attack-table-modifiers.js';
 import type { AttackResult, AttackTable, AttackTableRow } from '../../../domain/entities/attack-table.js';
 
 /** The result of an attack roll, as rmu-api-tactical reads it. */
@@ -48,6 +49,34 @@ export class AttackTableDto {
     return Object.assign(new AttackTableDto(), {
       id: table.id,
       rows: table.rows.map((row: AttackTableRow) => ({ ...row, results: row.results.map(result => ({ ...result })) })),
+    });
+  }
+}
+
+export class SpecialManeuverModifierDto {
+  @ApiProperty({ type: Number, description: 'Modifier in melee, or of the only use of a ranged weapon', example: -75 })
+  melee: number;
+
+  @ApiProperty({ type: Number, nullable: true, description: 'Modifier when the weapon is thrown; null when it is not', example: -175 })
+  ranged: number | null;
+}
+
+/** Disarm and subdual modifiers of an attack table (workspace spec 079, A7; Tables 9-7a and 9-7e). */
+export class AttackTableModifiersDto {
+  @ApiProperty({ type: String, example: 'dagger' })
+  id: string;
+
+  @ApiProperty({ type: SpecialManeuverModifierDto, nullable: true, description: 'Disarm modifier; null when not applicable' })
+  disarm: SpecialManeuverModifierDto | null;
+
+  @ApiProperty({ type: SpecialManeuverModifierDto, nullable: true, description: 'Subdual modifier; null when not applicable' })
+  subdual: SpecialManeuverModifierDto | null;
+
+  static fromEntity(modifiers: AttackTableModifiers): AttackTableModifiersDto {
+    return Object.assign(new AttackTableModifiersDto(), {
+      id: modifiers.id,
+      disarm: modifiers.disarm ? { ...modifiers.disarm } : null,
+      subdual: modifiers.subdual ? { ...modifiers.subdual } : null,
     });
   }
 }

@@ -66,10 +66,12 @@ Every endpoint needs a bearer token but `GET /v1/health`. The whole tables are r
 
 | `GET /v1/attack-tables` | token | The ids of the attack tables found in the data folder and in `tables/`, sorted.
 | `GET /v1/attack-tables/{tableId}` | Core Law | The whole Medium table: `{id, rows: [{rollMin, rollMax, results}]}`, rows from the highest band down, `results` with the ten cells (AT 1 to 10) parsed as below plus `armorType`.
+| `GET /v1/attack-tables/{tableId}/modifiers` | token | The disarm and subdual modifiers of the table (Tables 9-7a and 9-7e, workspace spec 079): `{id, disarm, subdual}`, each one `{melee, ranged}` (`ranged` when the weapon can be thrown, else null) or null when the maneuver does not apply (balls, bolts, tables without an entry). Numbers only, kept in code.
 | `GET /v1/attack-tables/{tableId}/{at}/{roll}` | token | The result of an attack roll on the Medium table. `tableId`: lowercase letters, digits and `-`; `at`: 1-10; `roll`: 1-175, and a roll above the last band of the table reads its top row (the ball tables end at 125).
 | `GET /v1/critical-tables` | token | The critical types, sorted.
+| `GET /v1/critical-tables/locations` | token | The roll → location map that every critical table shares (Section 7.2): `[{from, to, location}]`, one band per row, from 1 to 100 (66 is its own band). Read from the table files; a table with a different map is a data error (500, `critical-locations-mismatch`).
 | `GET /v1/critical-tables/{type}` | Core Law | Every severity of a type: `{type, severities: {A: [...], ..., E: [...]}}`, each with the rows of its file as they are. A severity without a file is left out.
-| `GET /v1/critical-tables/{type}/{severity}/{roll}` | token | The result of a critical roll. `type`: the letter of the attack tables (`G H I K L O P S T U W`) or `acid`, `holy`, `steam`, `subdual`; `severity`: `A`-`E`, or `Z` (Section 9.8); `roll`: 1-100; optional `?location=`.
+| `GET /v1/critical-tables/{type}/{severity}/{roll}` | token | The result of a critical roll. `type`: the letter of the attack tables (`G H I K L O P S T U W`) or `acid`, `holy`, `steam`, `subdual`; `severity`: `A`-`E`, or `Z` (Section 9.8); `roll`: 1-100; optional `?location=` (the first row of that location at or below the roll; 66 is never reached that way) and `?natural=true` (the roll is the unmodified one, so a 66 keeps the 66 row even with a location).
 | `GET /v1/fumble-tables` | token | The ids of the fumble tables, sorted.
 | `GET /v1/fumble-tables/{tableId}` | Core Law | The whole table: `{id, entries: [...]}`, with the rows as they are.
 | `GET /v1/fumble-tables/{tableId}/{roll}` | token | The result of a fumble roll (1-100).

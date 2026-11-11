@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
+import { GetCriticalLocationsHandler } from '../../../src/modules/critical-tables/application/cqrs/handlers/get-critical-locations.handler.js';
 import { GetCriticalTableHandler } from '../../../src/modules/critical-tables/application/cqrs/handlers/get-critical-table.handler.js';
 import { ListCriticalTypesHandler } from '../../../src/modules/critical-tables/application/cqrs/handlers/list-critical-types.handler.js';
 import { LookupCriticalTableHandler } from '../../../src/modules/critical-tables/application/cqrs/handlers/lookup-critical-table.handler.js';
@@ -67,8 +68,9 @@ const validateEntry = (entry: CriticalEntry) => {
 };
 
 const bundled = new FileCriticalTableRepository(tablePaths());
-const lookup = (type: string, severity: string, roll: number, location?: string, repository = bundled) =>
-  new LookupCriticalTableHandler(repository).execute(new LookupCriticalTableQuery(type, severity, roll, location));
+const lookup = (type: string, severity: string, roll: number, location?: string, natural = false, repository = bundled) =>
+  new LookupCriticalTableHandler(repository).execute(new LookupCriticalTableQuery(type, severity, roll, location, natural));
+const locationMap = (entries: CriticalEntry[]) => entries.map(e => ({ from: e.rollMin, to: e.rollMax, location: e.location }));
 
 describe('bundled critical tables', () => {
   it('has every table of Core Law and lists its types', async () => {
@@ -87,6 +89,46 @@ describe('bundled critical tables', () => {
         expect([roll, result.rollMin <= roll && roll <= result.rollMax]).toEqual([roll, true]);
       }
     });
+  });
+});
+
+describe('critical locations', () => {
+  it('every critical table file shares the same roll → location map', () => {
+    const files = readdirSync(CRITICAL_DIR).filter(file => file.endsWith('.json'));
+    const maps = files.map(file => ({
+      file,
+      map: locationMap(JSON.parse(readFileSync(path.join(CRITICAL_DIR, file), 'utf8')) as CriticalEntry[]),
+    }));
+    const reference = maps.find(m => m.file === 'K-A.json')!.map;
+    expect(maps.filter(m => JSON.stringify(m.map) !== JSON.stringify(reference)).map(m => m.file)).toEqual([]);
+  });
+
+  it('serves the common map, from 1 to 100 without gaps', async () => {
+    const map = await new GetCriticalLocationsHandler(bundled).execute();
+    expect(map).toEqual(locationMap(JSON.parse(readFileSync(path.join(CRITICAL_DIR, 'S-E.json'), 'utf8')) as CriticalEntry[]));
+    map.forEach((range, i) => expect(range.from).toBe(i === 0 ? 1 : map[i - 1].to + 1));
+    expect(map.at(-1)!.to).toBe(100);
+    expect(map.find(range => range.from === 81)).toEqual({ from: 81, to: 85, location: 'head' });
+    expect(map.find(range => range.from === 21)).toEqual({ from: 21, to: 25, location: 'chest' });
+  });
+
+  it('fails on a table with a different map, and 404 without tables', async () => {
+    const rows = (split: number): CriticalEntry[] => [
+      { rollMin: 1, rollMax: split, dmg: 0, location: 'head', message: 'a' },
+      { rollMin: split + 1, rollMax: 100, dmg: 0, location: 'leg', message: 'b' },
+    ];
+    const tables: Record<string, CriticalEntry[]> = { A: rows(50), B: rows(60) };
+    const repository = {
+      listTypes: () => Promise.resolve(['X']),
+      findSeverity: (_type: string, severity: string) => Promise.resolve(tables[severity] ?? null),
+    };
+    await expect(new GetCriticalLocationsHandler(repository).execute()).rejects.toMatchObject({
+      statusCode: 500,
+      code: 'critical-locations-mismatch',
+      message: expect.stringContaining('X-B') as string,
+    });
+    const empty = { listTypes: () => Promise.resolve([]), findSeverity: () => Promise.resolve(null) };
+    await expect(new GetCriticalLocationsHandler(empty).execute()).rejects.toMatchObject({ statusCode: 404 });
   });
 });
 
@@ -124,6 +166,22 @@ describe('critical lookup', () => {
     expect(findCriticalEntry(entries, 'B', 50, 'arm').message).toBe('11-20');
     expect(findCriticalEntry(entries, 'B', 66, 'head')).toBe(NO_EFFECT);
     expect(findCriticalEntry(entries, 'B', 5, 'leg')).toBe(NO_EFFECT);
+  });
+
+  it('never reaches 66 with a location, unless the 66 is natural', () => {
+    expect(findCriticalEntry(entries, 'B', 66, 'arm').message).toBe('11-20');
+    expect(findCriticalEntry(entries, 'B', 66, 'arm', true).message).toBe('66-66');
+    expect(findCriticalEntry(entries, 'B', 66, 'head', true).message).toBe('66-66');
+    // natural only matters for a 66: other rolls still move down to the location
+    expect(findCriticalEntry(entries, 'B', 70, 'head', true)).toBe(NO_EFFECT);
+    expect(findCriticalEntry(entries, 'B', 70, 'chest', true).message).toBe('21-65');
+    // without a location a 66 is the 66 row anyway
+    expect(findCriticalEntry(entries, 'B', 66).message).toBe('66-66');
+  });
+
+  it('keeps a natural 66 on the bundled tables with a forced location', async () => {
+    await expect(lookup('K', 'C', 66, 'head', true)).resolves.toMatchObject({ rollMin: 66, rollMax: 66 });
+    await expect(lookup('K', 'C', 66, 'head')).resolves.toMatchObject({ rollMin: 16, rollMax: 20, location: 'head' });
   });
 
   it('reads Z as the A row below the one of the roll, on its location', () => {

@@ -19,6 +19,6 @@ export class LookupCriticalTableHandler implements IQueryHandler<LookupCriticalT
     const severity = query.severity as LookupSeverity;
     const entries = await this.repository.findSeverity(query.type, severity === 'Z' ? 'A' : severity);
     if (!entries) throw new NotFoundError('Critical table', `${query.type}-${severity}`);
-    return findCriticalEntry(entries, severity, query.roll, query.location);
+    return findCriticalEntry(entries, severity, query.roll, query.location, query.natural);
   }
 }
